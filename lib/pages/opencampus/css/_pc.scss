@@ -1,0 +1,27 @@
+@use "sass:math";
+@use "../../../common/css/mixin" as *;
+@use "../../../common/css/global" as *;
+
+
+.test {
+  color: blue;
+}
+
+@include mq(pc){
+
+  .header {
+    color: green;
+    font-size: rem(16);
+  }
+
+
+.test {
+  font-size: rem(80);
+  width: 100%;
+  max-width: rem(1100);
+  color: white;
+  background-color: black;
+  margin-inline: auto;
+}
+
+}

@@ -1,0 +1,15 @@
+@use "sass:math";
+
+// ----------------------------------------------------------------------------
+// Media Query
+// ----------------------------------------------------------------------------
+$breakpoint: (
+  sp: 'screen and (max-width: 768px)',
+  pc: 'print, screen and (min-width: 769px)'
+);
+
+@mixin mq($bp) {
+  @media #{map-get($breakpoint, $bp)} {
+    @content;
+  }
+}

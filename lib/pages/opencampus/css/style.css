@@ -1,0 +1,22 @@
+body {
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+.test {
+  color: blue;
+}
+
+@media print, screen and (min-width: 769px) {
+  .header {
+    color: green;
+    font-size: 1rem;
+  }
+  .test {
+    font-size: 5rem;
+    width: 100%;
+    max-width: 68.75rem;
+    color: white;
+    background-color: black;
+    margin-inline: auto;
+  }
+}
