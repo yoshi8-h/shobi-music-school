@@ -18,7 +18,12 @@
 <body>
   <!-- header -->
   <header class="header">
-    <div class="header__logo"><img src="../../lib/common/img/logo.png" alt="ロゴ"></div>
+    <div class="header__logo">
+      <picture>
+        <source media="(min-width: 768px)" srcset="../../lib/common/img/logo.png">
+        <img src="../../lib/common/img/logo-sp.png" alt="ロゴ">
+      </picture>
+    </div>
   </header>
 
   <!--#include virtual="/include/header.shtml" -->
@@ -36,6 +41,47 @@
         <div class="fv__img is-06"><img src="../../lib/pages/opencampus/img/fv-06.png" alt="画像06"></div>
       </div>
     </div>
+
+    <!-- open campus -->
+    <div class="open">
+      <div class="open__line-top"></div>
+      <div class="open__line-bottom"></div>
+      <div class="open__top">
+        <picture>
+          <source media="(min-width: 768px)" srcset="../../lib/pages/opencampus/img/open-bg.png">
+          <img src="../../lib/pages/opencampus/img/open-bg-sp.png" alt="背景画像">
+        </picture>
+      </div>
+      <h2 class="open__bottom">
+        <img src="../../lib/pages/opencampus/img/open-logo.png" alt="OPEN CAMPUS">
+      </h2>
+    </div>
+
+    <!-- topics セクション -->
+    <!-- <section class="topics">
+      <h3 class="topics__title section-title">
+        <picture>
+          <source media="(min-width: 768px)" srcset="../../lib/pages/opencampus/img/section-title-topics.png">
+          <img src="../../lib/pages/opencampus/img/section-title-topics-sp.png" alt="TOPICS">
+        </picture>
+        <div class="section-title__left"><img src="../../lib/pages/opencampus/img/section-title-left.png" alt="左側のアイコン"></div>
+        <div class="section-title__right"><img src="../../lib/pages/opencampus/img/section-title-right.png" alt="右側のアイコン"></div>
+      </h3>
+      <div class="topics__middle">
+        <div class="topics__swiper swiper">
+          <div class="topics__cards cards swiper-wrapper">
+            <a href="#" class="cards__item card swiper-slide">
+              <div class="card__wrap">
+                <div class="card__img"><img src="" alt="写真01"></div>
+                <p class="card__button">全日程対象！<br>参加時の交通費を補助します！</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+
   </main>
 
   <!--#include virtual="/include/footer.shtml" -->

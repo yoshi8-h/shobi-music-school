@@ -118,6 +118,58 @@
 
 
 
+  // open campus
+  .open {
+    padding-top: rem(15);
+    position: relative;
+  }
+
+  .open__line-top {  // 上の仕切り線
+    width: 100%;
+    height: rem(15);  // 『.open』のpadding-topの高さに合わせる
+    background: $color-accent1;
+    position: absolute;
+    top: 0;
+  }
+
+  // .open__line-bottom {  // 下の仕切り線
+  //   width: 100%;
+  //   height: rem(10);
+  //   background: $color-accent1;
+  //   position: absolute;
+  //   bottom: 0;
+  // }
+
+  .open__top {
+    width: 100%;
+
+    img {
+      width: 100%;
+      height: rem(118);
+      object-fit: cover;
+    }
+  }
+
+  .open__bottom {
+    width: 100%;
+    height: rem(110);
+    background: linear-gradient(180deg, #5FC4F1 0%, #62DABD 100%);
+    position: relative;
+
+    img {
+      width: rem(350);
+      position: absolute;
+      top: rem(-60);
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+
+
+  // topics セクション
+
+
 
 
 

@@ -6,6 +6,8 @@
 
 @include mq(sp){
 
+
+  // inner 幅クラスを定義
   .inner {
     max-width: $inner + strip-unit($padding-pc) * 2;
     width: 100%;
@@ -17,6 +19,142 @@
 
 
 
+  // header
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 500;
+  }
+
+  .header__logo {
+
+    img {
+      width: rem(300);
+    }
+  }
+
+
+
+  // fv
+  .fv {
+    background: url(../../opencampus/img/fv-bg-sp.png) center center / cover;
+  }
+
+  .fv__inner {
+    padding-top: rem(230);
+    padding-bottom: rem(270);
+    position: relative;
+    overflow-x: hidden;
+  }
+
+  .fv__title {
+
+    img {
+      width: rem(360);
+      margin-inline: auto;
+      position: relative;
+      z-index: 50;
+    }
+  }
+
+  .fv__img {
+    position: absolute;
+  }
+
+  .fv__img.is-01 {
+    display: none;
+
+    img {
+    }
+  }
+
+  .fv__img.is-02 {
+    top: rem(30);
+    left: rem(-70);
+
+    img {
+      width: rem(250);
+    }
+  }
+
+  .fv__img.is-03 {
+    top: rem(50);
+    right: rem(-40);
+
+    img {
+      width: rem(180);
+    }
+  }
+
+  .fv__img.is-04 {
+    top: rem(400);
+    left: rem(-10);
+
+    img {
+      width: rem(140);
+    }
+  }
+
+  .fv__img.is-05 {
+    top: rem(420);
+    right: rem(15);
+
+    img {
+      width: rem(120);
+    }
+  }
+
+
+  .fv__img.is-06 {
+    bottom: 0;
+    left: rem(30);
+
+    img {
+      width: rem(260);
+    }
+  }
+
+
+
+  // open campus
+  .open {
+    padding-top: rem(10);
+    position: relative;
+  }
+
+  .open__line-top {  // 上の仕切り線
+    width: 100%;
+    height: rem(10);  // 『.open』のpadding-topの高さに合わせる
+    background: $color-accent1;
+    position: absolute;
+    top: 0;
+  }
+
+  .open__top {
+    width: 100%;
+
+    img {
+      width: 100%;
+      height: rem(90);
+      object-fit: cover;
+    }
+  }
+
+  .open__bottom {
+    width: 100%;
+    height: rem(80);
+    background: linear-gradient(180deg, #5FC4F1 0%, #62DABD 100%);
+    position: relative;
+
+    img {
+      width: rem(280);
+      position: absolute;
+      top: rem(-50);
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
 
 
 

@@ -81,6 +81,41 @@ body {
   .fv__img.is-06 img {
     width: 21.875rem;
   }
+  .open {
+    padding-top: 0.9375rem;
+    position: relative;
+  }
+  .open__line-top {
+    width: 100%;
+    height: 0.9375rem;
+    background: #00DEC7;
+    position: absolute;
+    top: 0;
+  }
+  .open__top {
+    width: 100%;
+  }
+  .open__top img {
+    width: 100%;
+    height: 7.375rem;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .open__bottom {
+    width: 100%;
+    height: 6.875rem;
+    background: -webkit-gradient(linear, left top, left bottom, from(#5FC4F1), to(#62DABD));
+    background: linear-gradient(180deg, #5FC4F1 0%, #62DABD 100%);
+    position: relative;
+  }
+  .open__bottom img {
+    width: 21.875rem;
+    position: absolute;
+    top: -3.75rem;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
 }
 @media screen and (max-width: 768px) {
   .inner {
@@ -90,5 +125,105 @@ body {
     margin-left: auto;
     padding-right: 15px;
     padding-left: 15px;
+  }
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 500;
+  }
+  .header__logo img {
+    width: 18.75rem;
+  }
+  .fv {
+    background: url(../../opencampus/img/fv-bg-sp.png) center center/cover;
+  }
+  .fv__inner {
+    padding-top: 14.375rem;
+    padding-bottom: 16.875rem;
+    position: relative;
+    overflow-x: hidden;
+  }
+  .fv__title img {
+    width: 22.5rem;
+    margin-inline: auto;
+    position: relative;
+    z-index: 50;
+  }
+  .fv__img {
+    position: absolute;
+  }
+  .fv__img.is-01 {
+    display: none;
+  }
+  .fv__img.is-02 {
+    top: 1.875rem;
+    left: -4.375rem;
+  }
+  .fv__img.is-02 img {
+    width: 15.625rem;
+  }
+  .fv__img.is-03 {
+    top: 3.125rem;
+    right: -2.5rem;
+  }
+  .fv__img.is-03 img {
+    width: 11.25rem;
+  }
+  .fv__img.is-04 {
+    top: 25rem;
+    left: -0.625rem;
+  }
+  .fv__img.is-04 img {
+    width: 8.75rem;
+  }
+  .fv__img.is-05 {
+    top: 26.25rem;
+    right: 0.9375rem;
+  }
+  .fv__img.is-05 img {
+    width: 7.5rem;
+  }
+  .fv__img.is-06 {
+    bottom: 0;
+    left: 1.875rem;
+  }
+  .fv__img.is-06 img {
+    width: 16.25rem;
+  }
+  .open {
+    padding-top: 0.625rem;
+    position: relative;
+  }
+  .open__line-top {
+    width: 100%;
+    height: 0.625rem;
+    background: #00DEC7;
+    position: absolute;
+    top: 0;
+  }
+  .open__top {
+    width: 100%;
+  }
+  .open__top img {
+    width: 100%;
+    height: 5.625rem;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .open__bottom {
+    width: 100%;
+    height: 5rem;
+    background: -webkit-gradient(linear, left top, left bottom, from(#5FC4F1), to(#62DABD));
+    background: linear-gradient(180deg, #5FC4F1 0%, #62DABD 100%);
+    position: relative;
+  }
+  .open__bottom img {
+    width: 17.5rem;
+    position: absolute;
+    top: -3.125rem;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
   }
 }
