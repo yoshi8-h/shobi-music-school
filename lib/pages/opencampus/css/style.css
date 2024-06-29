@@ -1,22 +1,94 @@
 body {
   font-family: "Noto Sans JP", sans-serif;
-}
-
-.test {
-  color: blue;
+  font-weight: 700;
+  line-height: 1.4;
 }
 
 @media print, screen and (min-width: 769px) {
-  .header {
-    color: green;
-    font-size: 1rem;
-  }
-  .test {
-    font-size: 5rem;
+  .inner {
+    max-width: 1250px;
+    padding-right: 25px;
+    padding-left: 25px;
     width: 100%;
-    max-width: 68.75rem;
-    color: white;
-    background-color: black;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 500;
+  }
+  .header__logo img {
+    width: 21.875rem;
+  }
+  .fv {
+    background: url(../../opencampus/img/fv-bg.png) center center/cover;
+  }
+  .fv__inner {
+    padding-top: 9.375rem;
+    padding-bottom: 14.375rem;
+    position: relative;
+  }
+  .fv__title img {
+    width: 31.25rem;
     margin-inline: auto;
+    position: relative;
+    z-index: 50;
+  }
+  .fv__img {
+    position: absolute;
+  }
+  .fv__img.is-01 {
+    top: 0;
+    right: 17.5rem;
+  }
+  .fv__img.is-01 img {
+    width: 12.5rem;
+  }
+  .fv__img.is-02 {
+    top: 3.125rem;
+    left: 2.5rem;
+  }
+  .fv__img.is-02 img {
+    width: 15.625rem;
+  }
+  .fv__img.is-03 {
+    top: 9.375rem;
+    right: 1.25rem;
+  }
+  .fv__img.is-03 img {
+    width: 14.375rem;
+  }
+  .fv__img.is-04 {
+    top: 21.875rem;
+    left: 0.625rem;
+  }
+  .fv__img.is-04 img {
+    width: 11.25rem;
+  }
+  .fv__img.is-05 {
+    bottom: 2.5rem;
+    right: 12.5rem;
+  }
+  .fv__img.is-05 img {
+    width: 11.25rem;
+  }
+  .fv__img.is-06 {
+    bottom: 0;
+    left: 18.75rem;
+  }
+  .fv__img.is-06 img {
+    width: 21.875rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .inner {
+    max-width: 1250px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
   }
 }
