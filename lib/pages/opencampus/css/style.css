@@ -310,6 +310,9 @@ body {
     -webkit-transition: color 0.2s ease-out;
     transition: color 0.2s ease-out;
   }
+  .hidden-pc {
+    display: none;
+  }
   .btn__arrow {
     position: absolute;
     top: 50%;
@@ -665,30 +668,30 @@ body {
     margin-inline: auto;
   }
   .section-title img {
-    width: 9.375rem;
+    width: 8.125rem;
   }
   .section-title__left {
     position: absolute;
     top: 50%;
-    left: -4.375rem;
+    left: -3.4375rem;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
   }
   .section-title__left img {
-    width: 3.125rem;
+    width: 2.1875rem;
   }
   .section-title__right {
     position: absolute;
     top: 50%;
-    right: -4.375rem;
+    right: -3.4375rem;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
   }
   .section-title__right img {
-    width: 3.125rem;
+    width: 2.1875rem;
   }
   .topics__middle {
-    margin-top: 3.125rem;
+    margin-top: 2.5rem;
   }
   .topics__swiper {
     padding-bottom: 3.4375rem;
@@ -712,10 +715,10 @@ body {
     border-radius: 0.625rem;
     border: 2px solid #E3E3E3;
     background: #FFF;
-    padding: 0.625rem;
-    width: 24.375rem;
-    height: 16.875rem;
-    aspect-ratio: 390/270;
+    padding: 0.4375rem;
+    width: 15.625rem;
+    height: 10.9375rem;
+    aspect-ratio: 250/175;
     -o-object-fit: cover;
        object-fit: cover;
     position: relative;
@@ -725,7 +728,7 @@ body {
   }
   .card__img img {
     width: 100%;
-    aspect-ratio: 370/250;
+    aspect-ratio: 232/156;
     -o-object-fit: cover;
        object-fit: cover;
     -webkit-transition: -webkit-transform 0.2s ease-out;
@@ -734,30 +737,31 @@ body {
     transition: transform 0.2s ease-out, -webkit-transform 0.2s ease-out;
   }
   .card__button {
-    width: 21.25rem;
-    height: 5rem;
+    width: 13.75rem;
+    height: 3.75rem;
     border-radius: 2.375rem;
     background: #FFF;
     -webkit-box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.25);
             box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.25);
-    padding-block: 0.9375rem;
-    padding-inline: 1.25rem;
-    font-size: 1.1875rem;
+    padding-block: 0.5rem;
+    padding-inline: 0.625rem;
+    font-size: 0.875rem;
     position: absolute;
-    bottom: -3.125rem;
+    bottom: -1.875rem;
     left: 50%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
     display: grid;
     place-items: center;
+    white-space: nowrap;
     -webkit-transition: -webkit-transform 0.2s ease-out, -webkit-box-shadow 0.2s ease-out;
     transition: -webkit-transform 0.2s ease-out, -webkit-box-shadow 0.2s ease-out;
     transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
     transition: transform 0.2s ease-out, box-shadow 0.2s ease-out, -webkit-transform 0.2s ease-out, -webkit-box-shadow 0.2s ease-out;
   }
   .topics__arrows {
-    width: 21.25rem;
-    height: 1.875rem;
+    width: 20rem;
+    height: 2.5rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -768,7 +772,7 @@ body {
         -ms-flex-align: center;
             align-items: center;
     gap: 11.25rem;
-    margin-top: 2.5rem;
+    margin-top: 0;
     position: relative;
     margin-inline: auto;
     z-index: 30;
@@ -778,16 +782,16 @@ body {
     display: none;
   }
   .topics__prev-img img {
-    width: 1.25rem;
-    height: 1.25rem;
+    width: 1.875rem;
+    height: 1.875rem;
   }
   .topics__next-img img {
-    width: 1.25rem;
-    height: 1.25rem;
+    width: 1.875rem;
+    height: 1.875rem;
   }
   .topics__pagination {
     bottom: auto !important;
-    margin-top: -1.625rem;
+    margin-top: -1.875rem;
   }
   .topics__pagination .swiper-pagination-bullet {
     width: 0.9375rem;
@@ -806,6 +810,10 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -816,14 +824,15 @@ body {
   }
   .btn {
     border: 2px solid #00DEC7;
-    border-radius: 1.875rem;
+    border-radius: 3.125rem;
     background: #00DEC7;
-    padding-block: 0.75rem;
-    padding-left: 2.1875rem;
-    padding-right: 3.75rem;
+    padding-block: 0.5rem;
+    padding-left: 1.875rem;
+    padding-right: 3.125rem;
     position: relative;
     -webkit-transition: background 0.2s ease-out;
     transition: background 0.2s ease-out;
+    text-align: center;
   }
   .btn:hover {
     background: #FFF;
@@ -840,7 +849,7 @@ body {
   }
   .btn__text {
     color: #FFF;
-    font-size: 1.1875rem;
+    font-size: 1rem;
     -webkit-transition: color 0.2s ease-out;
     transition: color 0.2s ease-out;
   }

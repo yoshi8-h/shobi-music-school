@@ -434,35 +434,35 @@
     margin-inline: auto;
 
     img {
-      width: rem(150);
+      width: rem(130);
     }
   }
 
   .section-title__left {
     position: absolute;
     top: 50%;
-    left: rem(-70);
+    left: rem(-55);
     transform: translateY(-50%);
 
     img {
-      width: rem(50);
+      width: rem(35);
     }
   }
 
   .section-title__right {
     position: absolute;
     top: 50%;
-    right: rem(-70);
+    right: rem(-55);
     transform: translateY(-50%);
 
     img {
-      width: rem(50);
+      width: rem(35);
     }
   }
 
 
   .topics__middle {
-    margin-top: rem(50);
+    margin-top: rem(40);
   }
 
   .topics__swiper {
@@ -474,8 +474,6 @@
 
 
   .cards {  // cards (Block)
-    // display: flex;
-    // gap: rem(10);
   }
 
   .cards__item {
@@ -501,10 +499,10 @@
     border-radius: rem(10);
     border: 2px solid #E3E3E3;
     background: #FFF;
-    padding: rem(10);
-    width: rem(390);
-    height: rem(270);
-    aspect-ratio: 390 / 270;
+    padding: rem(7);
+    width: rem(250);
+    height: rem(175);
+    aspect-ratio: 250 / 175;
     object-fit: cover;
     position: relative;
   }
@@ -514,40 +512,41 @@
 
     img {
       width: 100%;
-      aspect-ratio: 370 / 250;
+      aspect-ratio: 232 / 156;
       object-fit: cover;
       transition: transform 0.2s ease-out;
     }
   }
 
   .card__button {
-    width: rem(340);
-    height: rem(80);
+    width: rem(220);
+    height: rem(60);
     border-radius: rem(38);
     background: #FFF;
     box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.25);
-    padding-block: rem(15);
-    padding-inline: rem(20);
-    font-size: rem(19);
+    padding-block: rem(8);
+    padding-inline: rem(10);
+    font-size: rem(14);
     position: absolute;
-    bottom: rem(-50);
+    bottom: rem(-30);
     left: 50%;
     transform: translateX(-50%);
     display: grid;
     place-items: center;
+    white-space: nowrap;
 
     transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
   }
 
 
   .topics__arrows {  // swiperの「前へ」「次へ」ボタン
-    width: rem(340);
-    height: rem(30);
+    width: rem(320);
+    height: rem(40);
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: rem(180);
-    margin-top: rem(40);
+    margin-top: 0;
     position: relative;
     margin-inline: auto;
     z-index: 30;
@@ -566,8 +565,8 @@
   .topics__prev-img {
 
     img {
-      width: rem(20);
-      height: rem(20);
+      width: rem(30);
+      height: rem(30);
     }
   }
 
@@ -577,8 +576,8 @@
   .topics__next-img {
 
     img {
-      width: rem(20);
-      height: rem(20);
+      width: rem(30);
+      height: rem(30);
     }
   }
 
@@ -586,7 +585,7 @@
   .topics__pagination {  // swiperのページネーション   // デフォルトの指定を上書き。クラス名はデベロッパーツールから取得。
     // width: fit-content !important;
     bottom: auto !important;
-    margin-top: rem(-26);
+    margin-top: rem(-30);
 
     .swiper-pagination-bullet {  // デフォルトの指定を上書き。クラス名はデベロッパーツールから取得。
       width: rem(15);
@@ -606,6 +605,7 @@
   .topics__bottom {
     padding-top: rem(50);
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: rem(20);
@@ -618,13 +618,14 @@
 
   .btn {  // btn (Block)
     border: 2px solid $color-accent1;
-    border-radius: rem(30);
+    border-radius: rem(50);
     background: $color-accent1;
-    padding-block: rem(12);
-    padding-left: rem(35);
-    padding-right: rem(60);
+    padding-block: rem(8);
+    padding-left: rem(30);
+    padding-right: rem(50);
     position: relative;
     transition: background 0.2s ease-out;
+    text-align: center;
   }
 
   .btn:hover {
@@ -645,7 +646,7 @@
 
   .btn__text {
     color: #FFF;
-    font-size: rem(19);
+    font-size: rem(16);
     transition: color 0.2s ease-out;
   }
 
