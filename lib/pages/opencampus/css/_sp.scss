@@ -1612,6 +1612,269 @@
 
 
 
+  // flow セクション
+  .flow {
+    border-bottom: rem(8) solid #00DEC7;
+    background: #F8F7F0;
+    padding-top: rem(60);
+    padding-bottom: rem(900);
+  }
+
+  .flow__inner {
+  }
+
+  .flow__title {
+  }
+
+  .flow__title .section-title__img {  // セクション毎に上書きする部分。
+    img {
+      width: rem(240);
+    }
+  }
+
+  .flow__items {
+    margin-left: rem(-20);  // スマホ時だけ、少し全体を左に寄せる
+    margin-top: rem(50);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: rem(42);
+    position: relative;
+    z-index: 10;
+  }
+
+  .flow__item {
+    // width: rem(334);
+    width: calc(334px / 375px * 100vw);
+    max-width: rem(500);
+    position: relative;
+  }
+
+
+  .f-item {  // f-item (Block)
+    position: relative;
+    border-radius: rem(15);
+    background: #FFF;
+  }
+
+  .f-item__number {
+    text-align: center;
+    leading-trim: both;
+    text-edge: cap;
+    text-shadow: rem(3) rem(3) 0px #FFEDA6;
+    font-family: $font-family-en-1;
+    font-size: rem(45);
+    font-style: italic;
+    font-weight: 600;
+    line-height: 1.4;
+    position: absolute;
+    top: rem(-20);
+    left: rem(50);
+    z-index: 20;
+  }
+
+  .f-item__number::after {  // 黄色い円
+    content: "";
+    width: rem(62);
+    height: rem(62);
+    background: url(../img/flow-circle.png) no-repeat center center / contain;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(calc(-50% + rem(2)), calc(-50% + rem(2)));
+    z-index: -10;
+  }
+
+  .f-item__wrap {
+  }
+
+  .f-item__left {
+    padding-top: rem(15);
+    padding-bottom: rem(25);
+    padding-left: rem(104);
+  }
+
+  .item__left-text {
+    color: #006CB6;
+    text-align: left;
+    font-size: rem(20);
+    line-height: 1.3;
+  }
+
+  .f-item__medium {
+
+    img {
+      width: rem(280);
+      aspect-ratio: 280 / 148;
+      object-fit: cover;
+      margin-inline: auto;
+    }
+  }
+
+  .f-item__right {
+    display: grid;
+    place-items: center;
+    padding-top: rem(20);
+    padding-bottom: rem(35);
+  }
+
+  .item__right-text {
+    leading-trim: both;
+    text-edge: cap;
+    font-size: rem(14);
+    font-weight: 400;
+    line-height: 1.6;
+    width: rem(274);
+  }
+
+  .f-item__arrow {  // グラデーションの矢印
+    position: absolute;
+    bottom: rem(-33);
+    left: 50%;
+    transform: translateX(-50%);
+
+    img {
+      width: rem(40);
+    }
+  }
+
+  .f-item__arrow.is-last {  // 最後の『f-item』の下の矢印だけ、左側に配置。
+    display: none;
+  }
+
+
+  .flow__same-time {
+    width: rem(334);
+  }
+
+
+  .same-time {  // same-time (Block)
+    border-radius: rem(20);
+    background: #FFE3E1;
+    position: absolute;
+    bottom: rem(-450);
+    right: rem(-5);
+    z-index: -10;
+  }
+
+  .same-time__tag {
+    position: absolute;
+    left: rem(-18);
+    bottom: rem(300);
+
+    img {
+      width: rem(160);
+    }
+  }
+
+  .same-time__warp {
+    padding-top: rem(1050);
+    padding-inline: rem(29);
+    padding-bottom: rem(40);
+  }
+
+  .same-time__img {
+    margin-right: rem(-30);
+
+    img {
+      border-radius: rem(15) 0px 0px rem(15);
+      width: rem(320);
+      aspect-ratio: 320 / 168;
+      object-fit: cover;
+    }
+  }
+
+  .same-time__title {
+    margin-top: rem(25);
+    color: #006CB6;
+    leading-trim: both;
+    text-edge: cap;
+    font-size: rem(20);
+    line-height: 1.3;
+  }
+
+  .same-time__text {
+    margin-top: rem(15);
+    leading-trim: both;
+    text-edge: cap;;
+    font-size: rem(16);
+    font-weight: 400;
+    line-height: 1.6;
+  }
+
+  .flow__if-need {
+    width: rem(360);
+    width: calc(360px / 375px * 100vw);
+    max-width: rem(500);
+    position: absolute;
+    bottom: rem(-840);
+    left: 50%;
+    transform: translateX(calc(-50% + rem(9)));
+  }
+
+
+  .if-need {  // if-need (Block)
+    border-radius: rem(15);
+    background: #FFF;
+    padding-inline: rem(27.5);
+    padding-bottom: rem(35);
+  }
+
+  .if-need__tag {  // 『ご希望の方』
+    text-align: center;
+    leading-trim: both;
+    text-edge: cap;
+    font-size: rem(22);
+    line-height: 1.2;
+    position: absolute;
+    top: rem(10);
+    left: rem(43);
+    z-index: 10;
+  }
+
+  .if-need__tag::after {  // 黄色い円
+    content: "";
+    width: rem(94);
+    height: rem(94);
+    background: url(../img/flow-circle.png) no-repeat center center / contain;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -10;
+  }
+
+  .if-need__wrap {
+  }
+
+  .if-need__img {
+
+    img {
+      border-radius: 0px 0px rem(15) rem(15);
+      width: 100%;
+      aspect-ratio: 305 / 168;
+      object-fit: cover;
+    }
+  }
+
+  .if-need__title {
+    margin-top: rem(25);
+    color:#006CB6;
+    font-size: rem(26);
+    line-height: 1.3;
+  }
+
+  .if-need__text {
+    margin-top: rem(15);
+    leading-trim: both;
+    text-edge: cap;
+    font-size: rem(16);
+    font-weight: 400;
+    line-height: 1.6;
+  }
+
+
 
 
 
