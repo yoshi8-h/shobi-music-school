@@ -19,12 +19,12 @@
 <body>
   <!-- header -->
   <header class="header">
-    <div class="header__logo">
+    <a href="#" class="header__logo">
       <picture>
         <source media="(min-width: 768px)" srcset="../../lib/common/img/logo.png">
         <img src="../../lib/common/img/logo-sp.png" alt="ロゴ">
       </picture>
-    </div>
+    </a>
   </header>
 
   <!--#include virtual="/include/header.shtml" -->
@@ -72,66 +72,66 @@
       <div class="topics__middle">
         <div id="js-topics-swiper" class="topics__swiper swiper">  <!-- swiper -->
           <div class="topics__cards cards swiper-wrapper">
-            <a href="#" class="cards__item card swiper-slide">
+            <button class="cards__item card swiper-slide js-modal-open" data-modal="1">
               <div class="card__wrap">
                 <div class="card__img"><img src="../../lib/pages/opencampus/img/slide-01.png" alt="写真01"></div>
                 <p class="card__button">全日程対象！<br>参加時の交通費を補助します！</p>
               </div>
-            </a>
-            <a href="#" class="cards__item card swiper-slide">
+            </button>
+            <button class="cards__item card swiper-slide js-modal-open" data-modal="2">
               <div class="card__wrap">
                 <div class="card__img"><img src="../../lib/pages/opencampus/img/slide-02.png" alt="写真02"></div>
                 <p class="card__button">AO入学エントリー資格の認定</p>
               </div>
-            </a>
-            <a href="#" class="cards__item card swiper-slide">
+            </button>
+            <button class="cards__item card swiper-slide js-modal-open" data-modal="3">
               <div class="card__wrap">
                 <div class="card__img"><img src="../../lib/pages/opencampus/img/slide-03.png" alt="写真03"></div>
                 <p class="card__button">７月・8月限定夏休み特別企画！<br>01　無料体験入寮</p>
               </div>
-            </a>
-            <a href="#" class="cards__item card swiper-slide">
+            </button>
+            <button class="cards__item card swiper-slide js-modal-open" data-modal="4">
               <div class="card__wrap">
                 <div class="card__img"><img src="../../lib/pages/opencampus/img/slide-04.png" alt="写真04"></div>
                 <p class="card__button">実技試験、面接の免除！<br>入学選考優遇制度</p>
               </div>
-            </a>
-            <a href="#" class="cards__item card swiper-slide">
+            </button>
+            <button class="cards__item card swiper-slide js-modal-open" data-modal="5">
               <div class="card__wrap">
                 <div class="card__img"><img src="../../lib/pages/opencampus/img/slide-05.png" alt="写真05"></div>
                 <p class="card__button">保護者・ご家族向け説明会<br>学費・奨学金・入学制度など</p>
               </div>
-            </a>
-            <!-- <a href="#" class="cards__item card swiper-slide">
+            </button>
+            <!-- <button class="cards__item card swiper-slide">
               <div class="card__wrap">
                 <div class="card__img"><img src="../../lib/pages/opencampus/img/slide-01.png" alt="写真01"></div>
                 <p class="card__button">全日程対象！<br>参加時の交通費を補助します！</p>
               </div>
-            </a> -->
-            <!-- <a href="#" class="cards__item card swiper-slide">
+            </button> -->
+            <!-- <button class="cards__item card swiper-slide">
               <div class="card__wrap">
                 <div class="card__img"><img src="../../lib/pages/opencampus/img/slide-02.png" alt="写真02"></div>
                 <p class="card__button">AO入学エントリー資格の認定</p>
               </div>
-            </a> -->
-            <a href="#" class="cards__item card swiper-slide">
+            </button> -->
+            <button class="cards__item card swiper-slide js-modal-open" data-modal="6">
               <div class="card__wrap">
                 <div class="card__img"><img src="../../lib/pages/opencampus/img/slide-03.png" alt="写真03"></div>
                 <p class="card__button">７月・8月限定夏休み特別企画！<br>01　無料体験入寮</p>
               </div>
-            </a>
-            <a href="#" class="cards__item card swiper-slide">
+            </button>
+            <button class="cards__item card swiper-slide js-modal-open" data-modal="7">
               <div class="card__wrap">
                 <div class="card__img"><img src="../../lib/pages/opencampus/img/slide-04.png" alt="写真04"></div>
                 <p class="card__button">実技試験、面接の免除！<br>入学選考優遇制度</p>
               </div>
-            </a>
-            <!-- <a href="#" class="cards__item card swiper-slide">
+            </button>
+            <!-- <button class="cards__item card swiper-slide">
               <div class="card__wrap">
                 <div class="card__img"><img src="../../lib/pages/opencampus/img/slide-05.png" alt="写真05"></div>
                 <p class="card__button">保護者・ご家族向け説明会<br>学費・奨学金・入学制度など</p>
               </div>
-            </a> -->
+            </button> -->
           </div>
         </div>
         <div class="topics__arrows">  <!-- swiperの「前へ」「次へ」ボタン -->
@@ -168,8 +168,241 @@
       </div>
     </section>
 
+    <!-- モーダル (topics セクションの) -->
+  <dialog id="js-topics-modal-1" class="topics-modal">
+    <div class="topics-modal__wrap">
+      <div class="topics-modal__top">
+        <div class="topics-modal__top-titles">
+          <div class="topics-modal__top-en">TOPICS</div>
+          <p class="topics-modal__top-ja">全日程対象！<br>参加時の交通費を補助します！</p>
+        </div>
+        <button class="topics-modal__close js-modal-close" data-modal="1"><img src="../../lib/pages/opencampus/img/modal-close.png" alt="×"></button>
+      </div>
+      <div class="topics-modal__bottom">
+        <div class="topics-modal__bottom-top">
+          <div class="topics-modal__bottom-top-left"><img src="../../lib/pages/opencampus/img/slide-01.png" alt="写真01"></div>
+          <div class="topics-modal__bottom-top-right">
+            <p class="topics-modal__bottom-top-title">オープンキャンパス参加者限定の<br>優遇制度があります！！</p>
+            <div class="topics-modal__bottom-top-tags tags">
+              <div class="tags__title">面接の免除</div>
+              <p class="tags__text">全学科対象</p>
+            </div>
+            <p class="topics-modal__bottom-top-text1">担当教員との個別カウンセリングで『入学選考面接免除認定』を受けた方は、入学選考時の面接が免除になります。</p>
+            <p class="topics-modal__bottom-top-text2">※免除は認定を受けた学科へ2024年度に出願する場合のみ有効です。<br>※2024年1月14日からは高校2年生（新高校3年生）も認定を行います。2025年度に出願する場合のみ有効です。</p>
+          </div>
+        </div>
+        <div class="topics-modal__bottom-bottom">
+          <div class="topics-modal__bottom-bottom-tags tags">
+            <div class="tags__title">実技試験の免除</div>
+              <p class="tags__text">ジャズ・ポピュラー学科・管弦打楽器学科・音楽総合アカデミー学科対象</p>
+          </div>
+          <p class="topics-modal__bottom-bottom-text1">担当教員との個別レッスンで『入学選考実技試験免除認定』を受けた方は、入学選考時の実技試験が免除になります。</p>
+          <p class="topics-modal__bottom-bottom-text2">※免除は認定を受けた学科・専攻・コースへ2024年度に出願する場合のみ有効です。<br>※2024年1月14日からは高校2年生（新高校3年生）も認定を行います。2025年度に出願する場合のみ有効です。</p>
+        </div>
+      </div>
+    </div>
+  </dialog>
+  <dialog id="js-topics-modal-2" class="topics-modal">
+    <div class="topics-modal__wrap">
+      <div class="topics-modal__top">
+        <div class="topics-modal__top-titles">
+          <div class="topics-modal__top-en">TOPICS</div>
+          <p class="topics-modal__top-ja">AO入学エントリー資格の認定</p>
+        </div>
+        <button class="topics-modal__close js-modal-close" data-modal="2"><img src="../../lib/pages/opencampus/img/modal-close.png" alt="×"></button>
+      </div>
+      <div class="topics-modal__bottom">
+        <div class="topics-modal__bottom-top">
+          <div class="topics-modal__bottom-top-left"><img src="../../lib/pages/opencampus/img/slide-02.png" alt="写真02"></div>
+          <div class="topics-modal__bottom-top-right">
+            <p class="topics-modal__bottom-top-title">オープンキャンパス参加者限定の<br>優遇制度があります！！</p>
+            <div class="topics-modal__bottom-top-tags tags">
+              <div class="tags__title">面接の免除</div>
+              <p class="tags__text">全学科対象</p>
+            </div>
+            <p class="topics-modal__bottom-top-text1">担当教員との個別カウンセリングで『入学選考面接免除認定』を受けた方は、入学選考時の面接が免除になります。</p>
+            <p class="topics-modal__bottom-top-text2">※免除は認定を受けた学科へ2024年度に出願する場合のみ有効です。<br>※2024年1月14日からは高校2年生（新高校3年生）も認定を行います。2025年度に出願する場合のみ有効です。</p>
+          </div>
+        </div>
+        <div class="topics-modal__bottom-bottom">
+          <div class="topics-modal__bottom-bottom-tags tags">
+            <div class="tags__title">実技試験の免除</div>
+              <p class="tags__text">ジャズ・ポピュラー学科・管弦打楽器学科・音楽総合アカデミー学科対象</p>
+          </div>
+          <p class="topics-modal__bottom-bottom-text1">担当教員との個別レッスンで『入学選考実技試験免除認定』を受けた方は、入学選考時の実技試験が免除になります。</p>
+          <p class="topics-modal__bottom-bottom-text2">※免除は認定を受けた学科・専攻・コースへ2024年度に出願する場合のみ有効です。<br>※2024年1月14日からは高校2年生（新高校3年生）も認定を行います。2025年度に出願する場合のみ有効です。</p>
+        </div>
+      </div>
+    </div>
+  </dialog>
+  <dialog id="js-topics-modal-3" class="topics-modal">
+    <div class="topics-modal__wrap">
+      <div class="topics-modal__top">
+        <div class="topics-modal__top-titles">
+          <div class="topics-modal__top-en">TOPICS</div>
+          <p class="topics-modal__top-ja">７月・8月限定夏休み特別企画！<br>01　無料体験入寮</p>
+        </div>
+        <button class="topics-modal__close js-modal-close" data-modal="3"><img src="../../lib/pages/opencampus/img/modal-close.png" alt="×"></button>
+      </div>
+      <div class="topics-modal__bottom">
+        <div class="topics-modal__bottom-top">
+          <div class="topics-modal__bottom-top-left"><img src="../../lib/pages/opencampus/img/slide-03.png" alt="写真03"></div>
+          <div class="topics-modal__bottom-top-right">
+            <p class="topics-modal__bottom-top-title">オープンキャンパス参加者限定の<br>優遇制度があります！！</p>
+            <div class="topics-modal__bottom-top-tags tags">
+              <div class="tags__title">面接の免除</div>
+              <p class="tags__text">全学科対象</p>
+            </div>
+            <p class="topics-modal__bottom-top-text1">担当教員との個別カウンセリングで『入学選考面接免除認定』を受けた方は、入学選考時の面接が免除になります。</p>
+            <p class="topics-modal__bottom-top-text2">※免除は認定を受けた学科へ2024年度に出願する場合のみ有効です。<br>※2024年1月14日からは高校2年生（新高校3年生）も認定を行います。2025年度に出願する場合のみ有効です。</p>
+          </div>
+        </div>
+        <div class="topics-modal__bottom-bottom">
+          <div class="topics-modal__bottom-bottom-tags tags">
+            <div class="tags__title">実技試験の免除</div>
+              <p class="tags__text">ジャズ・ポピュラー学科・管弦打楽器学科・音楽総合アカデミー学科対象</p>
+          </div>
+          <p class="topics-modal__bottom-bottom-text1">担当教員との個別レッスンで『入学選考実技試験免除認定』を受けた方は、入学選考時の実技試験が免除になります。</p>
+          <p class="topics-modal__bottom-bottom-text2">※免除は認定を受けた学科・専攻・コースへ2024年度に出願する場合のみ有効です。<br>※2024年1月14日からは高校2年生（新高校3年生）も認定を行います。2025年度に出願する場合のみ有効です。</p>
+        </div>
+      </div>
+    </div>
+  </dialog>
+  <dialog id="js-topics-modal-4" class="topics-modal">
+    <div class="topics-modal__wrap">
+      <div class="topics-modal__top">
+        <div class="topics-modal__top-titles">
+          <div class="topics-modal__top-en">TOPICS</div>
+          <p class="topics-modal__top-ja">実技試験、面接の免除！<br>入学選考優遇制度</p>
+        </div>
+        <button class="topics-modal__close js-modal-close" data-modal="4"><img src="../../lib/pages/opencampus/img/modal-close.png" alt="×"></button>
+      </div>
+      <div class="topics-modal__bottom">
+        <div class="topics-modal__bottom-top">
+          <div class="topics-modal__bottom-top-left"><img src="../../lib/pages/opencampus/img/slide-04.png" alt="写真04"></div>
+          <div class="topics-modal__bottom-top-right">
+            <p class="topics-modal__bottom-top-title">オープンキャンパス参加者限定の<br>優遇制度があります！！</p>
+            <div class="topics-modal__bottom-top-tags tags">
+              <div class="tags__title">面接の免除</div>
+              <p class="tags__text">全学科対象</p>
+            </div>
+            <p class="topics-modal__bottom-top-text1">担当教員との個別カウンセリングで『入学選考面接免除認定』を受けた方は、入学選考時の面接が免除になります。</p>
+            <p class="topics-modal__bottom-top-text2">※免除は認定を受けた学科へ2024年度に出願する場合のみ有効です。<br>※2024年1月14日からは高校2年生（新高校3年生）も認定を行います。2025年度に出願する場合のみ有効です。</p>
+          </div>
+        </div>
+        <div class="topics-modal__bottom-bottom">
+          <div class="topics-modal__bottom-bottom-tags tags">
+            <div class="tags__title">実技試験の免除</div>
+              <p class="tags__text">ジャズ・ポピュラー学科・管弦打楽器学科・音楽総合アカデミー学科対象</p>
+          </div>
+          <p class="topics-modal__bottom-bottom-text1">担当教員との個別レッスンで『入学選考実技試験免除認定』を受けた方は、入学選考時の実技試験が免除になります。</p>
+          <p class="topics-modal__bottom-bottom-text2">※免除は認定を受けた学科・専攻・コースへ2024年度に出願する場合のみ有効です。<br>※2024年1月14日からは高校2年生（新高校3年生）も認定を行います。2025年度に出願する場合のみ有効です。</p>
+        </div>
+      </div>
+    </div>
+  </dialog>
+  <dialog id="js-topics-modal-5" class="topics-modal">
+    <div class="topics-modal__wrap">
+      <div class="topics-modal__top">
+        <div class="topics-modal__top-titles">
+          <div class="topics-modal__top-en">TOPICS</div>
+          <p class="topics-modal__top-ja">保護者・ご家族向け説明会<br>学費・奨学金・入学制度など</p>
+        </div>
+        <button class="topics-modal__close js-modal-close" data-modal="5"><img src="../../lib/pages/opencampus/img/modal-close.png" alt="×"></button>
+      </div>
+      <div class="topics-modal__bottom">
+        <div class="topics-modal__bottom-top">
+          <div class="topics-modal__bottom-top-left"><img src="../../lib/pages/opencampus/img/slide-05.png" alt="写真05"></div>
+          <div class="topics-modal__bottom-top-right">
+            <p class="topics-modal__bottom-top-title">オープンキャンパス参加者限定の<br>優遇制度があります！！</p>
+            <div class="topics-modal__bottom-top-tags tags">
+              <div class="tags__title">面接の免除</div>
+              <p class="tags__text">全学科対象</p>
+            </div>
+            <p class="topics-modal__bottom-top-text1">担当教員との個別カウンセリングで『入学選考面接免除認定』を受けた方は、入学選考時の面接が免除になります。</p>
+            <p class="topics-modal__bottom-top-text2">※免除は認定を受けた学科へ2024年度に出願する場合のみ有効です。<br>※2024年1月14日からは高校2年生（新高校3年生）も認定を行います。2025年度に出願する場合のみ有効です。</p>
+          </div>
+        </div>
+        <div class="topics-modal__bottom-bottom">
+          <div class="topics-modal__bottom-bottom-tags tags">
+            <div class="tags__title">実技試験の免除</div>
+              <p class="tags__text">ジャズ・ポピュラー学科・管弦打楽器学科・音楽総合アカデミー学科対象</p>
+          </div>
+          <p class="topics-modal__bottom-bottom-text1">担当教員との個別レッスンで『入学選考実技試験免除認定』を受けた方は、入学選考時の実技試験が免除になります。</p>
+          <p class="topics-modal__bottom-bottom-text2">※免除は認定を受けた学科・専攻・コースへ2024年度に出願する場合のみ有効です。<br>※2024年1月14日からは高校2年生（新高校3年生）も認定を行います。2025年度に出願する場合のみ有効です。</p>
+        </div>
+      </div>
+    </div>
+  </dialog>
+  <dialog id="js-topics-modal-6" class="topics-modal">
+    <div class="topics-modal__wrap">
+      <div class="topics-modal__top">
+        <div class="topics-modal__top-titles">
+          <div class="topics-modal__top-en">TOPICS</div>
+          <p class="topics-modal__top-ja">７月・8月限定夏休み特別企画！<br>01　無料体験入寮</p>
+        </div>
+        <button class="topics-modal__close js-modal-close" data-modal="6"><img src="../../lib/pages/opencampus/img/modal-close.png" alt="×"></button>
+      </div>
+      <div class="topics-modal__bottom">
+        <div class="topics-modal__bottom-top">
+          <div class="topics-modal__bottom-top-left"><img src="../../lib/pages/opencampus/img/slide-03.png" alt="写真03"></div>
+          <div class="topics-modal__bottom-top-right">
+            <p class="topics-modal__bottom-top-title">オープンキャンパス参加者限定の<br>優遇制度があります！！</p>
+            <div class="topics-modal__bottom-top-tags tags">
+              <div class="tags__title">面接の免除</div>
+              <p class="tags__text">全学科対象</p>
+            </div>
+            <p class="topics-modal__bottom-top-text1">担当教員との個別カウンセリングで『入学選考面接免除認定』を受けた方は、入学選考時の面接が免除になります。</p>
+            <p class="topics-modal__bottom-top-text2">※免除は認定を受けた学科へ2024年度に出願する場合のみ有効です。<br>※2024年1月14日からは高校2年生（新高校3年生）も認定を行います。2025年度に出願する場合のみ有効です。</p>
+          </div>
+        </div>
+        <div class="topics-modal__bottom-bottom">
+          <div class="topics-modal__bottom-bottom-tags tags">
+            <div class="tags__title">実技試験の免除</div>
+              <p class="tags__text">ジャズ・ポピュラー学科・管弦打楽器学科・音楽総合アカデミー学科対象</p>
+          </div>
+          <p class="topics-modal__bottom-bottom-text1">担当教員との個別レッスンで『入学選考実技試験免除認定』を受けた方は、入学選考時の実技試験が免除になります。</p>
+          <p class="topics-modal__bottom-bottom-text2">※免除は認定を受けた学科・専攻・コースへ2024年度に出願する場合のみ有効です。<br>※2024年1月14日からは高校2年生（新高校3年生）も認定を行います。2025年度に出願する場合のみ有効です。</p>
+        </div>
+      </div>
+    </div>
+  </dialog>
+  <dialog id="js-topics-modal-7" class="topics-modal">
+    <div class="topics-modal__wrap">
+      <div class="topics-modal__top">
+        <div class="topics-modal__top-titles">
+          <div class="topics-modal__top-en">TOPICS</div>
+          <p class="topics-modal__top-ja">実技試験、面接の免除！<br>入学選考優遇制度</p>
+        </div>
+        <button class="topics-modal__close js-modal-close" data-modal="7"><img src="../../lib/pages/opencampus/img/modal-close.png" alt="×"></button>
+      </div>
+      <div class="topics-modal__bottom">
+        <div class="topics-modal__bottom-top">
+          <div class="topics-modal__bottom-top-left"><img src="../../lib/pages/opencampus/img/slide-04.png" alt="写真04"></div>
+          <div class="topics-modal__bottom-top-right">
+            <p class="topics-modal__bottom-top-title">オープンキャンパス参加者限定の<br>優遇制度があります！！</p>
+            <div class="topics-modal__bottom-top-tags tags">
+              <div class="tags__title">面接の免除</div>
+              <p class="tags__text">全学科対象</p>
+            </div>
+            <p class="topics-modal__bottom-top-text1">担当教員との個別カウンセリングで『入学選考面接免除認定』を受けた方は、入学選考時の面接が免除になります。</p>
+            <p class="topics-modal__bottom-top-text2">※免除は認定を受けた学科へ2024年度に出願する場合のみ有効です。<br>※2024年1月14日からは高校2年生（新高校3年生）も認定を行います。2025年度に出願する場合のみ有効です。</p>
+          </div>
+        </div>
+        <div class="topics-modal__bottom-bottom">
+          <div class="topics-modal__bottom-bottom-tags tags">
+            <div class="tags__title">実技試験の免除</div>
+              <p class="tags__text">ジャズ・ポピュラー学科・管弦打楽器学科・音楽総合アカデミー学科対象</p>
+          </div>
+          <p class="topics-modal__bottom-bottom-text1">担当教員との個別レッスンで『入学選考実技試験免除認定』を受けた方は、入学選考時の実技試験が免除になります。</p>
+          <p class="topics-modal__bottom-bottom-text2">※免除は認定を受けた学科・専攻・コースへ2024年度に出願する場合のみ有効です。<br>※2024年1月14日からは高校2年生（新高校3年生）も認定を行います。2025年度に出願する場合のみ有効です。</p>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
     <!-- subject セクション -->
-    <!-- <section class="subject">
+    <section class="subject">
       <div class="subject__inner inner">
         <h3 class="subject__title section-title">
           <picture>
@@ -189,7 +422,7 @@
           </a>
         </div>
       </div>
-    </section> -->
+    </section>
 
 
   </main>

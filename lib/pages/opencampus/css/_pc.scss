@@ -26,10 +26,16 @@
   }
 
   .header__logo {
+    display: block;
+    transition: opacity 0.3s ease-out;
 
     img {
       width: rem(350);
     }
+  }
+
+  .header__logo:hover {
+    opacity: 0.7;
   }
 
 
@@ -265,6 +271,7 @@
   }
 
   .card__button {
+    color: #000 !important;  // <dialog>タグを使った際に、なぜか実機で見た時のみ文字が青色になる現象を打ち消し
     width: rem(340);
     height: rem(80);
     border-radius: rem(38);
@@ -417,6 +424,219 @@
     position: absolute;
     bottom: 0;
   }
+
+
+
+  // モーダル (topics セクションの)
+
+  // 要素を固定するクラス (スクロール不可に)
+  .is-fixed {
+    overflow: hidden;
+  }
+
+  .topics-modal {
+    width: rem(940);
+    border-radius: rem(30);
+    box-shadow: 6px 6px 8px 0px rgba(0, 0, 0, 0.25);
+    border: none;  // デフォルトの指定を打ち消し
+    padding: 0;  // デフォルトの指定を打ち消し
+    overflow: auto;  // 画面の高さがモーダルより小さい場合にスクロール可能に。
+
+    &::backdrop {
+      opacity: 0.7;
+      background: #000;
+    }
+  }
+
+  .topics-modal__wrap {
+  }
+
+  .topics-modal__top {
+    background: #FFF;
+    padding-block: rem(38);
+    padding-inline: rem(66);
+    position: relative;
+  }
+
+  .topics-modal__top-titles {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: rem(152);
+  }
+
+  .topics-modal__top-en {
+    leading-trim: both;
+    text-edge: cap;
+    font-family: $font-family-en-1;
+    font-size: rem(22);
+    font-style: italic;
+    font-weight: 600;
+    letter-spacing: 2.2px;
+    position: relative;
+  }
+
+  .topics-modal__top-en::after {  // 矢印の群
+    content: "";
+    width: rem(119);
+    height: rem(20);
+    background: url(../img/modal-arrows.png) no-repeat center center / contain;
+    position: absolute;
+    top: 50%;
+    left: calc(100% + rem(12));
+    transform: translateY(-50%);
+  }
+
+  .topics-modal__top-ja {
+    leading-trim: both;
+    text-edge: cap;
+    font-size: rem(28);
+    line-height: normal;
+  }
+
+  .topics-modal__close {  // 『閉じる』ボタン
+    position: absolute;
+    top: rem(14);
+    right: rem(14);
+
+    img {
+      width: rem(38);
+    }
+  }
+
+  .topics-modal__bottom {
+    background: #F8F7F0;
+    padding-top: rem(50);
+    padding-inline: rem(60);
+    padding-bottom: rem(60);
+  }
+
+  .topics-modal__bottom-top {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: rem(24);
+  }
+
+  .topics-modal__bottom-top-left {
+    flex-shrink: 0;
+
+    img {
+      width: rem(430);
+    }
+  }
+
+  .topics-modal__bottom-top-right {
+  }
+
+  .topics-modal__bottom-top-title {
+    color: #006CB6;
+    leading-trim: both;
+    text-edge: cap;
+    font-size: rem(24);
+  }
+
+  .topics-modal__bottom-top-tags {
+    margin-top: rem(28);
+  }
+
+
+  .tags {  // tags (Block)
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: rem(10);
+  }
+
+  .tags__title {
+    color: #FFF;
+    leading-trim: both;
+    text-edge: cap;
+    font-size: rem(18);
+    line-height: 1.6;
+    padding-block: rem(2);
+    padding-left: rem(5);
+    padding-right: rem(14);
+    border-radius: 0px rem(20) rem(20) 0px;
+    background: #F47F95;
+  }
+
+  .tags__text {
+    leading-trim: both;
+    text-edge: cap;
+    font-size: rem(18);
+    line-height: 1.6;
+  }
+
+
+  .topics-modal__bottom-top-text1 {
+    margin-top: rem(20);
+    leading-trim: both;
+    text-edge: cap;
+    font-size: rem(15);
+    font-weight: 400;
+    line-height: 1.6;
+  }
+
+  .topics-modal__bottom-top-text2 {
+    margin-top: rem(18);
+    leading-trim: both;
+    text-edge: cap;
+    font-size: rem(12);
+    font-weight: 400;
+    line-height: 1.6;
+  }
+
+  .topics-modal__bottom-bottom {
+    margin-top: rem(30);
+  }
+
+  .topics-modal__bottom-bottom-tags {
+  }
+
+  .topics-modal__bottom-bottom-text1 {
+    margin-top: rem(20);
+    leading-trim: both;
+    text-edge: cap;
+    font-size: rem(15);
+    font-weight: 400;
+    line-height: 1.6;
+  }
+
+  .topics-modal__bottom-bottom-text2 {
+    margin-top: rem(18);
+    leading-trim: both;
+    text-edge: cap;
+    font-size: rem(12);
+    font-weight: 400;
+    line-height: 1.6;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
