@@ -1411,6 +1411,180 @@ body {
     font-weight: 400;
     line-height: 1.6;
   }
+  .qa {
+    padding-top: 1.25rem;
+    padding-bottom: 5.3125rem;
+    overflow: hidden;
+  }
+  .qa__inner {
+    position: relative;
+  }
+  .qa__inner::before {
+    content: "";
+    width: 18.75rem;
+    height: 56.25rem;
+    background: url(../img/qa-bg-left-icons.png) repeat-y center center/cover;
+    position: absolute;
+    left: -15.625rem;
+    top: 1.875rem;
+    z-index: -10;
+  }
+  .qa__inner::after {
+    content: "";
+    width: 18.75rem;
+    height: 56.25rem;
+    background: url(../img/qa-bg-right-icons.png) repeat-y center center/cover;
+    position: absolute;
+    right: -15.625rem;
+    top: 1.875rem;
+    z-index: -10;
+  }
+  .qa__title {
+    margin-inline: auto;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    position: relative;
+  }
+  .qa__title img {
+    width: 100%;
+  }
+  .qa-boxes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 1.625rem;
+  }
+  .qa-boxes__item {
+    width: 100%;
+  }
+  .qa-box.is-open .qa-box__open-button::after {
+    -webkit-transform: translate(-50%, -50%) rotate(270deg);
+            transform: translate(-50%, -50%) rotate(270deg);
+  }
+  .qa-box__head {
+    border-radius: 0.9375rem;
+    border: 0.1875rem solid #007BC4;
+    background: #F8F7F0;
+    padding-block: 2rem;
+    padding-left: 8.125rem;
+    padding-right: 2.5rem;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 1.5rem;
+    position: relative;
+  }
+  .qa-box__head-icon {
+    position: absolute;
+    top: 50%;
+    left: -0.0625rem;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  .qa-box__head-icon img {
+    width: 5.5rem;
+  }
+  .qa-box__head-right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+  .qa-box__head-text {
+    color: #006CB6;
+    font-size: 1.25rem;
+    line-height: 1.6;
+    text-align: left;
+  }
+  .qa-box__open-button {
+    display: block;
+    width: 1.625rem;
+    height: 1.625rem;
+    position: relative;
+  }
+  .qa-box__open-button::before,
+  .qa-box__open-button::after {
+    content: "";
+    background-color: #00DEC7;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  .qa-box__open-button::before {
+    width: 1.625rem;
+    height: 0.125rem;
+    min-height: 0.125rem;
+    max-height: 0.125rem;
+  }
+  .qa-box__open-button::after {
+    width: 0.125rem;
+    max-width: 0.125rem;
+    min-width: 0.125rem;
+    height: 1.625rem;
+    -webkit-transition: -webkit-transform 0.35s ease-out;
+    transition: -webkit-transform 0.35s ease-out;
+    transition: transform 0.35s ease-out;
+    transition: transform 0.35s ease-out, -webkit-transform 0.35s ease-out;
+  }
+  .qa-box__body {
+    padding-top: 0.625rem;
+    padding-bottom: 0.125rem;
+    padding-left: 3.75rem;
+    padding-right: 3.75rem;
+    display: none;
+  }
+  .qa-box__a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 3.125rem;
+  }
+  .qa-box__a-icon {
+    display: inline-block;
+    color: #00DEC7;
+    text-align: center;
+    font-family: Outfit;
+    font-size: 3.125rem;
+    line-height: normal;
+  }
+  .qa-box__a-text {
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.6;
+    text-align: left;
+  }
 }
 @media screen and (max-width: 768px) {
   .inner {

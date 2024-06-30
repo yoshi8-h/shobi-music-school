@@ -1644,9 +1644,208 @@
 
 
 
+  // qa セクション
+  .qa {
+    padding-top: rem(20);
+    padding-bottom: rem(85);
+    // background: url(../img/qa-bg-side.png) no-repeat center center / cover;
+    overflow: hidden;
+  }
+
+  .qa__inner {
+    position: relative;
+  }
+
+  .qa__inner::before {  // 左側の背景(アイコン群)
+    content: "";
+    width: rem(300);
+    height: rem(900);
+    background: url(../img/qa-bg-left-icons.png) repeat-y center center / cover;
+    position: absolute;
+    left: rem(-250);
+    top: rem(30);
+    z-index: -10;
+  }
+
+  .qa__inner::after {  // 右側の背景(アイコン群)
+    content: "";
+    width: rem(300);
+    height: rem(900);
+    background: url(../img/qa-bg-right-icons.png) repeat-y center center / cover;
+    position: absolute;
+    right: rem(-250);
+    top: rem(30);
+    z-index: -10;
+  }
+
+  .qa__title {
+    margin-inline: auto;
+    // padding-left: rem(140);
+    width: fit-content;
+    position: relative;
+
+    img {
+      // width: rem(240);
+      // width: rem(1200);
+      width: 100%;
+    }
+  }
+
+  // .qa__title::before {  // 三角形３つ (タイトル横)
+  //   content: "";
+  //   width: rem(123);
+  //   height: rem(38);
+  //   background: url(../img/qa-triangle.png) no-repeat center center / contain;
+  //   position: absolute;
+  //   left: 0;
+  //   top: 50%;
+  //   transform: translateY(-50%);
+  // }
+
+  // .qa__title::after {  // タイトルの後ろのロゴ群
+  //   content: "";
+  //   width: rem(123);
+  //   height: rem(38);
+  //   background: url(../img/qa-triangle.png) no-repeat center center / contain;
+  //   position: absolute;
+  //   left: 0;
+  //   top: 50%;
+  //   transform: translateY(-50%);
+  // }
+
+  .qa__boxes {
+  }
 
 
+  .qa-boxes {  // qa-boxes (Block)
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: rem(26);
+  }
 
+  .qa-boxes__item {
+    width: 100%;
+  }
+
+
+  .qa-box {  // qa-box (Block)
+    // width: calc(1060px / 1440px * 100vw);
+    // max-width: rem(1060);
+    // margin-inline: auto;
+
+    &.is-open {
+      .qa-box__open-button {
+        &::after {
+          transform: translate(-50%, -50%) rotate(270deg);  // 『rotate』だけだと、元々指定していた『translate(-50%, -50%)』が無しになり『rotate』だけが適用されてしまうため『rotate』と『translate』の両方の記述が必要。また『translate』と『rotate』の順番も重要。逆にすると移動と回転の順番が逆になり結果が変わる。
+        }
+      }
+    }
+  }
+
+  .qa-box__head {
+    border-radius: rem(15);
+    border: rem(3) solid #007BC4;
+    background: #F8F7F0;
+    padding-block: rem(32);
+    padding-left: rem(130);
+    padding-right: rem(40);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: rem(24);
+    position: relative;
+  }
+
+  .qa-box__head-icon {  // 「Q」の文字 (画像)
+    position: absolute;
+    top: 50%;
+    left: rem(-1);
+    transform: translateY(-50%);
+
+    img {
+      width: rem(88);
+    }
+  }
+
+  .qa-box__head-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .qa-box__head-text {
+    color: #006CB6;
+    font-size: rem(20);
+    line-height: 1.6;
+    text-align: left;
+  }
+
+  .qa-box__open-button {
+    display: block;
+    width: rem(26);
+    height: rem(26);
+    position: relative;
+  }
+
+  .qa-box__open-button::before,
+  .qa-box__open-button::after {  // 縦線と横線の共通の指定
+    content: "";
+    background-color: $color-accent1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .qa-box__open-button::before {  // 横線
+    width: rem(26);
+    height: rem(2);
+    min-height: rem(2);
+    max-height: rem(2);
+  }
+
+  .qa-box__open-button::after {  // 縦線
+    width: rem(2);
+    max-width: rem(2);
+    min-width: rem(2);
+    height: rem(26);
+    transition: transform 0.35s ease-out;
+  }
+
+  .qa-box__body {
+    padding-top: rem(10);
+    padding-bottom: rem(2);
+    padding-left: rem(60);
+    padding-right: rem(60);
+    display: none;  // 普段(最初)は「.qa-box__body」は閉じている仕様のため。
+  }
+
+  .qa-box__a {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: rem(50);
+  }
+
+  .qa-box__a-icon {  // 「A」の文字
+    display: inline-block;
+    color: $color-accent1;
+    text-align: center;
+    font-family: Outfit;
+    font-size: rem(50);
+    line-height: normal;
+  }
+
+  .qa-box__a-text {
+    font-size: rem(20);
+    font-weight: 400;
+    line-height: 1.6;
+    text-align: left;
+  }
 
 
 
