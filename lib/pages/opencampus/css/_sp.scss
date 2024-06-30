@@ -368,6 +368,7 @@
 
 
   .btn {  // btn (Block)
+    display: block;
     border: 2px solid $color-accent1;
     border-radius: rem(30);
     background: $color-accent1;
@@ -1259,6 +1260,368 @@
     font-weight: 400;
     line-height: 1.6;
   }
+
+
+
+  // feature セクション
+  .feature {
+    padding-top: rem(90);
+    padding-bottom: rem(60);
+    border-bottom: rem(8) solid #00DEC7;
+    background: #F1F8F5;
+  }
+
+  .feature__inner {
+  }
+
+  .feature__title {
+  }
+
+  .feature__title .section-title__img {  // セクション毎に上書きする部分。
+    img {
+      width: rem(245);
+    }
+  }
+
+  .feature__circles {
+    margin-top: rem(40);
+  }
+
+
+  .circles {  // circles (Block)
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: rem(30);
+  }
+
+  .circles__item {
+  }
+
+
+  .circle {  // circle (Block)
+    background: #FFF;
+    width: rem(254);
+    height: rem(254);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+  }
+
+  .circle__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: rem(5);
+    margin-top: rem(-40);
+  }
+
+  .circle__title-en {
+    color: $color-accent1;
+    text-align: center;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: $font-family-en-1;
+    font-size: rem(20);
+    font-style: italic;
+    font-weight: 600;
+    line-height: 1.6;
+    letter-spacing: 1px;
+  }
+
+  .circle__title-number {
+    color: $color-accent1;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: $font-family-en-1;
+    font-size: rem(60);
+    font-style: italic;
+    font-weight: 600;
+    line-height: 1.6;
+    letter-spacing: 3px;
+  }
+
+  .circle__text {
+    margin-top: rem(-130);
+    color: #006CB6;
+    text-align: center;
+    font-size: rem(18);
+    line-height: 1.8;
+    position: relative;
+    z-index: 30;
+  }
+
+  .circle__text .is-underline {
+    position: relative;
+  }
+
+  .circle__text .is-underline::after {  // 黄色い下線
+    content: "";
+    width: 100%;
+    height: rem(15);
+    background: #FAF7AF;
+    position: absolute;
+    bottom: rem(-4);
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -10;
+  }
+
+  .feature__detail {
+    margin-top: rem(50);
+  }
+
+
+  .detail{  // detail (Block)
+
+  }
+
+  .detail__title {
+  }
+
+
+  .title2 {  // title2 (Block)
+    color: #006CB6;
+    text-align: center;
+    leading-trim: both;
+    text-edge: cap;
+    font-size: rem(24);
+    line-height: 1.6;
+    position: relative;
+  }
+
+  .title2::after {  // 青い波線の下線
+    content: "";
+    width: rem(110);
+    height: rem(6);
+    background: url(../img/title2-wave.png) no-repeat center center / contain;
+    position: absolute;
+    bottom: rem(-5);
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+
+  .detail__inner {
+    margin-top: rem(32);
+    border-radius: rem(10);
+    background: #FFF;
+    padding-top: rem(30);
+    padding-bottom: rem(40);
+    padding-inline: rem(20);
+  }
+
+  .detail__contents {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    column-gap: rem(10);
+    row-gap: rem(15);
+  }
+
+  .detail__content {
+    width: rem(144);
+    height: rem(54);
+    text-align: center;
+    background: url(../img/detail_content-bg.png) no-repeat center center / contain;
+    display: grid;
+    place-items: center;
+
+    color: #006CB6;
+    font-size: rem(18);
+    line-height: 1.2;
+  }
+
+  .detail__texts {
+    margin-top: rem(20);
+    padding-left: rem(24);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: rem(10);
+  }
+
+  .detail__text {
+    color: #F47F95;
+    font-size: rem(16);
+    line-height: 1.6;
+    position: relative;
+    z-index: 30;
+  }
+
+  .detail__text::before {  // ピンクの円
+    content: "";
+    width: rem(14);
+    height: rem(14);
+    background: #F47F95;
+    border-radius: 50%;
+    position: absolute;
+    left: rem(-24);
+    top: rem(6);
+  }
+
+  // .detail__text .is-underline::after {  // 黄色い下線
+  //   content: "";
+  //   width: 100%;
+  //   height: rem(15);
+  //   background: #FAF7AF;
+  //   position: absolute;
+  //   bottom: rem(-4);
+  //   left: 50%;
+  //   transform: translateX(-50%);
+  //   z-index: -10;
+  // }
+
+  .detail__text-sub {
+    font-size: rem(13);
+    font-weight: 400;
+    line-height: 1.8;
+  }
+
+  .feature__place {
+    margin-top: rem(50);
+  }
+
+
+  .place {  // place (Block)
+    text-align: center;
+  }
+
+  .place__title {
+  }
+
+  .title2.is-place::after {  // 青い波線の下線 (上書き)
+    width: rem(65);
+    height: rem(12);
+  }
+
+  .place__inner {
+    margin-top: rem(30);
+    border-radius: rem(10);
+    background: #FFF;
+    padding-block: rem(30);
+    padding-inline: rem(20);
+  }
+
+  .place__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: rem(3);
+  }
+
+  .place__building {
+    leading-trim: both;
+    text-edge: cap;
+    font-size: rem(16);
+    line-height: 1.4;
+  }
+
+  .place__address {
+    leading-trim: both;
+    text-edge: cap;
+    font-size: rem(13);
+    font-weight: 400;
+    line-height: 1.8;
+  }
+
+  .place__station {
+    margin-top: rem(25);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: rem(36);
+  }
+
+  .place__tag {
+    border-radius: 6px;
+    border: 1px solid #000;
+
+    leading-trim: both;
+    text-edge: cap;
+    font-size: rem(16);
+    line-height: 1.6;
+    padding-block: rem(12);
+    padding-inline: rem(14);
+    width: fit-content;
+    position: relative;
+  }
+
+  .place__tag::after {  // 黒い縦線
+    content: "";
+    width: rem(1);
+    height: rem(30);
+    background: #000;
+    position: absolute;
+    top: rem(43);
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .place__accesses {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: rem(5);
+  }
+
+  .place__access {
+    text-align: left;
+    leading-trim: both;
+    text-edge: cap;
+    font-size: rem(12);
+    font-weight: 400;
+    line-height: 1.6;
+    position: relative;
+    padding-left: rem(30);
+  }
+
+  .place__access::after {  // ピンクの円
+    content: "";
+    width: rem(14);
+    height: rem(14);
+    background: #F47F95;
+    border-radius: 50%;
+    position: absolute;
+    left: rem(3);
+    top: rem(4);
+  }
+
+  .place__map {
+    margin-top: rem(25);
+  }
+
+  .place__map iframe {
+    width: 100%;
+    max-width: rem(450);
+    height: rem(200);
+    aspect-ratio: 305 / 200;
+  }
+
+  .place__btn {
+    margin-top: rem(20);
+    width: rem(280);
+    margin-inline: auto;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
