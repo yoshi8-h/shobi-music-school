@@ -182,13 +182,15 @@
     position: relative;
     width: fit-content;
     margin-inline: auto;
+  }
 
+  .section-title__img {  // セクションタイトルの文字
     img {
       width: rem(150);
     }
   }
 
-  .section-title__left {
+  .section-title__left {  // 左側のアイコン
     position: absolute;
     top: 50%;
     left: rem(-70);
@@ -199,7 +201,7 @@
     }
   }
 
-  .section-title__right {
+  .section-title__right {  // 右側のアイコン
     position: absolute;
     top: 50%;
     right: rem(-70);
@@ -614,33 +616,420 @@
 
 
 
+  // subject セクション
+  .subject {
+    padding-top: rem(80);
+    padding-bottom: rem(260);
+    background: linear-gradient(180deg, #E4F6FF 0%, #D7FFF6 100%);
+    position: relative;
+  }
+
+  .subject__inner {
+  }
+
+  .subject__title {
+  }
+
+  .subject__title .section-title__img {  // セクション毎に上書きする部分。
+    img {
+      width: rem(500);
+    }
+  }
+
+  .subject__title {
+  }
+
+  .subject__message {
+    margin-top: rem(40);
+    text-align: center;
+    font-size: rem(18);
+  }
+
+  .subject__contents {
+    margin-top: rem(40);
+  }
 
 
+  .contents {  // contents (Block)
+    // display: grid;
+    // grid-template-columns: repeat(4, 1fr);  // 『grid-template-rows』は指定しない事で、行の高さは、その行に含まれるコンテンツのサイズに基づいて自動的に調整される。
+    // column-gap: rem(8);
+    // row-gap: rem(40);  // 『Voice ページ』を想定して設定。
+    // justify-content: center;
+    // align-items: flex-start;  // grid時も、上側に揃うように。
+
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: rem(8);
+    row-gap: rem(40);  // 『Voice ページ』を想定して設定。
+    justify-content: center;
+    align-items: flex-start;  // grid時も、上側に揃うように。
+  }
+
+  .contents__item {
+    width: rem(284);
+    height: rem(208);
+  }
 
 
+  .item {  // item (Block)
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .item::after {  // hover時にオーバーレイする黒いマスク
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.40);
+    opacity: 0;  // デフォルトでは透明に
+    transition: opacity 0.3s;
+  }
+
+  .item:hover {
+    &::after {
+      opacity: 1;
+    }
+
+    .item__message {
+      opacity: 1;
+    }
+
+    .item__title-en {
+      opacity: 1;
+    }
+  }
+
+  .item.is-01 {  // 学科毎に、色を指定
+    border: 5px solid #E75297;
+
+    .item__title-en {
+      color: #E75297;
+    }
+
+    &:hover {  // hover時
+      .item__title-ja {
+        background: #E75297;
+      }
+    }
+  }
+
+  .item.is-02 {
+    border: 5px solid #D70C18;
+
+    .item__title-en {
+      color: #D70C18;
+    }
+
+    &:hover {  // hover時
+      .item__title-ja {
+        background: #D70C18;
+      }
+    }
+  }
+
+  .item.is-03 {
+    border: 5px solid #29B5B2;
+
+    .item__title-en {
+      color: #29B5B2;
+    }
+
+    &:hover {  // hover時
+      .item__title-ja {
+        background: #29B5B2;
+      }
+    }
+  }
+
+  .item.is-04 {
+    border: 5px solid #7FBE26;
+
+    .item__title-en {
+      color: #7FBE26;
+    }
+
+    &:hover {  // hover時
+      .item__title-ja {
+        background: #7FBE26;
+      }
+    }
+  }
+
+  .item.is-05 {
+    border: 5px solid #E9545D;
+
+    .item__title-en {
+      color: #E9545D;
+    }
+
+    &:hover {  // hover時
+      .item__title-ja {
+        background: #E9545D;
+      }
+    }
+  }
+
+  .item.is-06 {
+    border: 5px solid #F29600;
+
+    .item__title-en {
+      color: #F29600;
+    }
+
+    &:hover {  // hover時
+      .item__title-ja {
+        background: #F29600;
+      }
+    }
+  }
+
+  .item.is-07 {
+    border: 5px solid #F4C200;
+
+    .item__title-en {
+      color: #F4C200;
+    }
+
+    &:hover {  // hover時
+      .item__title-ja {
+        background: #F4C200;
+      }
+    }
+  }
+
+  .item.is-08 {
+    border: 5px solid #0098D8;
+
+    .item__title-en {
+      color: #0098D8;
+    }
+
+    &:hover {  // hover時
+      .item__title-ja {
+        background: #0098D8;
+      }
+    }
+  }
+
+  .item.is-09 {
+    border: 5px solid #015DAE;
+
+    .item__title-en {
+      color: #015DAE;
+    }
+
+    &:hover {  // hover時
+      .item__title-ja {
+        background: #015DAE;
+      }
+    }
+  }
+
+  .item.is-10 {
+    border: 5px solid #008532;
+
+    .item__title-en {
+      color: #008532;
+    }
+
+    &:hover {  // hover時
+      .item__title-ja {
+        background: #008532;
+      }
+    }
+  }
+
+  .item.is-11 {
+    border: 5px solid #C10147;
+
+    .item__title-en {
+      color: #C10147;
+    }
+
+    &:hover {  // hover時
+      .item__title-ja {
+        background: #C10147;
+      }
+    }
+  }
+
+  .item__img {
+    width: 100%;
+    position: absolute;
+    inset: 0;
+
+    img {
+      width: 100%;
+      aspect-ratio: 290 / 210;
+      object-fit: cover;
+    }
+  }
+
+  .item__message {
+    color: #FFF;
+    text-align: center;
+    font-size: rem(15);
+    position: absolute;
+    top: rem(45);
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    z-index: 30;
+
+    opacity: 0;  // デフォルトでは非表示
+    transition: opacity 0.2s ease-out;
+  }
+
+  .item__title-en {  // 共通の指定
+    text-align: center;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: $font-family-en-1;
+    font-size: rem(26);
+    font-style: italic;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    z-index: 30;
+
+    position: absolute;
+    top: rem(110);
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+
+    opacity: 0;  // デフォルトでは非表示
+    transition: opacity 0.2s ease-out;
+  }
+
+  .item__title-ja {
+    position: relative;
+    z-index: 30;
+    top: rem(138);
+
+    color: #FFF;
+    text-align: center;
+    font-size: rem(19);
+    line-height: 1.4;
+    width: 100%;
+    padding-block: rem(6);
+    background: rgba(0, 0, 0, 0.50);
+    transition: background 0.2s ease-out;
+  }
+
+  .item__title-ja::after {
+    content: "";
+    width: rem(10);
+    height: rem(15);
+    background: url(../img/arrow-white.png) no-repeat center center / contain;
+    position: absolute;
+    top: 50%;
+    right: rem(12);
+    transform: translateY(-50%);
+  }
+
+  .subject__cta {
+  }
 
 
+  .cta {  // cta (Block)
+    border-radius: 105px 0px 0px 105px;
+    border-top: 3px solid var(--Linear, #5FC4F1);
+    border-bottom: 3px solid var(--Linear, #5FC4F1);
+    border-left: 3px solid var(--Linear, #5FC4F1);
+    background: var(--Linear, linear-gradient(47deg, #CAEDC2 13.08%, #FFEDA6 82.58%));
 
+    width: fit-content;
+    position: absolute;
+    bottom: rem(-30);
+    right: 0;
+  }
 
+  .cta__wrap {
+    padding-block: rem(40);
+    padding-left: rem(45);
+    padding-right: rem(55);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: rem(35);
+    width: fit-content;
+  }
 
+  .cta__btn {
+    flex-shrink: 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: rem(24);
+    width: rem(630);
 
+    border-radius: rem(58);
+    border: rem(4) solid #FFF;
+    background: #006CB6;
+    box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.25);
+    padding-block: rem(25);
 
+    transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
+  }
 
+  .cta__btn:hover {
+    transform: translateY(rem(4));
+    box-shadow: none;
+  }
 
+  .cta__btn-icon {
 
+    img {
+      width: rem(90);
+    }
+  }
 
+  .cta__btn-text {
+    color: #FFF;
+    font-size: rem(23);
+    line-height: 1.4;
+    position: relative;
+    z-index: 20;
+  }
 
+  .cta__btn-text .bg-pink {
+    position: relative;
+    margin-right: rem(5);
+  }
 
+  .cta__btn-text .bg-pink::after {
+    content: "";
+    width: 104%;
+    height: 100%;
+    border-radius: rem(18);
+    background: #F47F95;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, calc(-50% + rem(2)));
+    z-index: -1;
+  }
 
+  .cta__btn-arrow {
 
+    img {
+      width: rem(14);
+    }
+  }
 
+  .cta__text {
+    width: rem(340);
+    font-size: rem(15);
+    font-weight: 400;
+    line-height: 1.6;
+  }
 
-
-
-
-
-
-    // subject セクション
 
 
 
