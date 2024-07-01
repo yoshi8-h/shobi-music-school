@@ -1413,29 +1413,29 @@ body {
   }
   .qa {
     padding-top: 1.25rem;
-    padding-bottom: 5.3125rem;
     overflow: hidden;
   }
   .qa__inner {
     position: relative;
+    padding-bottom: 5.3125rem;
   }
   .qa__inner::before {
     content: "";
     width: 18.75rem;
-    height: 56.25rem;
-    background: url(../img/qa-bg-left-icons.png) repeat-y center center/cover;
+    height: 100%;
+    background: url(../img/qa-bg-left-icons.png) repeat-y top center/80%;
     position: absolute;
-    left: -15.625rem;
+    left: -16.875rem;
     top: 1.875rem;
     z-index: -10;
   }
   .qa__inner::after {
     content: "";
     width: 18.75rem;
-    height: 56.25rem;
-    background: url(../img/qa-bg-right-icons.png) repeat-y center center/cover;
+    height: 100%;
+    background: url(../img/qa-bg-right-icons.png) repeat-y top center/80%;
     position: absolute;
-    right: -15.625rem;
+    right: -16.875rem;
     top: 1.875rem;
     z-index: -10;
   }
@@ -1584,6 +1584,23 @@ body {
     font-weight: 400;
     line-height: 1.6;
     text-align: left;
+  }
+  .qa__buttons {
+    margin-top: 4.375rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 1.875rem;
+  }
+  .qa__btn {
+    width: 18.75rem;
+    text-align: center;
   }
 }
 @media screen and (max-width: 768px) {

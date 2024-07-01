@@ -1647,22 +1647,24 @@
   // qa セクション
   .qa {
     padding-top: rem(20);
-    padding-bottom: rem(85);
+    // padding-bottom: rem(85);
     // background: url(../img/qa-bg-side.png) no-repeat center center / cover;
     overflow: hidden;
   }
 
   .qa__inner {
     position: relative;
+    padding-bottom: rem(85);  // 背景画像の繰り返しを考慮して、padding-bottomは『.qa』ではなく『.qa__inner』に付与。
   }
 
   .qa__inner::before {  // 左側の背景(アイコン群)
     content: "";
     width: rem(300);
-    height: rem(900);
-    background: url(../img/qa-bg-left-icons.png) repeat-y center center / cover;
+    height: 100%;  // 下に繰り返すから、heightは100%に。
+    background: url(../img/qa-bg-left-icons.png) repeat-y top center / 80%;
+    // background-size: 300px auto; // 画像の幅を300px、高さを自動に設定
     position: absolute;
-    left: rem(-250);
+    left: rem(-270);
     top: rem(30);
     z-index: -10;
   }
@@ -1670,10 +1672,10 @@
   .qa__inner::after {  // 右側の背景(アイコン群)
     content: "";
     width: rem(300);
-    height: rem(900);
-    background: url(../img/qa-bg-right-icons.png) repeat-y center center / cover;
+    height: 100%;
+    background: url(../img/qa-bg-right-icons.png) repeat-y top center / 80%;
     position: absolute;
-    right: rem(-250);
+    right: rem(-270);
     top: rem(30);
     z-index: -10;
   }
@@ -1847,6 +1849,18 @@
     text-align: left;
   }
 
+  .qa__buttons {
+    margin-top: rem(70);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: rem(30);
+  }
+
+  .qa__btn {
+    width: rem(300);
+    text-align: center;
+  }
 
 
 
