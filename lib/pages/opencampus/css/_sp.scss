@@ -1876,6 +1876,198 @@
 
 
 
+  // qa セクション
+  .qa {
+    padding-top: rem(60);
+    overflow: hidden;
+  }
+
+  .qa__inner {
+    position: relative;
+    padding-bottom: rem(70);  // 背景画像の繰り返しを考慮して、padding-bottomは『.qa』ではなく『.qa__inner』に付与。
+  }
+
+  .qa__inner::before {  // 左側の背景(アイコン群)
+    content: "";
+    width: rem(300);
+    height: 100%;  // 下に繰り返すから、heightは100%に。
+    background: url(../img/qa-bg-left-icons.png) repeat-y top center / 80%;
+    // background-size: 300px auto; // 画像の幅を300px、高さを自動に設定
+    position: absolute;
+    left: rem(-270);
+    top: rem(30);
+    z-index: -10;
+  }
+
+  .qa__inner::after {  // 右側の背景(アイコン群)
+    content: "";
+    width: rem(300);
+    height: 100%;
+    background: url(../img/qa-bg-right-icons.png) repeat-y top center / 80%;
+    position: absolute;
+    right: rem(-270);
+    top: rem(30);
+    z-index: -10;
+  }
+
+  .qa__title {
+    margin-inline: auto;
+    width: fit-content;
+    position: relative;
+
+    img {
+      width: rem(180);
+    }
+  }
+
+  .qa__boxes {
+    margin-top: rem(40);
+  }
+
+
+  .qa-boxes {  // qa-boxes (Block)
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: rem(30);
+  }
+
+  .qa-boxes__item {
+    width: 100%;
+  }
+
+
+  .qa-box {  // qa-box (Block)
+
+    &.is-open {
+      .qa-box__open-button {
+        &::after {
+          transform: translate(-50%, -50%) rotate(270deg);  // 『rotate』だけだと、元々指定していた『translate(-50%, -50%)』が無しになり『rotate』だけが適用されてしまうため『rotate』と『translate』の両方の記述が必要。また『translate』と『rotate』の順番も重要。逆にすると移動と回転の順番が逆になり結果が変わる。
+        }
+      }
+    }
+  }
+
+  .qa-box__head {
+    border-radius: rem(15);
+    border: rem(2) solid #007BC4;
+    background: #F8F7F0;
+    padding-block: rem(20);
+    padding-left: rem(80);
+    padding-right: rem(18);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: rem(12);
+    position: relative;
+  }
+
+  .qa-box__head-icon {  // 「Q」の文字 (画像)
+    position: absolute;
+    top: 50%;
+    left: rem(-1);
+    transform: translateY(-50%);
+
+    img {
+      width: rem(68);
+    }
+  }
+
+  .qa-box__head-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: rem(10);
+  }
+
+  .qa-box__head-text {
+    color: #006CB6;
+    font-size: rem(16);
+    line-height: 1.6;
+    text-align: left;
+  }
+
+  .qa-box__open-button {
+    display: block;
+    width: rem(22);
+    height: rem(22);
+    position: relative;
+  }
+
+  .qa-box__open-button::before,
+  .qa-box__open-button::after {  // 縦線と横線の共通の指定
+    content: "";
+    background-color: $color-accent1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .qa-box__open-button::before {  // 横線
+    width: rem(22);
+    height: rem(3);
+    min-height: rem(3);
+    max-height: rem(3);
+  }
+
+  .qa-box__open-button::after {  // 縦線
+    width: rem(3);
+    max-width: rem(3);
+    min-width: rem(3);
+    height: rem(22);
+    transition: transform 0.35s ease-out;
+  }
+
+  .qa-box__body {
+    padding-top: rem(10);
+    padding-bottom: rem(2);
+    padding-left: rem(20);
+    padding-right: rem(10);
+    display: none;  // 普段(最初)は「.qa-box__body」は閉じている仕様のため。
+  }
+
+  .qa-box__a {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: rem(30);
+  }
+
+  .qa-box__a-icon {  // 「A」の文字
+    display: inline-block;
+    color: $color-accent1;
+    text-align: center;
+    font-family: $font-family-en-2;
+    font-size: rem(38);
+    line-height: normal;
+  }
+
+  .qa-box__a-text {
+    font-size: rem(15);
+    font-weight: 400;
+    line-height: 1.6;
+    text-align: left;
+  }
+
+  .qa__buttons {
+    margin-top: rem(50);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: rem(25);
+  }
+
+  .qa__btn {
+    width: rem(300);
+    text-align: center;
+  }
+
+
 
 
 

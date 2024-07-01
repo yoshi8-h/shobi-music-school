@@ -1647,8 +1647,6 @@
   // qa セクション
   .qa {
     padding-top: rem(20);
-    // padding-bottom: rem(85);
-    // background: url(../img/qa-bg-side.png) no-repeat center center / cover;
     overflow: hidden;
   }
 
@@ -1682,38 +1680,13 @@
 
   .qa__title {
     margin-inline: auto;
-    // padding-left: rem(140);
     width: fit-content;
     position: relative;
 
     img {
-      // width: rem(240);
-      // width: rem(1200);
       width: 100%;
     }
   }
-
-  // .qa__title::before {  // 三角形３つ (タイトル横)
-  //   content: "";
-  //   width: rem(123);
-  //   height: rem(38);
-  //   background: url(../img/qa-triangle.png) no-repeat center center / contain;
-  //   position: absolute;
-  //   left: 0;
-  //   top: 50%;
-  //   transform: translateY(-50%);
-  // }
-
-  // .qa__title::after {  // タイトルの後ろのロゴ群
-  //   content: "";
-  //   width: rem(123);
-  //   height: rem(38);
-  //   background: url(../img/qa-triangle.png) no-repeat center center / contain;
-  //   position: absolute;
-  //   left: 0;
-  //   top: 50%;
-  //   transform: translateY(-50%);
-  // }
 
   .qa__boxes {
   }
@@ -1733,9 +1706,6 @@
 
 
   .qa-box {  // qa-box (Block)
-    // width: calc(1060px / 1440px * 100vw);
-    // max-width: rem(1060);
-    // margin-inline: auto;
 
     &.is-open {
       .qa-box__open-button {
@@ -1837,7 +1807,7 @@
     display: inline-block;
     color: $color-accent1;
     text-align: center;
-    font-family: Outfit;
+    font-family: $font-family-en-2;
     font-size: rem(50);
     line-height: normal;
   }
