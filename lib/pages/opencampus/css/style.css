@@ -522,7 +522,7 @@ body {
     position: relative;
   }
   .subject__title .section-title__img img {
-    width: 30rem;
+    width: 18.75rem;
   }
   .subject__message {
     margin-top: 2.5rem;
@@ -855,7 +855,7 @@ body {
     background: #F1F8F5;
   }
   .feature__title .section-title__img img {
-    width: 27.5rem;
+    width: 20.625rem;
   }
   .feature__circles {
     margin-top: 3.4375rem;
@@ -1186,7 +1186,7 @@ body {
     padding-bottom: 33.75rem;
   }
   .flow__title .section-title__img img {
-    width: 41.25rem;
+    width: 21.25rem;
   }
   .flow__items {
     margin-top: 3.75rem;
