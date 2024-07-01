@@ -2069,29 +2069,75 @@
 
 
 
+  // footer
+  .footer {
+    width: 100%;
+    height: rem(104);
+    padding-top: rem(16);
+    padding-inline: rem(20);
+    padding-bottom: rem(14);
+    background: #3B6F93;
+  }
+
+  .footer__wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+  }
+
+  .footer__logo {
+    width: fit-content;
+    align-self: flex-start;
+    transition: opacity 0.2s ease-out;
+  }
+
+  .footer__logo:hover {
+    opacity: 0.7;
+  }
+
+  .footer__img {
+    display: block;
+    width: fit-content;
+
+    img {
+      width: rem(220);
+    }
+  }
+
+  .footer__copyright {
+    color: #FFF;
+    text-align: center;
+    font-family: $font-family-en-1;
+    font-size: rem(11);
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+  }
 
 
 
+  // トップへ戻るボタン
+  .top-btn {
+    display: block;
+    position: fixed;
+    bottom: rem(40);
+    right: rem(13);
+    z-index: 300;
+    opacity: 0;    // 通常は透明に。(スクロールしたら現れる)
+    visibility: hidden;  // かつ、通常は押せないように。
+    transition: opacity 0.2s ease-out, visibility 0.2s ease-out;
 
+    img {
+      width: rem(50);
+    }
+  }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  .top-btn.is-show {  // 画面をスクロールした際にボタンを表示する為のクラス
+    opacity: 1;
+    visibility: visible;
+  }
 
 
 
