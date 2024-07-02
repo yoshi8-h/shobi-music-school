@@ -181,6 +181,371 @@
 
 
 
+  // o-flow セクション (オンラインの流れ)
+  .o-flow {
+    background: #F8F7F0;
+    padding-top: rem(95);
+    padding-bottom: rem(90);
+  }
+
+  .o-flow__inner {
+  }
+
+  .o-flow__title {
+  }
+
+  .o-flow .section-title__img {  // セクション毎に上書きする部分。
+    img {
+      width: rem(530);
+    }
+  }
+
+  .o-flow__items {
+    margin-top: rem(55);
+    max-width: rem(1000);
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: rem(42);
+    position: relative;
+    z-index: 10;
+  }
+
+  .o-flow__item {
+    width: 100%;
+  }
+
+
+  .o-f-item {  // o-f-item (Block)
+    border-radius: rem(20);
+    background: #FFF;
+    padding-top: rem(30);
+    padding-bottom: rem(45);
+    padding-inline: rem(35);
+    position: relative;
+  }
+
+  .o-f-item__number {
+    text-align: center;
+    leading-trim: both;
+    text-edge: cap;
+    text-shadow: rem(4) rem(4) 0px #FFEDA6;
+    font-family: $font-family-en-1;
+    font-size: rem(70);
+    font-style: italic;
+    font-weight: 600;
+    line-height: 1.4;
+    position: absolute;
+    top: rem(-20);
+    left: rem(70);
+    z-index: 20;
+  }
+
+  .o-f-item__number::after {  // 黄色い円
+    content: "";
+    width: rem(99);
+    height: rem(99);
+    background: url(../img/flow-circle.png) no-repeat center center / contain;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(calc(-50% + rem(3)), calc(-50% + rem(5)));
+    z-index: -10;
+  }
+
+  .o-f-item__wrap {
+    max-width: rem(700);
+    margin-inline: auto;
+  }
+
+  .o-flow__top {
+  }
+
+  .o-f-item__title {
+    color: #006CB6;
+    font-size: rem(26);
+    line-height: 1.3;
+  }
+
+  .o-f-item__text {
+    width: rem(770);
+    margin-top: rem(15);
+    font-weight: 400;
+  }
+
+  .o-flow__movie {
+    margin-top: rem(30);
+
+    iframe {
+      width: rem(680);
+      height: rem(380);
+      aspect-ratio: 680 / 380;
+    }
+  }
+
+  .o-f-item__arrow {  // グラデーションの矢印
+    position: absolute;
+    bottom: rem(-33);
+    left: 50%;
+    transform: translateX(-50%);
+
+    img {
+      width: rem(40);
+    }
+  }
+
+  .o-f-item__btn {
+    margin-top: rem(35);
+    width: rem(530);
+    margin-inline: auto;
+    padding-block: rem(25);
+    border-radius: rem(40);
+    display: grid;
+    place-items: center;
+  }
+
+  .o-f-item__sub-text {
+    width: rem(780);
+    margin-top: rem(35);
+    leading-trim: both;
+    text-edge: cap;
+    font-size: rem(12);
+    font-weight: 400;
+    line-height: 1.6;
+  }
+
+  .o-f-item__download {
+    margin-top: rem(40);
+    max-width: rem(700);
+    margin-inline: auto;
+  }
+
+  .o-f-item__download-text {
+    leading-trim: both;
+    text-edge: cap;
+    font-size: rem(20);
+  }
+
+  .o-f-item__download-text .is-pink {
+    color: #F47F95;
+  }
+
+  .o-f-item__download-links {
+  margin-top: rem(22);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: rem(100);
+  }
+
+  .o-f-item__download-link {
+    color: #006CB6;
+    text-align: center;
+    font-size: rem(18);
+    line-height: normal;
+    position: relative;
+  }
+
+  .o-f-item__download-link:hover {
+    &::before {
+      transform: translate(rem(6), -50%);
+    }
+  }
+
+  .o-f-item__download-link::before {  // 青い矢印
+    content: "";
+    width: rem(9);
+    height: rem(18);
+    background: url(../img/link-arrow-blue.png) no-repeat center center / contain;
+    position: absolute;
+    top: 50%;
+    right: rem(-25);
+    transform: translateY(-50%);
+    transition: transform 0.2s ease-out;
+  }
+
+  .o-f-item__download-link::after {  // 青い下線
+    content: "";
+    width: rem(155);
+    height: rem(2);
+    background: #006CB6;
+    position: absolute;
+    bottom: rem(-12);
+    left: rem(-20);
+  }
+
+  .o-flow__box {
+    margin-top: rem(70);
+    border-radius: rem(10);
+    background: var(--Linear, linear-gradient(47deg, #CAEDC2 13.08%, #FFEDA6 82.58%));
+    width: 100%;
+    max-width: rem(1000);
+    margin-inline: auto;
+    padding-top: rem(45);
+    padding-bottom: rem(30);
+    padding-inline: rem(50);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: rem(16);
+  }
+
+  .o-flow__box-left {
+  }
+
+  .o-flow__box-title {
+    color: #F47F95;
+    leading-trim: both;
+    text-edge: cap;
+    font-size: rem(26);
+  }
+
+  .o-flow__box-text {
+    margin-top: rem(35);
+    leading-trim: both;
+    text-edge: cap;
+    font-size: rem(16);
+    font-weight: 400;
+    line-height: 1.6;
+  }
+
+  .o-flow__box-right {
+    flex-shrink: 0;
+
+    img {
+      width: rem(330);
+      border-radius: rem(20);
+    }
+  }
+
+  .o-flow__contact {
+    margin-top: rem(80);
+  }
+
+
+  .contact {  // contact (Block)
+    background: #FFF;
+    padding-top: rem(35);
+    padding-bottom: rem(32);
+    padding-inline: rem(30);
+  }
+
+  .contact__message {
+    text-align: center;
+    leading-trim: both;
+    text-edge: cap;
+    font-size: rem(22);
+    line-height: 1.6;
+    width: fit-content;
+    margin-inline: auto;
+    position: relative;
+  }
+
+  .contact__message::before {  // 左側のピンクの丸
+    content: "";
+    width: rem(23);
+    height: rem(23);
+    background: url(../img/contact-side-circle.png) no-repeat center center / contain;
+    position: absolute;
+    left: rem(-35);
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .contact__message::after {  // 右側のピンクの丸
+    content: "";
+    width: rem(23);
+    height: rem(23);
+    background: url(../img/contact-side-circle.png) no-repeat center center / contain;
+    position: absolute;
+    right: rem(-35);
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .contact__info {
+    margin-top: rem(20);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: rem(20);
+  }
+
+  .contact__tel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: rem(12);
+  }
+
+  .contact__tel-text {
+    margin-top: rem(4);
+    text-align: center;
+    leading-trim: both;
+    text-edge: cap;
+    font-size: rem(16);
+    line-height: 1.6;
+  }
+
+  .contact__tel-link {
+    color: #006CB6;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: $font-family-en-1;
+    font-size: rem(22);
+    font-weight: 600;
+    line-height: 2.0;
+    text-decoration-line: underline;
+  }
+
+  .contact__date {
+    margin-top: rem(6);
+    color: #000;
+    leading-trim: both;
+    text-edge: cap;
+    font-size: rem(14);
+    font-weight: 400;
+    line-height: 2.0;
+  }
+
+  .contact__mail {
+    margin-left: rem(20);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: rem(12);
+  }
+
+  .contact__mail-text {
+    margin-top: rem(4);
+    text-align: center;
+    leading-trim: both;
+    text-edge: cap;
+    font-size: rem(16);
+    line-height: 1.6;
+  }
+
+  .contact__mail-link {
+    color: #006CB6;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: $font-family-en-1;
+    font-size: rem(22);
+    font-weight: 600;
+    line-height: 2.0;
+    text-decoration-line: underline;
+  }
+
+
+
+
+
+
+
+
+
 
 
 
