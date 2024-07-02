@@ -1,5 +1,335 @@
+@charset "UTF-8";
 body {
   font-family: "Noto Sans JP", sans-serif;
   font-weight: 700;
   line-height: 1.4;
+}
+
+@media print, screen and (min-width: 769px) {
+  .open__line-top {
+    background: #F47F95;
+  }
+  .open__bottom {
+    background: -webkit-gradient(linear, left top, left bottom, from(#CBEEC3), to(#FFEEA7));
+    background: linear-gradient(180deg, #CBEEC3 0%, #FFEEA7 100%);
+  }
+  .description {
+    background: #FCFBD7;
+    padding-top: 5rem;
+    padding-bottom: 15rem;
+    border-bottom: 0.625rem solid #F47F95;
+    position: relative;
+  }
+  .description__top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    gap: 2.375rem;
+  }
+  .description__title-texts {
+    color: #006CB6;
+    leading-trim: both;
+    text-edge: cap;
+    font-size: 1.125rem;
+    line-height: 1.6;
+  }
+  .description__title-text2 {
+    margin-top: 0.75rem;
+  }
+  .description__title-text2 .is-pink {
+    color: #F47F95;
+  }
+  .description__img {
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+  }
+  .description__img img {
+    width: 8rem;
+  }
+  .description__box {
+    margin-top: 3.4375rem;
+  }
+  .box {
+    border-radius: 1.25rem;
+    background: #FFF;
+    position: relative;
+  }
+  .box__title-img {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  .box__title-img img {
+    width: 10.625rem;
+  }
+  .box__wrap {
+    padding-block: 2.375rem;
+    padding-left: 15.625rem;
+    padding-right: 4.0625rem;
+  }
+  .box__title {
+    color: #006CB6;
+    leading-trim: both;
+    text-edge: cap;
+    font-size: 1.375rem;
+    line-height: 1.6;
+  }
+  .box__items {
+    margin-top: 0.9375rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    gap: 0.125rem;
+  }
+  .box__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 0.9375rem;
+  }
+  .box__item-number {
+    color: #00DEC7;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-size: 1.25rem;
+    font-style: italic;
+    line-height: 1.6;
+  }
+  .box__item-text {
+    leading-trim: both;
+    text-edge: cap;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.6;
+  }
+  .box__text {
+    margin-top: 1.25rem;
+    leading-trim: both;
+    text-edge: cap;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.6;
+  }
+  .box__text .mail-link {
+    color: #006CB6;
+    text-decoration-line: underline;
+  }
+  .box__text .tel-link {
+    text-decoration-line: underline;
+  }
+  .description__cta {
+    position: absolute;
+    bottom: -1.875rem;
+    right: 0;
+  }
+  .cta--online {
+    border-radius: 105px 0px 0px 105px;
+    border-top: 3px solid #CAEDC2;
+    border-bottom: 3px solid #CAEDC2;
+    border-left: 3px solid #CAEDC2;
+    background: linear-gradient(88deg, #5FC4F1 8.32%, #62DABD 86.09%);
+  }
+  .cta--online .cta__btn-icon img {
+    width: 4.375rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .open__line-top {
+    background: #F47F95;
+  }
+  .open__bottom {
+    background: -webkit-gradient(linear, left top, left bottom, from(#CBEEC3), to(#FFEEA7));
+    background: linear-gradient(180deg, #CBEEC3 0%, #FFEEA7 100%);
+  }
+  .description {
+    background: #FCFBD7;
+    padding-top: 3.125rem;
+    padding-bottom: 11.875rem;
+    border-bottom: 0.5rem solid #F47F95;
+    position: relative;
+  }
+  .description__inner {
+    max-width: 34.375rem;
+  }
+  .description__top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 1.25rem;
+  }
+  .description__title-texts {
+    color: #006CB6;
+    leading-trim: both;
+    text-edge: cap;
+    font-size: 0.875rem;
+    line-height: 1.6;
+  }
+  .description__title-text2 {
+    margin-top: 0.75rem;
+  }
+  .description__title-text2 .is-pink {
+    color: #F47F95;
+  }
+  .description__img {
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+  }
+  .description__img img {
+    width: 6.25rem;
+  }
+  .description__box {
+    margin-top: 2.5rem;
+  }
+  .box {
+    border-radius: 0.9375rem;
+    background: #FFF;
+    position: relative;
+  }
+  .box::before {
+    content: "参加対象";
+    width: 9.375rem;
+    height: 3.75rem;
+    background: var(--Linear, linear-gradient(48deg, #BDE3FF 14.23%, #D6D0F7 85.2%));
+    color: #000;
+    font-size: 1.25rem;
+    border-radius: 0 0 1.875rem 1.875rem;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    display: grid;
+    place-items: center;
+  }
+  .box__title-img {
+    display: none;
+  }
+  .box__wrap {
+    padding-top: 5.625rem;
+    padding-bottom: 2.5rem;
+    padding-inline: 0.9375rem;
+  }
+  .box__title {
+    text-align: center;
+    color: #006CB6;
+    leading-trim: both;
+    text-edge: cap;
+    font-size: 1.125rem;
+    line-height: 1.6;
+  }
+  .box__items {
+    margin-top: 1.25rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 0.625rem;
+  }
+  .box__item {
+    width: 19.6875rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    gap: 0.625rem;
+  }
+  .box__item-number {
+    color: #00DEC7;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-size: 1.125rem;
+    font-style: italic;
+    line-height: 1.6;
+  }
+  .box__item-text {
+    leading-trim: both;
+    text-edge: cap;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.6;
+  }
+  .box__text {
+    margin-top: 0.9375rem;
+    leading-trim: both;
+    text-edge: cap;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.6;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-inline: auto;
+  }
+  .box__text .mail-link {
+    color: #006CB6;
+    text-decoration-line: underline;
+  }
+  .box__text .tel-link {
+    text-decoration-line: underline;
+  }
+  .description__cta {
+    position: absolute;
+    bottom: -1.875rem;
+    right: 0;
+  }
+  .cta--online {
+    border-radius: 105px 0px 0px 105px;
+    border-top: 3px solid #CAEDC2;
+    border-bottom: 3px solid #CAEDC2;
+    border-left: 3px solid #CAEDC2;
+    background: linear-gradient(88deg, #5FC4F1 8.32%, #62DABD 86.09%);
+  }
+  .cta--online .cta__btn-icon img {
+    width: 3.125rem;
+  }
 }

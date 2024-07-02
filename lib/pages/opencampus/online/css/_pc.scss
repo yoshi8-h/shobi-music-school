@@ -4,10 +4,194 @@
 
 
 
+// 基本的に、TOPページで書いたCSSの上書き部分だけを記述
 @include mq(pc){
-  .fv {
-    // background: red;
+
+
+  // open campus
+  .open__line-top {  // 上の仕切り線
+    background: #F47F95;
   }
+
+  .open__bottom {
+    background: linear-gradient(180deg, #CBEEC3 0%, #FFEEA7 100%);
+  }
+
+
+
+  // description セクション
+  .description {
+    background: #FCFBD7;
+    padding-top: rem(80);
+    padding-bottom: rem(240);
+    border-bottom: rem(10) solid #F47F95;
+    position: relative;
+  }
+
+  .description__inner {
+  }
+
+  .description__top {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: rem(38);
+  }
+
+  .description__title-texts {
+    color: #006CB6;
+    leading-trim: both;
+    text-edge: cap;
+    font-size: rem(18);
+    line-height: 1.6;
+  }
+
+  .description__title-text1 {
+  }
+
+  .description__title-text2 {
+  margin-top: rem(12);
+  }
+
+  .description__title-text2 .is-pink {
+    color: #F47F95;
+  }
+
+  .description__img {
+    flex-shrink: 0;
+
+    img {
+      width: rem(128);
+    }
+  }
+
+  .description__box {
+    margin-top: rem(55);
+  }
+
+
+  .box {  // box (Block)
+    border-radius: rem(20);
+    background: #FFF;
+    position: relative;
+  }
+
+  .box__title-img {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+
+    img {
+      width: rem(170);
+    }
+  }
+
+  .box__wrap {
+    padding-block: rem(38);
+    padding-left: rem(250);
+    padding-right: rem(65);
+  }
+
+  .box__title {
+    color: #006CB6;
+    leading-trim: both;
+    text-edge: cap;
+    font-size: rem(22);
+    line-height: 1.6;
+  }
+
+  .box__items {
+    margin-top: rem(15);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: rem(2);
+  }
+
+  .box__item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: rem(15);
+  }
+
+  .box__item-number {
+    color: $color-accent1;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: $font-family-en-1;
+    font-size: rem(20);
+    font-style: italic;
+    line-height: 1.6;
+  }
+
+  .box__item-text {
+    leading-trim: both;
+    text-edge: cap;
+    font-size: rem(16);
+    font-weight: 400;
+    line-height: 1.6;
+  }
+
+  .box__text {
+    margin-top: rem(20);
+    leading-trim: both;
+    text-edge: cap;
+    font-size: rem(16);
+    font-weight: 400;
+    line-height: 1.6;
+  }
+
+  .box__text .mail-link {
+    color: #006CB6;
+    text-decoration-line: underline;
+  }
+
+  .box__text .tel-link {
+    text-decoration-line: underline;
+  }
+
+
+  .description__cta {
+    position: absolute;
+    bottom: rem(-30);
+    right: 0;
+  }
+
+
+  .cta--online {  // 『.cta』の モディファイア
+    border-radius: 105px 0px 0px 105px;
+    border-top: 3px solid #CAEDC2;
+    border-bottom: 3px solid #CAEDC2;
+    border-left: 3px solid #CAEDC2;
+    background: linear-gradient(88deg, #5FC4F1 8.32%, #62DABD 86.09%);
+  }
+
+  .cta--online {
+
+    .cta__btn-icon {
+
+      img {
+        width: rem(70);
+      }
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 }

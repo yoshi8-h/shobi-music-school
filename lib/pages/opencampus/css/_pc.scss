@@ -935,6 +935,9 @@
   }
 
   .subject__cta {
+    position: absolute;
+    bottom: rem(-30);
+    right: 0;
   }
 
 
@@ -946,9 +949,6 @@
     background: var(--Linear, linear-gradient(47deg, #CAEDC2 13.08%, #FFEDA6 82.58%));
 
     width: fit-content;
-    position: absolute;
-    bottom: rem(-30);
-    right: 0;
   }
 
   .cta__wrap {

@@ -3,7 +3,218 @@
 @use "../../../../common/css/global" as *;
 
 
+
+// 基本的に、TOPページで書いたCSSの上書き部分だけを記述
 @include mq(sp){
+
+
+  // open campus
+  .open__line-top {  // 上の仕切り線
+    background: #F47F95;
+  }
+
+  .open__bottom {
+    background: linear-gradient(180deg, #CBEEC3 0%, #FFEEA7 100%);
+  }
+
+
+
+  // description セクション
+  .description {
+    background: #FCFBD7;
+    padding-top: rem(50);
+    padding-bottom: rem(190);
+    border-bottom: rem(8) solid #F47F95;
+    position: relative;
+  }
+
+  .description__inner {
+    max-width: rem(550);
+  }
+
+  .description__top {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: rem(20);
+  }
+
+  .description__title-texts {
+    color: #006CB6;
+    leading-trim: both;
+    text-edge: cap;
+    font-size: rem(14);
+    line-height: 1.6;
+  }
+
+  .description__title-text1 {
+  }
+
+  .description__title-text2 {
+  margin-top: rem(12);
+  }
+
+  .description__title-text2 .is-pink {
+    color: #F47F95;
+  }
+
+  .description__img {
+    flex-shrink: 0;
+
+    img {
+      width: rem(100);
+    }
+  }
+
+  .description__box {
+    margin-top: rem(40);
+  }
+
+
+  .box {  // box (Block)
+    border-radius: rem(15);
+    background: #FFF;
+    position: relative;
+  }
+
+  .box::before {  // タイトル部分をSP時は擬似要素で作成。(画像が無かった為)
+    content: "参加対象";
+    width: rem(150);
+    height: rem(60);
+    background: var(--Linear, linear-gradient(48deg, #BDE3FF 14.23%, #D6D0F7 85.2%));
+    color: #000;
+    font-size: rem(20);
+    border-radius: 0 0 rem(30) rem(30);
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    display: grid;
+    place-items: center;
+  }
+
+  .box__title-img {  // タイトルの画像はSP時は擬似要素で作成したので非表示に。
+    display: none;
+
+    img {
+    }
+  }
+
+  .box__wrap {
+    padding-top: rem(90);
+    padding-bottom: rem(40);
+    padding-inline: rem(15);
+  }
+
+  .box__title {
+    text-align: center;
+    color: #006CB6;
+    leading-trim: both;
+    text-edge: cap;
+    font-size: rem(18);
+    line-height: 1.6;
+  }
+
+  .box__items {
+    margin-top: rem(20);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: rem(10);
+  }
+
+  .box__item {
+    width: rem(315);
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: rem(10);
+  }
+
+  .box__item-number {
+    color: $color-accent1;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: $font-family-en-1;
+    font-size: rem(18);
+    font-style: italic;
+    line-height: 1.6;
+  }
+
+  .box__item-text {
+    leading-trim: both;
+    text-edge: cap;
+    font-size: rem(14);
+    font-weight: 400;
+    line-height: 1.6;
+  }
+
+  .box__text {
+    margin-top: rem(15);
+    leading-trim: both;
+    text-edge: cap;
+    font-size: rem(14);
+    font-weight: 400;
+    line-height: 1.6;
+    width: fit-content;
+    margin-inline: auto;
+  }
+
+  .box__text .mail-link {
+    color: #006CB6;
+    text-decoration-line: underline;
+  }
+
+  .box__text .tel-link {
+    text-decoration-line: underline;
+  }
+
+
+  .description__cta {
+    position: absolute;
+    bottom: rem(-30);
+    right: 0;
+  }
+
+
+  .cta--online {  // 『.cta』の モディファイア
+    border-radius: 105px 0px 0px 105px;
+    border-top: 3px solid #CAEDC2;
+    border-bottom: 3px solid #CAEDC2;
+    border-left: 3px solid #CAEDC2;
+    background: linear-gradient(88deg, #5FC4F1 8.32%, #62DABD 86.09%);
+  }
+
+  .cta--online {
+
+    .cta__btn-icon {
+
+      img {
+        width: rem(50);
+      }
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 }
