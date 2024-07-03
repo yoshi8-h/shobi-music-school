@@ -683,7 +683,7 @@ body {
   .o-flow {
     background: #F8F7F0;
     padding-top: 5rem;
-    padding-bottom: 5.625rem;
+    padding-bottom: 3.75rem;
   }
   .o-flow .section-title__img img {
     width: 15.625rem;
@@ -762,9 +762,12 @@ body {
     margin-top: 0.9375rem;
     font-weight: 400;
     font-size: 0.875rem;
+    max-width: 28.125rem;
+    margin-inline: auto;
   }
   .o-flow__movie {
     margin-top: 1.875rem;
+    text-align: center;
   }
   .o-flow__movie iframe {
     width: 19.0625rem;
@@ -799,6 +802,8 @@ body {
     font-size: 0.75rem;
     font-weight: 400;
     line-height: 1.6;
+    max-width: 28.125rem;
+    margin-inline: auto;
   }
   .o-f-item__sub-text.is-download {
     margin-top: 2.5rem;
@@ -901,6 +906,8 @@ body {
     leading-trim: both;
     text-edge: cap;
     font-size: 1.125rem;
+    max-width: 28.125rem;
+    margin-inline: auto;
   }
   .o-flow__box-text {
     margin-top: 1.5625rem;
@@ -909,6 +916,8 @@ body {
     font-size: 0.875rem;
     font-weight: 400;
     line-height: 1.6;
+    max-width: 28.125rem;
+    margin-inline: auto;
   }
   .o-flow__box-right {
     -ms-flex-negative: 0;
@@ -919,7 +928,7 @@ body {
     border-radius: 1.25rem;
   }
   .o-flow__contact {
-    margin-top: 5rem;
+    margin-top: 2.5rem;
   }
   .contact {
     background: #FFF;
@@ -931,7 +940,7 @@ body {
     text-align: center;
     leading-trim: both;
     text-edge: cap;
-    font-size: 1.375rem;
+    font-size: 1.125rem;
     line-height: 1.6;
     width: -webkit-fit-content;
     width: -moz-fit-content;
@@ -941,22 +950,22 @@ body {
   }
   .contact__message::before {
     content: "";
-    width: 1.4375rem;
-    height: 1.4375rem;
+    width: 1.125rem;
+    height: 1.125rem;
     background: url(../img/contact-side-circle.png) no-repeat center center/contain;
     position: absolute;
-    left: -2.1875rem;
+    left: -1.875rem;
     top: 50%;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
   }
   .contact__message::after {
     content: "";
-    width: 1.4375rem;
-    height: 1.4375rem;
+    width: 1.125rem;
+    height: 1.125rem;
     background: url(../img/contact-side-circle.png) no-repeat center center/contain;
     position: absolute;
-    right: -2.1875rem;
+    right: -1.875rem;
     top: 50%;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
@@ -966,13 +975,17 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    gap: 1.25rem;
+    gap: 0.125rem;
   }
   .contact__tel {
     display: -webkit-box;
@@ -991,7 +1004,7 @@ body {
     text-align: center;
     leading-trim: both;
     text-edge: cap;
-    font-size: 1rem;
+    font-size: 0.875rem;
     line-height: 1.6;
   }
   .contact__tel-link {
@@ -999,7 +1012,7 @@ body {
     leading-trim: both;
     text-edge: cap;
     font-family: "Barlow Semi Condensed", sans-serif;
-    font-size: 1.375rem;
+    font-size: 1.25rem;
     font-weight: 600;
     line-height: 2;
     text-decoration-line: underline;
@@ -1009,7 +1022,7 @@ body {
     color: #000;
     leading-trim: both;
     text-edge: cap;
-    font-size: 0.875rem;
+    font-size: 0.75rem;
     font-weight: 400;
     line-height: 2;
   }
@@ -1031,7 +1044,7 @@ body {
     text-align: center;
     leading-trim: both;
     text-edge: cap;
-    font-size: 1rem;
+    font-size: 0.875rem;
     line-height: 1.6;
   }
   .contact__mail-link {
@@ -1039,7 +1052,7 @@ body {
     leading-trim: both;
     text-edge: cap;
     font-family: "Barlow Semi Condensed", sans-serif;
-    font-size: 1.375rem;
+    font-size: 1.25rem;
     font-weight: 600;
     line-height: 2;
     text-decoration-line: underline;

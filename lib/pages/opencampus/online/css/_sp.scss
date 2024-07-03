@@ -203,7 +203,7 @@
   .o-flow {
     background: #F8F7F0;
     padding-top: rem(80);
-    padding-bottom: rem(90);
+    padding-bottom: rem(60);
   }
 
   .o-flow__inner {
@@ -293,10 +293,13 @@
     margin-top: rem(15);
     font-weight: 400;
     font-size: rem(14);
+    max-width: rem(450);
+    margin-inline: auto;
   }
 
   .o-flow__movie {
     margin-top: rem(30);
+    text-align: center;
 
     iframe {
       width: rem(305);
@@ -335,6 +338,8 @@
     font-size: rem(12);
     font-weight: 400;
     line-height: 1.6;
+    max-width: rem(450);
+    margin-inline: auto;
   }
 
   .o-f-item__sub-text.is-download {
@@ -431,6 +436,8 @@
     leading-trim: both;
     text-edge: cap;
     font-size: rem(18);
+    max-width: rem(450);
+    margin-inline: auto;
   }
 
   .o-flow__box-text {
@@ -440,6 +447,8 @@
     font-size: rem(14);
     font-weight: 400;
     line-height: 1.6;
+    max-width: rem(450);
+    margin-inline: auto;
   }
 
   .o-flow__box-right {
@@ -452,7 +461,7 @@
   }
 
   .o-flow__contact {
-    margin-top: rem(80);
+    margin-top: rem(40);
   }
 
 
@@ -467,7 +476,7 @@
     text-align: center;
     leading-trim: both;
     text-edge: cap;
-    font-size: rem(22);
+    font-size: rem(18);
     line-height: 1.6;
     width: fit-content;
     margin-inline: auto;
@@ -476,22 +485,22 @@
 
   .contact__message::before {  // 左側のピンクの丸
     content: "";
-    width: rem(23);
-    height: rem(23);
+    width: rem(18);
+    height: rem(18);
     background: url(../img/contact-side-circle.png) no-repeat center center / contain;
     position: absolute;
-    left: rem(-35);
+    left: rem(-30);
     top: 50%;
     transform: translateY(-50%);
   }
 
   .contact__message::after {  // 右側のピンクの丸
     content: "";
-    width: rem(23);
-    height: rem(23);
+    width: rem(18);
+    height: rem(18);
     background: url(../img/contact-side-circle.png) no-repeat center center / contain;
     position: absolute;
-    right: rem(-35);
+    right: rem(-30);
     top: 50%;
     transform: translateY(-50%);
   }
@@ -499,9 +508,10 @@
   .contact__info {
     margin-top: rem(20);
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: rem(20);
+    gap: rem(2);
   }
 
   .contact__tel {
@@ -516,7 +526,7 @@
     text-align: center;
     leading-trim: both;
     text-edge: cap;
-    font-size: rem(16);
+    font-size: rem(14);
     line-height: 1.6;
   }
 
@@ -525,7 +535,7 @@
     leading-trim: both;
     text-edge: cap;
     font-family: $font-family-en-1;
-    font-size: rem(22);
+    font-size: rem(20);
     font-weight: 600;
     line-height: 2.0;
     text-decoration-line: underline;
@@ -536,7 +546,7 @@
     color: #000;
     leading-trim: both;
     text-edge: cap;
-    font-size: rem(14);
+    font-size: rem(12);
     font-weight: 400;
     line-height: 2.0;
   }
@@ -554,7 +564,7 @@
     text-align: center;
     leading-trim: both;
     text-edge: cap;
-    font-size: rem(16);
+    font-size: rem(14);
     line-height: 1.6;
   }
 
@@ -563,7 +573,7 @@
     leading-trim: both;
     text-edge: cap;
     font-family: $font-family-en-1;
-    font-size: rem(22);
+    font-size: rem(20);
     font-weight: 600;
     line-height: 2.0;
     text-decoration-line: underline;
