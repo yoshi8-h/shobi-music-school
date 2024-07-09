@@ -389,7 +389,7 @@
     }
 
     .btn__arrow {
-      transform: translate(rem(8), -50%);
+      transform: translate(rem(8), calc(-50% + rem(2)));
     }
 
     .btn__arrow svg path {
@@ -410,7 +410,7 @@
   .btn__arrow {
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(calc(-50% + rem(2)));
     right: rem(20);
     transition: transform 0.2s ease-out;
   }
