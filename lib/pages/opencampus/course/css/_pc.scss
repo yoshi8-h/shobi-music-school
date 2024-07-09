@@ -538,109 +538,499 @@
 
 
 
+
+
+
+
   // date セクション
   .date {
+    padding-top: rem(70);
+    padding-bottom: rem(80);;
+    position: relative;
+    z-index: 40;
   }
+
+  .date::after {  // 背景色 (各学科のテーマカラーの15%の濃さ) →背景色以外をここで指定。背景色は以下で制御して指定。
+    content: "";
+    width: 100%;
+    height: 100%;
+    opacity: 0.15;
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+  }
+
+  /* ============================================================================= */
+  /* 各学科のページ個別の指定 (bodyタグのidで制御) */
+   // 背景色 (各学科のテーマカラーの15%の濃さ)
+
+  // ダンス学科 (dance)
+  #dance {
+    .date::after {
+      background: $theme-color-dance;
+    }
+
+    .post {
+      background: $theme-color-dance;
+    }
+
+    .post__tag {
+      background: $theme-color-dance;
+    }
+  }
+
+  // 音楽総合アカデミー学科 (academy)
+  #academy {
+    .date::after {
+      background: $theme-color-academy;
+    }
+  }
+
+  // アレンジ・作曲学科 (arrangecompose)
+  #arrangecompose {
+    .date::after {
+      background: $theme-color-arrangecompose;
+    }
+  }
+
+  // ジャズ・ポピュラー学科 (jazzpop)
+  #jazzpop {
+    .date::after {
+      background: $theme-color-jazzpop;
+    }
+  }
+
+  // ミュージカル学科 (musical)
+  #musical {
+    .date::after {
+      background: $theme-color-musical;
+    }
+  }
+
+  // ミュージックビジネス学科 (musicbusiness)
+  #musicbusiness {
+    .date::after {
+      background: $theme-color-musicbusiness;
+    }
+  }
+
+  // プロミュージシャン学科 (promusician)
+  #promusician {
+    .date::after {
+      background: $theme-color-promusician;
+    }
+  }
+
+  // 音楽・映像・照明学科 (soundvisuallighting)
+  #soundvisuallighting {
+    .date::after {
+      background: $theme-color-soundvisuallighting;
+    }
+  }
+
+  // ヴォーカル学科 (vocal)
+  #vocal {
+    .date::after {
+      background: $theme-color-vocal;
+    }
+  }
+
+  // 声優学科 (voiceactor)
+  #voiceactor {
+    .date::after {
+      background: $theme-color-voiceactor;
+    }
+  }
+
+  // 管弦打楽器学科 (wind)
+  #wind {
+    .date::after {
+      background: $theme-color-wind;
+    }
+  }
+
+  /* ============================================================================= */
+
 
   .date__inner {
   }
 
   .date__title {
+    width: rem(654);
+    max-width: rem(654);
+    margin-inline: auto;
+  }
+
+  .date__title-img {
+    width: 100%;
+
+    img {
+      width: 100%;
+    }
   }
 
   .date__posts {
+    margin-top: rem(60);
   }
 
 
   .posts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  // 『grid-template-rows』は指定しない事で、行の高さは、その行に含まれるコンテンツのサイズに基づいて自動的に調整される。
+    column-gap: rem(9);
+    row-gap: rem(30);
+    align-items: flex-start;  // grid時も、上側に揃うように。
   }
 
   .posts__item {
+    width: rem(394);
   }
 
 
   .post {
+    border-radius: rem(15);
+    height: 100%;
   }
 
   .post__wrap {
+    padding: rem(5);
+    position: relative;
+
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .post__tag {
+    text-align: center;
+    width: fit-content;
+    border-radius: rem(15) 0px;
+    padding-block: rem(6);
+    padding-inline: rem(15);
+    color: #FFF;
+    text-align: center;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: $font-family-en-1;
+    font-size: rem(18);
+    font-style: italic;
+    font-weight: 600;
+    line-height: 1.4;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .post__top {
   }
 
   .post__img {
+    border-radius: rem(10);
+    overflow: hidden;
 
     img {
-
+      width: 100%;
+      aspect-ratio: 384 / 188;
+      object-fit: cover;
     }
   }
 
+  .post__bottom {
+    padding-top: rem(18);
+    padding-inline: rem(18);
+    padding-bottom: rem(18);
+    flex-grow: 1;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  .post__bottom-top {
+    flex-grow: 1;
+  }
+
   .post__title {
+    color: #FFF;
+    leading-trim: both;
+    text-edge: cap;
+    font-size: rem(20);
+    font-weight: $bold;
+    line-height: 1.4;
   }
 
   .post__teacher {
+    margin-top: rem(14);
+    text-align: right;
+    color: #FFF;
+    leading-trim: both;
+    text-edge: cap;
+    font-size: rem(16);
+    font-weight: $normal;
+    line-height: 1.4;
   }
 
   .post__tags {
+    margin-top: rem(11);
+    margin-bottom: rem(16);
   }
 
   .tags2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: rem(4);
+    row-gap: rem(6);
   }
 
   .tags2__item {
   }
 
+
   .tag2 {
+    color: #000;
+    text-align: center;
+    leading-trim: both;
+    text-edge: cap;
+    font-size: rem(13);
+    font-weight: $bold;
+    line-height: 1.4;
+
+    padding-inline: rem(4);
+    padding-block: rem(3);
+    border-radius: rem(3);
+    background: rgba(255, 255, 255, 0.70);
   }
 
 
-  .post__dates {
+  .post__bottom-bottom {
+    border-top: 1px solid #FFF;
+    position: relative;
   }
 
-  .dates {
+  .post__days {
+    margin-top: rem(20);
   }
 
-  .dates__item {
+  .days {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: rem(7);
   }
 
-  .date {
+  .days__item {
+    width: rem(114);
   }
 
-  .date__text1 {
+
+  .day {
+    border-radius: rem(20);
+    background: #FFF;
+    box-shadow: rem(4) rem(4) 0px 0px rgba(0, 0, 0, 0.25);
+    padding-block: rem(3);
+    padding-left: rem(9);
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: rem(7);
+
+    position: relative;
+    transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
   }
 
-  .date__text2 {
+  .day:hover {
+    transform: translateY(rem(3));
+    box-shadow: none;
+
+    .day__arrow {
+      transform: translate(rem(3), -50%);
+    }
   }
 
-  .date__arrow {
+  .day__text1 {  // 日付
+    color: #000;
+    text-align: center;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: $font-family-en-1;
+    font-size: rem(24);
+    font-style: italic;
+    font-weight: $bold;
+    line-height: 1.4;
+  }
+
+  .day__text2 {
+    color: #000;
+    text-align: center;
+    leading-trim: both;
+    text-edge: cap;
+    font-size: rem(12);
+    font-weight: $bold;
+    line-height: 1.4;
+    position: relative;
+  }
+
+  .day__text2::after {  // 囲っている丸 ○
+    content: "";
+    width: rem(20);
+    height: rem(20);
+    border-radius: 50%;
+    border: rem(1) solid #000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .day__arrow {
+    position: absolute;
+    top: 50%;
+    right: rem(9);
+    transform: translateY(-50%);
+    transition: transform 0.2s ease-out;
+
+    img {
+      width: rem(7);
+    }
   }
 
 
   .post__link {
+    margin-top: rem(28);
+    width: rem(117);
+    margin-inline: auto;
+    padding-bottom: rem(8);
+    position: relative;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .post__link:hover {
+    .post__link-arrow {
+      transform: translateX(rem(4));
+    }
+  }
+
+  .post__link::after {  // 白い下線
+    content: "";
+    width: 112%;
+    height: rem(2);
+    border-radius: rem(21);
+    background: #FFF;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   .post__link-text {
+    color: #FFF;
+    text-align: center;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Inter;
+    font-size: rem(16);
+    font-weight: $bold;
+    line-height: normal;
   }
 
   .post__link-arrow {
+    width: fit-content;
+    transition: transform 0.2s ease-out;
+
+    img {
+      width: rem(9);
+    }
   }
+
 
   .date__bottom {
+    margin-top: rem(60);
+    width: fit-content;
+    margin-inline: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: rem(46);
   }
 
-  .date__bottom-left {
+  .date__bottom-left {  // 『持ち物』
+    text-align: center;
+    color: #006CB6;
+    leading-trim: both;
+    text-edge: cap;
+    font-size: rem(24);
+    font-weight: $bold;
+    line-height: 1.6;
+    position: relative;
+    z-index: 10;
+  }
+
+  .date__bottom-left::after {  // 背景の白い円
+    content: "";
+    width: rem(120);
+    height: rem(120);
+    border-radius: 50%;
+    background: #FFF;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
   }
 
   .date__bottom-right {
   }
 
   .date__bottom-text {
+    color: #000;
+    leading-trim: both;
+    text-edge: cap;
+    font-size: rem(16);
+    font-weight: $normal;
+    line-height: 1.6;
   }
 
   .date__list {
+    margin-top: rem(10);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: rem(4);
   }
 
   .date__list-item {
+    color: #000;
+    leading-trim: both;
+    text-edge: cap;
+    font-size: rem(16);
+    font-weight: $bold;
+    line-height: 1.4;
+    padding-left: rem(30);
+    position: relative;
+  }
+
+  .date__list-item::before {  // 緑の丸
+    content: "";
+    width: rem(16);
+    height: rem(16);
+    background: #00DEC7;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
   }
 
 
+
+  // 最後に、postの他のページも色を制御する記載を忘れないように。danceにしか反映していない。
 
 
 
