@@ -2189,6 +2189,7 @@ body {
     font-size: 1rem;
     font-weight: 700;
     line-height: normal;
+    white-space: nowrap;
   }
   .post__link-arrow {
     width: -webkit-fit-content;
@@ -2449,8 +2450,8 @@ body {
     overflow: hidden;
   }
   .date-modal {
-    width: 58.75rem;
-    border-radius: 1.875rem;
+    width: 22.1875rem;
+    border-radius: 1.25rem;
     -webkit-box-shadow: 6px 6px 8px 0px rgba(0, 0, 0, 0.25);
             box-shadow: 6px 6px 8px 0px rgba(0, 0, 0, 0.25);
     border: none;
@@ -2467,30 +2468,34 @@ body {
     background: #000;
   }
   .date-modal__wrap {
-    padding-top: 3.3125rem;
-    padding-inline: 3.75rem;
-    padding-bottom: 3.75rem;
+    padding-top: 3.75rem;
+    padding-inline: 0.9375rem;
+    padding-bottom: 1.875rem;
     position: relative;
   }
   .date-modal__close {
     position: absolute;
     top: 0.875rem;
-    right: 0.875rem;
+    right: 0.5rem;
   }
   .date-modal__close img {
-    width: 2.375rem;
+    width: 2.1875rem;
   }
   .date-modal__titles {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    gap: 1.3125rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    gap: 0.375rem;
   }
   .date-modal__title-tag {
     color: #FFF;
@@ -2498,7 +2503,7 @@ body {
     leading-trim: both;
     text-edge: cap;
     font-family: "Barlow Semi Condensed", sans-serif;
-    font-size: 1.125rem;
+    font-size: 1rem;
     font-style: italic;
     font-weight: 600;
     line-height: 1.4;
@@ -2506,10 +2511,10 @@ body {
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
-    padding-top: 0.375rem;
-    padding-bottom: 0.375rem;
-    padding-left: 0.625rem;
-    padding-right: 1rem;
+    padding-top: 0.3125rem;
+    padding-bottom: 0.3125rem;
+    padding-left: 0.5rem;
+    padding-right: 0.875rem;
     width: 6.1875rem;
   }
   /* ============================================================================= */
@@ -2617,31 +2622,33 @@ body {
   .date-modal__title-main {
     leading-trim: both;
     text-edge: cap;
-    font-size: 1.75rem;
+    font-size: 1.375rem;
     font-weight: 700;
     line-height: normal;
   }
   .date-modal__teacher {
-    margin-top: 1.875rem;
+    margin-top: 0.375rem;
     text-align: right;
     color: #000;
     leading-trim: both;
     text-edge: cap;
-    font-size: 1.125rem;
+    font-size: 1.0625rem;
     font-weight: 400;
-    line-height: normal;
+    line-height: 1;
   }
   .date-modal__box {
-    margin-top: 1.875rem;
-    border-radius: 1.25rem;
+    margin-top: 1.25rem;
+    border-radius: 0.9375rem;
     padding-top: 1.875rem;
-    padding-inline: 3.125rem;
-    padding-bottom: 3.125rem;
+    padding-inline: 0.9375rem;
+    padding-bottom: 1.875rem;
   }
   .date-modal__tags {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -2649,7 +2656,7 @@ body {
         -ms-flex-align: center;
             align-items: center;
     gap: 0.25rem;
-    padding-bottom: 1.5rem;
+    padding-bottom: 1.25rem;
     border-bottom: 0.0625rem solid #FFF;
   }
   .date-modal__tag {
@@ -2657,7 +2664,7 @@ body {
     text-align: center;
     leading-trim: both;
     text-edge: cap;
-    font-size: 0.8125rem;
+    font-size: 0.75rem;
     font-weight: 700;
     line-height: 1.4;
     border-radius: 0.1875rem;
@@ -2666,12 +2673,12 @@ body {
     padding-inline: 0.375rem;
   }
   .date-modal__days {
-    margin-top: 1.875rem;
+    margin-top: 1.5625rem;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    -webkit-column-gap: 2.25rem;
-       -moz-column-gap: 2.25rem;
-            column-gap: 2.25rem;
+    grid-template-columns: repeat(1, 1fr);
+    -webkit-column-gap: 0.625rem;
+       -moz-column-gap: 0.625rem;
+            column-gap: 0.625rem;
     row-gap: 1.25rem;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -2679,6 +2686,8 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    width: 15.625rem;
+    margin-inline: auto;
   }
   .date-modal__day {
     border-radius: 1.75rem;
@@ -2687,8 +2696,8 @@ body {
             box-shadow: 0.25rem 0.25rem 0px 0px rgba(0, 0, 0, 0.25);
     padding-top: 0.3125rem;
     padding-bottom: 0.4375rem;
-    padding-left: 2.0625rem;
-    padding-right: 3.0625rem;
+    padding-left: 1.875rem;
+    padding-right: 6.875rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2699,6 +2708,8 @@ body {
         -ms-flex-align: center;
             align-items: center;
     gap: 0.9375rem;
+    width: 12.5rem;
+    margin-inline: auto;
     position: relative;
     -webkit-transition: -webkit-transform 0.2s ease-out, -webkit-box-shadow 0.2s ease-out;
     transition: -webkit-transform 0.2s ease-out, -webkit-box-shadow 0.2s ease-out;
@@ -2721,7 +2732,7 @@ body {
     leading-trim: both;
     text-edge: cap;
     font-family: "Barlow Semi Condensed", sans-serif;
-    font-size: 2.375rem;
+    font-size: 2rem;
     font-style: italic;
     font-weight: 700;
     line-height: normal;
@@ -2731,15 +2742,15 @@ body {
     text-align: center;
     leading-trim: both;
     text-edge: cap;
-    font-size: 1.25rem;
+    font-size: 1.125rem;
     font-weight: 700;
     line-height: 1;
     position: relative;
   }
   .date-modal__day-text2::after {
     content: "";
-    width: 1.875rem;
-    height: 1.875rem;
+    width: 1.75rem;
+    height: 1.75rem;
     border-radius: 50%;
     border: 0.0625rem solid #000;
     position: absolute;
@@ -2751,7 +2762,7 @@ body {
   .date-modal__day-arrow {
     position: absolute;
     top: 50%;
-    right: 1rem;
+    right: 1.625rem;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
     -webkit-transition: -webkit-transform 0.2s ease-out;

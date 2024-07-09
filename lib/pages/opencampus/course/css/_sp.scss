@@ -1033,6 +1033,7 @@
     font-size: rem(16);
     font-weight: $bold;
     line-height: normal;
+    white-space: nowrap;
   }
 
   .post__link-arrow {
@@ -1287,6 +1288,7 @@
 
 
 
+
 // モーダル (全日程)
 
   // 要素を固定するクラス (スクロール不可に)
@@ -1295,8 +1297,8 @@
   }
 
   .date-modal {
-    width: rem(940);
-    border-radius: rem(30);
+    width: rem(355);
+    border-radius: rem(20);
     box-shadow: 6px 6px 8px 0px rgba(0, 0, 0, 0.25);
     border: none;  // デフォルトの指定を打ち消し
     padding: 0;  // デフォルトの指定を打ち消し
@@ -1310,19 +1312,19 @@
   }
 
   .date-modal__wrap {
-    padding-top: rem(53);
-    padding-inline: rem(60);
-    padding-bottom: rem(60);
+    padding-top: rem(60);
+    padding-inline: rem(15);
+    padding-bottom: rem(30);
     position: relative;
   }
 
   .date-modal__close {  // 『閉じる』ボタン
     position: absolute;
     top: rem(14);
-    right: rem(14);
+    right: rem(8);
 
     img {
-      width: rem(38);
+      width: rem(35);
     }
   }
 
@@ -1331,9 +1333,10 @@
 
   .date-modal__titles {
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: rem(21);
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: rem(6);
   }
 
   .date-modal__title-tag {
@@ -1342,16 +1345,16 @@
     leading-trim: both;
     text-edge: cap;
     font-family: $font-family-en-1;
-    font-size: rem(18);
+    font-size: rem(16);
     font-style: italic;
     font-weight: 600;
     line-height: 1.4;
     border-radius: 0px rem(21) rem(21) 0px;
     width: fit-content;
-    padding-top: rem(6);
-    padding-bottom: rem(6);
-    padding-left: rem(10);
-    padding-right: rem(16);
+    padding-top: rem(5);
+    padding-bottom: rem(5);
+    padding-left: rem(8);
+    padding-right: rem(14);
     width: rem(99);
   }
 
@@ -1531,36 +1534,37 @@
   .date-modal__title-main {
     leading-trim: both;
     text-edge: cap;
-    font-size: rem(28);
+    font-size: rem(22);
     font-weight: $bold;
     line-height: normal;
   }
 
   .date-modal__teacher {
-    margin-top: rem(30);
+    margin-top: rem(6);
     text-align: right;
     color: #000;
     leading-trim: both;
     text-edge: cap;
-    font-size: rem(18);
+    font-size: rem(17);
     font-weight: $normal;
-    line-height: normal;
+    line-height: 1;
   }
 
   .date-modal__box {
-    margin-top: rem(30);
-    border-radius: rem(20);
+    margin-top: rem(20);
+    border-radius: rem(15);
     padding-top: rem(30);
-    padding-inline: rem(50);
-    padding-bottom: rem(50);
+    padding-inline: rem(15);
+    padding-bottom: rem(30);
   }
 
   .date-modal__tags {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: rem(4);
-    padding-bottom: rem(24);
+    padding-bottom: rem(20);
     border-bottom: rem(1) solid #FFF;
   }
 
@@ -1569,7 +1573,7 @@
     text-align: center;
     leading-trim: both;
     text-edge: cap;
-    font-size: rem(13);
+    font-size: rem(12);
     font-weight: $bold;
     line-height: 1.4;
     border-radius: rem(3);
@@ -1579,13 +1583,15 @@
   }
 
   .date-modal__days {
-    margin-top: rem(30);
+    margin-top: rem(25);
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: rem(36);
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: rem(10);
     row-gap: rem(20);
     justify-content: center;
     align-items: center;
+    width: rem(250);
+    margin-inline: auto;
   }
 
   .date-modal__day {
@@ -1594,13 +1600,16 @@
     box-shadow: rem(4) rem(4) 0px 0px rgba(0, 0, 0, 0.25);
     padding-top: rem(5);
     padding-bottom: rem(7);
-    padding-left: rem(33);
-    padding-right: rem(49);
+    padding-left: rem(30);
+    padding-right: rem(110);
 
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: rem(15);
+
+    width: rem(200);
+    margin-inline: auto;
 
     position: relative;
     transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
@@ -1621,7 +1630,7 @@
     leading-trim: both;
     text-edge: cap;
     font-family: $font-family-en-1;
-    font-size: rem(38);
+    font-size: rem(32);
     font-style: italic;
     font-weight: $bold;
     line-height: normal;
@@ -1632,7 +1641,7 @@
     text-align: center;
     leading-trim: both;
     text-edge: cap;
-    font-size: rem(20);
+    font-size: rem(18);
     font-weight: $bold;
     line-height: 1;
     position: relative;
@@ -1640,8 +1649,8 @@
 
   .date-modal__day-text2::after {  // 囲っている丸 ○
     content: "";
-    width: rem(30);
-    height: rem(30);
+    width: rem(28);
+    height: rem(28);
     border-radius: 50%;
     border: rem(1) solid #000;
     position: absolute;
@@ -1653,7 +1662,7 @@
   .date-modal__day-arrow {
     position: absolute;
     top: 50%;
-    right: rem(16);
+    right: rem(26);
     transform: translateY(-50%);
     transition: transform 0.2s ease-out;
 
