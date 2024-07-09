@@ -422,10 +422,10 @@
                       <div class="day__arrow"><img src="../../../../lib/pages/opencampus/course/img/day-arrow.svg" alt="黒い矢印"></div>
                     </a>
                   </div>
-                  <a href="#" class="post__link">
+                  <button type="button" class="post__link js-modal-open" data-modal="1">
                     <span class="post__link-text">全日程を見る</span>
                     <span class="post__link-arrow"><img src="../../../../lib/pages/opencampus/course/img/post_arrow-white.svg" alt="白い矢印"></span>
-                  </a>
+                  </button>
                 </div>
               </div>
             </div>
@@ -462,10 +462,10 @@
                       <div class="day__arrow"><img src="../../../../lib/pages/opencampus/course/img/day-arrow.svg" alt="黒い矢印"></div>
                     </a>
                   </div>
-                  <a href="#" class="post__link">
+                  <button type="button" class="post__link js-modal-open" data-modal="1">
                     <span class="post__link-text">全日程を見る</span>
                     <span class="post__link-arrow"><img src="../../../../lib/pages/opencampus/course/img/post_arrow-white.svg" alt="白い矢印"></span>
-                  </a>
+                  </button>
                 </div>
               </div>
             </div>
@@ -497,10 +497,10 @@
                       <div class="day__arrow"><img src="../../../../lib/pages/opencampus/course/img/day-arrow.svg" alt="黒い矢印"></div>
                     </a>
                   </div>
-                  <a href="#" class="post__link">
+                  <button type="button" class="post__link js-modal-open" data-modal="1">
                     <span class="post__link-text">全日程を見る</span>
                     <span class="post__link-arrow"><img src="../../../../lib/pages/opencampus/course/img/post_arrow-white.svg" alt="白い矢印"></span>
-                  </a>
+                  </button>
                 </div>
               </div>
             </div>
@@ -519,6 +519,70 @@
         </div>
       </div>
     </section>
+
+    <!-- モーダル (全日程) -->
+    <dialog id="js-date-modal-1" class="date-modal">
+      <div class="date-modal__wrap">
+        <button class="date-modal__close js-modal-close" data-modal="1"><img src="../../../../lib/pages/opencampus/course/img/modal-close.png" alt="×"></button>
+        <div class="date-modal__top">
+          <div class="date-modal__titles">
+            <div class="date-modal__title-tag">SPECIAL</div>
+            <p class="date-modal__title-main">ダンスの基礎レッスン ～STEPPER～</p>
+          </div>
+          <div class="date-modal__teacher">講師：〇〇〇〇〇〇</div>
+        </div>
+        <div class="date-modal__box">
+          <div class="date-modal__tags">
+            <div class="date-modal__tag">初参加の方</div>
+            <div class="date-modal__tag">リピーターの方</div>
+            <div class="date-modal__tag">初参加の方（希望者のみ）</div>
+            <div class="date-modal__tag">リピーターの方（希望者のみ）</div>
+          </div>
+          <div class="date-modal__days">
+            <a href="#" class="date-modal__day">
+              <div class="date-modal__day-text1">06/23</div>
+              <div class="date-modal__day-text2">日</div>
+              <div class="date-modal__day-arrow"><img src="../../../../lib/pages/opencampus/course/img/day-arrow.svg" alt="黒い矢印"></div>
+            </a>
+            <a href="#" class="date-modal__day">
+              <div class="date-modal__day-text1">06/30</div>
+              <div class="date-modal__day-text2">日</div>
+              <div class="date-modal__day-arrow"><img src="../../../../lib/pages/opencampus/course/img/day-arrow.svg" alt="黒い矢印"></div>
+            </a>
+            <a href="#" class="date-modal__day">
+              <div class="date-modal__day-text1">07/07</div>
+              <div class="date-modal__day-text2">日</div>
+              <div class="date-modal__day-arrow"><img src="../../../../lib/pages/opencampus/course/img/day-arrow.svg" alt="黒い矢印"></div>
+            </a>
+            <a href="#" class="date-modal__day">
+              <div class="date-modal__day-text1">07/14</div>
+              <div class="date-modal__day-text2">日</div>
+              <div class="date-modal__day-arrow"><img src="../../../../lib/pages/opencampus/course/img/day-arrow.svg" alt="黒い矢印"></div>
+            </a>
+            <a href="#" class="date-modal__day">
+              <div class="date-modal__day-text1">07/21</div>
+              <div class="date-modal__day-text2">日</div>
+              <div class="date-modal__day-arrow"><img src="../../../../lib/pages/opencampus/course/img/day-arrow.svg" alt="黒い矢印"></div>
+            </a>
+            <a href="#" class="date-modal__day">
+              <div class="date-modal__day-text1">07/29</div>
+              <div class="date-modal__day-text2">日</div>
+              <div class="date-modal__day-arrow"><img src="../../../../lib/pages/opencampus/course/img/day-arrow.svg" alt="黒い矢印"></div>
+            </a>
+            <a href="#" class="date-modal__day">
+              <div class="date-modal__day-text1">08/23</div>
+              <div class="date-modal__day-text2">日</div>
+              <div class="date-modal__day-arrow"><img src="../../../../lib/pages/opencampus/course/img/day-arrow.svg" alt="黒い矢印"></div>
+            </a>
+            <a href="#" class="date-modal__day">
+              <div class="date-modal__day-text1">11/23</div>
+              <div class="date-modal__day-text2">日</div>
+              <div class="date-modal__day-arrow"><img src="../../../../lib/pages/opencampus/course/img/day-arrow.svg" alt="黒い矢印"></div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </dialog>
 
     <!-- treatment セクション -->
     <section class="treatment">
@@ -585,8 +649,6 @@
         </a>
       </div>
     </section>
-
-
 
   </main>
 
