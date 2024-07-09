@@ -1977,4 +1977,155 @@ body {
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
   }
+  .treatment {
+    padding-top: 2.875rem;
+    padding-bottom: 4.25rem;
+  }
+  .treatment__title {
+    width: 21.875rem;
+    max-width: 21.875rem;
+    margin-inline: auto;
+  }
+  .treatment__title-img {
+    width: 100%;
+  }
+  .treatment__title-img img {
+    width: 100%;
+  }
+  .treatment__boxes {
+    margin-top: 3.375rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 0.9375rem;
+    width: 21.5625rem;
+    max-width: 55rem;
+    margin-inline: auto;
+  }
+  .treatment__box {
+    border-radius: 0.625rem;
+    background: #FFF5CC;
+    padding-block: 1.875rem;
+    padding-inline: 1.125rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 1.875rem;
+  }
+  .treatment__box-left {
+    text-align: center;
+    color: #F47F95;
+    leading-trim: both;
+    text-edge: cap;
+    text-shadow: 0.1875rem 0.1875rem 0px #FFF;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-size: 3.125rem;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 1.4;
+    padding-left: 1.0625rem;
+    position: relative;
+    z-index: 20;
+  }
+  .treatment__box-left::after {
+    content: "";
+    width: 4.5rem;
+    height: 4.5rem;
+    background: url(../img/treatment_box-number-bg.svg) no-repeat center center/contain;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    z-index: -1;
+  }
+  .treatment__box-right {
+    width: 13.75rem;
+  }
+  .treatment__box-title {
+    color: #006CB6;
+    leading-trim: both;
+    text-edge: cap;
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.4;
+  }
+  .treatment__box-title .is-small {
+    font-size: 1rem;
+    padding-left: 0.9375rem;
+  }
+  .treatment__box-text {
+    margin-top: 0.625rem;
+    color: #000;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.6;
+  }
+  .treatment__bottom {
+    width: 21.5625rem;
+    max-width: 21.5625rem;
+    margin-inline: auto;
+  }
+  .treatment__messages {
+    margin-top: 1.875rem;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-left: auto;
+    position: relative;
+  }
+  .treatment__messages::before {
+    display: none;
+  }
+  .treatment__message1 {
+    color: #000;
+    leading-trim: both;
+    text-edge: cap;
+    font-size: 0.8125rem;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .treatment__message2 {
+    margin-top: 0.9375rem;
+    color: #F00;
+    leading-trim: both;
+    text-edge: cap;
+    font-size: 0.8125rem;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .treatment__buttons {
+    margin-top: 2.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 1.5625rem;
+  }
+  .treatment__btn {
+    width: 18.75rem;
+    text-align: center;
+  }
 }
