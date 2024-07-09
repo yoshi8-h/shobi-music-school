@@ -473,6 +473,13 @@ body {
   }
   .posts__item {
     width: 24.625rem;
+    max-width: 24.625rem;
+    width: 100%;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
   }
   .post {
     border-radius: 0.9375rem;
@@ -511,23 +518,31 @@ body {
     top: 0;
     left: 0;
   }
+  .post__top {
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+  }
   .post__img {
     border-radius: 0.625rem;
     overflow: hidden;
   }
   .post__img img {
     width: 100%;
+    width: 24rem;
+    height: 11.75rem;
     aspect-ratio: 384/188;
     -o-object-fit: cover;
        object-fit: cover;
   }
   .post__bottom {
     padding-top: 1.125rem;
-    padding-inline: 1.125rem;
+    padding-inline: 0.8125rem;
     padding-bottom: 1.125rem;
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
             flex-grow: 1;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -537,6 +552,8 @@ body {
             flex-direction: column;
   }
   .post__bottom-top {
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
             flex-grow: 1;
@@ -611,9 +628,11 @@ body {
         -ms-flex-align: center;
             align-items: center;
     gap: 0.4375rem;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .days__item {
-    width: 7.125rem;
+    width: 7.0625rem;
   }
   .day {
     border-radius: 1.25rem;
