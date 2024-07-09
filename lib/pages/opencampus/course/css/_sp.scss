@@ -13,6 +13,7 @@
     display: grid;
     place-items: center;
     position: relative;
+    z-index: 40;
   }
 
   .c-fv__inner {
@@ -398,6 +399,144 @@
 
   /* ============================================================================= */
 
+
+
+  // topics2 セクション (少しTOPページと異なる)
+  .topics2 {
+    background: #F8F7F0;
+    padding-top: rem(35);
+    padding-bottom: rem(60);
+  }
+
+  .topics2__title {
+  }
+
+  .topics2__title-course {  // 『学科名(英字)』 色はidによって制御
+    text-align: center;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: $font-family-en-1;
+    font-size: rem(20);
+    font-style: italic;
+    font-weight: 600;
+    line-height: 1.4;
+    letter-spacing: 0.6px;
+    position: relative;
+    z-index: 40;
+  }
+
+  .topics2__title-img {  // 『TOPICS』のsvg
+    display: block;
+    margin-top: rem(9.5);
+    width: fit-content;
+    margin-inline: auto;
+    position: relative;
+    z-index: 30;
+
+    img {
+      width: rem(128);
+    }
+  }
+
+  .topics2__title-img::after {  // タイトルの背景の画像
+    content: "";
+    width: rem(200);
+    height: rem(200);
+    background: url(../img/topics2_title-bg-sp.svg) no-repeat center center / contain;
+    position: absolute;
+    top: rem(-90);
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+  }
+
+  .topics2__middle {
+    margin-top: rem(26);
+    position: relative;
+    z-index: 40;
+  }
+
+/* ============================================================================= */
+  /* 各学科のページ個別の指定 (bodyタグのidで制御) */
+
+  // ダンス学科 (dance)
+  #dance {
+    .topics2__title-course {  // 学科名 (英字)
+      color: $theme-color-dance;
+    }
+  }
+
+  // 音楽総合アカデミー学科 (academy)
+  #academy {
+    .topics2__title-course {  // 学科名 (英字)
+      color: $theme-color-academy;
+    }
+  }
+
+  // アレンジ・作曲学科 (arrangecompose)
+  #arrangecompose {
+    .topics2__title-course {  // 学科名 (英字)
+      color: $theme-color-arrangecompose;
+    }
+  }
+
+  // ジャズ・ポピュラー学科 (jazzpop)
+  #jazzpop {
+    .topics2__title-course {  // 学科名 (英字)
+      color: $theme-color-jazzpop;
+    }
+  }
+
+  // ミュージカル学科 (musical)
+  #musical {
+    .topics2__title-course {  // 学科名 (英字)
+      color: $theme-color-musical;
+    }
+  }
+
+  // ミュージックビジネス学科 (musicbusiness)
+  #musicbusiness {
+    .topics2__title-course {  // 学科名 (英字)
+      color: $theme-color-musicbusiness;
+    }
+  }
+
+  // プロミュージシャン学科 (promusician)
+  #promusician {
+    .topics2__title-course {  // 学科名 (英字)
+      color: $theme-color-promusician;
+    }
+  }
+
+  // 音楽・映像・照明学科 (soundvisuallighting)
+  #soundvisuallighting {
+    .topics2__title-course {  // 学科名 (英字)
+      color: $theme-color-soundvisuallighting;
+    }
+  }
+
+  // ヴォーカル学科 (vocal)
+  #vocal {
+    .topics2__title-course {  // 学科名 (英字)
+      color: $theme-color-vocal;
+    }
+  }
+
+  // 声優学科 (voiceactor)
+  #voiceactor {
+    .topics2__title-course {  // 学科名 (英字)
+      color: $theme-color-voiceactor;
+    }
+  }
+
+  // 管弦打楽器学科 (wind)
+  #wind {
+    .topics2__title-course {  // 学科名 (英字)
+      color: $theme-color-wind;
+    }
+  }
+
+  /* ============================================================================= */
 
 
 

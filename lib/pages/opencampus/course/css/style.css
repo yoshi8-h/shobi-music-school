@@ -15,6 +15,7 @@ body {
     display: grid;
     place-items: center;
     position: relative;
+    z-index: 40;
   }
   .c-fv__titles {
     width: -webkit-fit-content;
@@ -305,6 +306,89 @@ body {
     color: #008532;
   }
   /* ============================================================================= */
+  .topics2 {
+    background: #F8F7F0;
+    padding-bottom: 5.5rem;
+  }
+  .topics2__title-course {
+    text-align: center;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-size: 2.125rem;
+    font-style: italic;
+    font-weight: 600;
+    line-height: 1.4;
+    letter-spacing: 1.02px;
+    position: relative;
+    z-index: 40;
+  }
+  .topics2__title-img {
+    display: block;
+    margin-top: 1rem;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-inline: auto;
+    position: relative;
+    z-index: 30;
+  }
+  .topics2__title-img img {
+    width: 13.25rem;
+  }
+  .topics2__title-img::after {
+    content: "";
+    width: 19.25rem;
+    height: 18.625rem;
+    background: url(../img/topics2_title-bg.svg) no-repeat center center/contain;
+    position: absolute;
+    top: -8.75rem;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    z-index: -1;
+  }
+  .topics2__middle {
+    margin-top: 2.1875rem;
+    position: relative;
+    z-index: 40;
+  }
+  /* ============================================================================= */
+  /* 各学科のページ個別の指定 (bodyタグのidで制御) */
+  #dance .topics2__title-course {
+    color: #E9545D;
+  }
+  #academy .topics2__title-course {
+    color: #C10147;
+  }
+  #arrangecompose .topics2__title-course {
+    color: #29B5B2;
+  }
+  #jazzpop .topics2__title-course {
+    color: #015DAE;
+  }
+  #musical .topics2__title-course {
+    color: #F29600;
+  }
+  #musicbusiness .topics2__title-course {
+    color: #F4C200;
+  }
+  #promusician .topics2__title-course {
+    color: #D70C18;
+  }
+  #soundvisuallighting .topics2__title-course {
+    color: #0098D8;
+  }
+  #vocal .topics2__title-course {
+    color: #E75297;
+  }
+  #voiceactor .topics2__title-course {
+    color: #7FBE26;
+  }
+  #wind .topics2__title-course {
+    color: #008532;
+  }
+  /* ============================================================================= */
 }
 @media screen and (max-width: 768px) {
   .c-fv {
@@ -313,6 +397,7 @@ body {
     display: grid;
     place-items: center;
     position: relative;
+    z-index: 40;
   }
   .c-fv__titles {
     width: -webkit-fit-content;
@@ -601,6 +686,90 @@ body {
     background: #008532;
   }
   #wind .c-fv__course-text {
+    color: #008532;
+  }
+  /* ============================================================================= */
+  .topics2 {
+    background: #F8F7F0;
+    padding-top: 2.1875rem;
+    padding-bottom: 3.75rem;
+  }
+  .topics2__title-course {
+    text-align: center;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-size: 1.25rem;
+    font-style: italic;
+    font-weight: 600;
+    line-height: 1.4;
+    letter-spacing: 0.6px;
+    position: relative;
+    z-index: 40;
+  }
+  .topics2__title-img {
+    display: block;
+    margin-top: 0.59375rem;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-inline: auto;
+    position: relative;
+    z-index: 30;
+  }
+  .topics2__title-img img {
+    width: 8rem;
+  }
+  .topics2__title-img::after {
+    content: "";
+    width: 12.5rem;
+    height: 12.5rem;
+    background: url(../img/topics2_title-bg-sp.svg) no-repeat center center/contain;
+    position: absolute;
+    top: -5.625rem;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    z-index: -1;
+  }
+  .topics2__middle {
+    margin-top: 1.625rem;
+    position: relative;
+    z-index: 40;
+  }
+  /* ============================================================================= */
+  /* 各学科のページ個別の指定 (bodyタグのidで制御) */
+  #dance .topics2__title-course {
+    color: #E9545D;
+  }
+  #academy .topics2__title-course {
+    color: #C10147;
+  }
+  #arrangecompose .topics2__title-course {
+    color: #29B5B2;
+  }
+  #jazzpop .topics2__title-course {
+    color: #015DAE;
+  }
+  #musical .topics2__title-course {
+    color: #F29600;
+  }
+  #musicbusiness .topics2__title-course {
+    color: #F4C200;
+  }
+  #promusician .topics2__title-course {
+    color: #D70C18;
+  }
+  #soundvisuallighting .topics2__title-course {
+    color: #0098D8;
+  }
+  #vocal .topics2__title-course {
+    color: #E75297;
+  }
+  #voiceactor .topics2__title-course {
+    color: #7FBE26;
+  }
+  #wind .topics2__title-course {
     color: #008532;
   }
   /* ============================================================================= */
