@@ -1,1 +1,58 @@
-/*# sourceMappingURL=style.css.map */
+@charset "UTF-8";
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+@media print, screen and (min-width: 769px) {
+  .c-fv {
+    background: red;
+    height: 100vh;
+    max-height: 39.375rem;
+    display: grid;
+    place-items: center;
+  }
+  .c-fv__titles {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-inline: auto;
+    position: relative;
+    z-index: 30;
+  }
+  .c-fv__title {
+    text-align: center;
+    color: #FFF;
+    leading-trim: both;
+    text-edge: cap;
+    text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.6);
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-size: 3.625rem;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 1.4;
+    letter-spacing: 1.74px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding-top: 7.5rem;
+  }
+  .c-fv__title-bg {
+    width: 30.75rem;
+    max-width: 30.75rem;
+    position: absolute;
+    bottom: -1.875rem;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    z-index: -1;
+  }
+  .c-fv__title-bg img {
+    width: 100%;
+  }
+  /* 各学科のページ個別の指定 */
+  #dance .c-fv {
+    background: url(../img/c-fv_bg-dance.png) no-repeat center center/cover;
+  }
+}

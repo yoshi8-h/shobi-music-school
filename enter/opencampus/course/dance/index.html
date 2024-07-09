@@ -5,16 +5,69 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ダンス学科 | オープンキャンパス プログラム | 音楽を仕事にする学校 尚美ミュージックカレッジ専門学校</title>
   <!--#include virtual="/include/head_end.shtml" -->
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+JP:wght@100..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/lib/common/css/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="/lib/common/css/style.css" type="text/css" media="all" />  <!-- reset.cssの役割 -->
+  <link rel="stylesheet" href="/lib/pages/opencampus/css/style.css" type="text/css" media="all" />  <!-- 全てのhtmlファイルに必須 -->
   <link rel="stylesheet" href="/lib/pages/opencampus/course/css/style.css" type="text/css" media="all" />
 </head>
 <body id="dance">
+  <!-- header -->
+  <header class="header">
+    <a href="#" class="header__logo">
+      <picture>
+        <source media="(min-width: 769px)" srcset="../../../../lib/common/img/logo.png">
+        <img src="../../../../lib/common/img/logo-sp.png" alt="ロゴ">
+      </picture>
+    </a>
+  </header>
+
   <!--#include virtual="/include/header.shtml" -->
+
   <main>
+    <!-- c-fv -->
+    <div class="c-fv">
+      <div class="c-fv__inner inner">
+        <div class="c-fv__titles">
+          <p class="c-fv__title">OPEN CAMPUS</p>
+          <div class="c-fv__title-bg"><img src="../../../../lib/pages/opencampus/course/img/c-fv_title-bg.png" alt="黒い背景"></div>
+        </div>
+      </div>
+    </div>
 
   </main>
+
   <!--#include virtual="/include/footer.shtml" -->
+  <footer class="footer">
+    <div class="footer__wrap">
+      <a href="#" class="footer__logo">
+        <picture class="footer__img">
+          <source media="(min-width: 769px)" srcset="../../../../lib/common/img/footer-logo.png">
+          <img src="../../../../lib/common/img/footer-logo-sp.png" alt="ロゴ">
+        </picture>
+      </a>
+      <small class="footer__copyright">Copyright(C)2024 SHOBI College of Music All Rights Reserved.</small>
+    </div>
+  </footer>
+
+  <!-- トップへ戻るボタン -->
+  <a href="#" id="js-top-btn" class="top-btn"><img src="../../../../lib/common/img/top-btn.png" alt="TOPへ戻るボタン"></a>
+
 
   <!--#include virtual="/include/body_end.shtml" -->
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>  <!-- GSAPをCDNで読込み -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>  <!-- GSAPのプラグイン「ScrollTrigger」をCDNで読込み -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>  <!-- GSAPのプラグイン「ScrollTo」をCDNで読込み -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/CustomEase.min.js"></script>  <!-- GSAPのプラグイン「CustomEase」をCDNで読込み -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>  <!-- jQuery -->
+  <script src="/lib/common/js/swiper-bundle.min.js"></script>  <!-- swiper -->
   <script type="text/javascript" src="/lib/pages/opencampus/course/js/scripts.js"></script>
 </body>
 </html>
