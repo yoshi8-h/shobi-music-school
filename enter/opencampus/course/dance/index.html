@@ -32,14 +32,120 @@
 
   <main>
     <!-- c-fv -->
-    <div class="c-fv">
+    <div class="c-fv">  <!-- 背景画像は、『c-fv_bg-dance.png』/『『c-fv_bg-dance-sp.png』』という命名規則(danceの部分を適宜変更)にて『scss』内にて定義済み -->
       <div class="c-fv__inner inner">
         <div class="c-fv__titles">
-          <p class="c-fv__title">OPEN CAMPUS</p>
-          <div class="c-fv__title-bg"><img src="../../../../lib/pages/opencampus/course/img/c-fv_title-bg.png" alt="黒い背景"></div>
+          <div class="c-fv__title">
+            OPEN CAMPUS
+            <div class="c-fv__title-names">
+              <p class="c-fv__school-name">SHOBI</p>
+              <div class="c-fv__course-name"><img src="../../../../lib/pages/opencampus/course/img/course_name-dance.svg" alt="ダンス学科"></div>
+            </div>
+          </div>
+          <picture class="c-fv__title-bg">
+            <source media="(min-width: 769px)" srcset="../../../../lib/pages/opencampus/course/img/c-fv_title-bg.svg">
+            <img src="../../../../lib/pages/opencampus/course/img/c-fv_title-bg-sp.svg" alt="黒い背景">
+          </picture>
         </div>
       </div>
+      <div class="c-fv__bottom">
+        <div class="c-fv__course-text">DANCE</div>
+        <p class="c-fv__message">多くのダンサーを輩出してきた実績！ プロになるためのすべてがここにある！</p>
+      </div>
     </div>
+
+     <!-- topics セクション -->
+     <section class="topics">
+      <div class="topics__line-bottom line-bottom"></div>
+      <h3 class="topics__title section-title js-fadeInUp">
+        <picture class="section-title__img">
+          <source media="(min-width: 769px)" srcset="../../lib/pages/opencampus/img/section-title-topics.png">
+          <img src="../../lib/pages/opencampus/img/section-title-topics-sp.png" alt="TOPICS">
+        </picture>
+        <div class="section-title__left"><img src="../../lib/pages/opencampus/img/section-title-left.png" alt="左側のアイコン"></div>
+        <div class="section-title__right"><img src="../../lib/pages/opencampus/img/section-title-right.png" alt="右側のアイコン"></div>
+      </h3>
+      <div class="topics__middle">
+        <div id="js-topics-swiper" class="topics__swiper swiper">  <!-- swiper -->
+          <div class="topics__cards cards swiper-wrapper">
+            <button class="cards__item card swiper-slide js-modal-open" data-modal="1">
+              <div class="card__wrap">
+                <div class="card__img"><img src="../../lib/pages/opencampus/img/slide-01.png" alt="写真01"></div>
+                <p class="card__button">全日程対象！<br>参加時の交通費を補助します！</p>
+              </div>
+            </button>
+            <button class="cards__item card swiper-slide js-modal-open" data-modal="2">
+              <div class="card__wrap">
+                <div class="card__img"><img src="../../lib/pages/opencampus/img/slide-02.png" alt="写真02"></div>
+                <p class="card__button">AO入学エントリー資格の認定</p>
+              </div>
+            </button>
+            <button class="cards__item card swiper-slide js-modal-open" data-modal="3">
+              <div class="card__wrap">
+                <div class="card__img"><img src="../../lib/pages/opencampus/img/slide-03.png" alt="写真03"></div>
+                <p class="card__button">７月・8月限定夏休み特別企画！<br>01　無料体験入寮</p>
+              </div>
+            </button>
+            <button class="cards__item card swiper-slide js-modal-open" data-modal="4">
+              <div class="card__wrap">
+                <div class="card__img"><img src="../../lib/pages/opencampus/img/slide-04.png" alt="写真04"></div>
+                <p class="card__button">実技試験、面接の免除！<br>入学選考優遇制度</p>
+              </div>
+            </button>
+            <button class="cards__item card swiper-slide js-modal-open" data-modal="5">
+              <div class="card__wrap">
+                <div class="card__img"><img src="../../lib/pages/opencampus/img/slide-05.png" alt="写真05"></div>
+                <p class="card__button">保護者・ご家族向け説明会<br>学費・奨学金・入学制度など</p>
+              </div>
+            </button>
+            <!-- <button class="cards__item card swiper-slide">
+              <div class="card__wrap">
+                <div class="card__img"><img src="../../lib/pages/opencampus/img/slide-01.png" alt="写真01"></div>
+                <p class="card__button">全日程対象！<br>参加時の交通費を補助します！</p>
+              </div>
+            </button> -->
+            <!-- <button class="cards__item card swiper-slide">
+              <div class="card__wrap">
+                <div class="card__img"><img src="../../lib/pages/opencampus/img/slide-02.png" alt="写真02"></div>
+                <p class="card__button">AO入学エントリー資格の認定</p>
+              </div>
+            </button> -->
+            <button class="cards__item card swiper-slide js-modal-open" data-modal="6">
+              <div class="card__wrap">
+                <div class="card__img"><img src="../../lib/pages/opencampus/img/slide-03.png" alt="写真03"></div>
+                <p class="card__button">７月・8月限定夏休み特別企画！<br>01　無料体験入寮</p>
+              </div>
+            </button>
+            <button class="cards__item card swiper-slide js-modal-open" data-modal="7">
+              <div class="card__wrap">
+                <div class="card__img"><img src="../../lib/pages/opencampus/img/slide-04.png" alt="写真04"></div>
+                <p class="card__button">実技試験、面接の免除！<br>入学選考優遇制度</p>
+              </div>
+            </button>
+            <!-- <button class="cards__item card swiper-slide">
+              <div class="card__wrap">
+                <div class="card__img"><img src="../../lib/pages/opencampus/img/slide-05.png" alt="写真05"></div>
+                <p class="card__button">保護者・ご家族向け説明会<br>学費・奨学金・入学制度など</p>
+              </div>
+            </button> -->
+          </div>
+        </div>
+        <div class="topics__arrows">  <!-- swiperの「前へ」「次へ」ボタン -->
+          <div id="js-topics-prev" class="topics__prev swiper-button-prev">
+            <div class="topics__prev-img">
+              <img src="../../lib/pages/opencampus/img/arrow-prev.png" alt="前へボタン">
+            </div>
+          </div>
+          <div id="js-topics-next" class="topics__next swiper-button-next">
+            <div class="topics__next-img">
+              <img src="../../lib/pages/opencampus/img/arrow-next.png" alt="次へボタン">
+            </div>
+          </div>
+        </div>
+        <div id="js-topics-pagination" class="swiper-pagination topics__pagination"></div>  <!-- ページネーション -->
+      </div>
+    </section>
+
 
   </main>
 

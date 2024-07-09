@@ -33,6 +33,22 @@ $color-background-base: #F8F7F0;
 $color-accent1: #00DEC7;
 
 
+/* ======================================== */
+/* それぞれの『学科』の色(テーマカラー)を定義 */
+$theme-color-academy: #C10147;
+$theme-color-arrangecompose: #29B5B2;
+$theme-color-dance: #E9545D;
+$theme-color-jazzpop: #015DAE;
+$theme-color-musical: #F29600;
+$theme-color-musicbusiness: #F4C200;
+$theme-color-promusician: #D70C18;
+$theme-color-soundvisuallighting: #0098D8;
+$theme-color-vocal: #E75297;
+$theme-color-voiceactor: #7FBE26;
+$theme-color-wind: #008532;
+/* ======================================== */
+
+
 body {
   font-family: $font-family-base;
   font-weight: $bold;
