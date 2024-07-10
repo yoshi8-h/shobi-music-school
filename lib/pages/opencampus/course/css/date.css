@@ -7,3 +7,806 @@ body {
   font-weight: 700;
   line-height: 1.4;
 }
+
+@media print, screen and (min-width: 769px) {
+  .details {
+    padding-top: 10.9375rem;
+    padding-bottom: 5rem;
+    position: relative;
+  }
+  .details::before {
+    content: "";
+    width: 100%;
+    height: 17.8125rem;
+    background: url(../img/details-bg.svg) no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  .details__titles {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 1.875rem;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-right: auto;
+  }
+  .details__title-course {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .details__title-text {
+    color: #000;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .box2 {
+    margin-top: 1.75rem;
+    width: 100%;
+    border-radius: 1.25rem;
+    position: relative;
+    overflow: hidden;
+  }
+  .box2::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    opacity: 0.15;
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+  }
+  /* ============================================================================= */
+  /* 各学科のページ個別の指定 (bodyタグのidで制御) */
+  #dance .box2::after {
+    background: #E9545D;
+  }
+  #dance .details__title-course {
+    color: #E9545D;
+  }
+  #dance .box2__top {
+    background: #E9545D;
+  }
+  #dance .box2__lesson {
+    border-left: 4px solid #E9545D;
+  }
+  #dance .lesson__label {
+    background: #E9545D;
+  }
+  #dance .lesson__title {
+    color: #E9545D;
+  }
+  #dance .lesson__teacher-name {
+    color: #E9545D;
+  }
+  #academy .box2::after {
+    background: #C10147;
+  }
+  #academy .details__title-course {
+    color: #C10147;
+  }
+  #academy .box2__top {
+    background: #C10147;
+  }
+  #academy .box2__lesson {
+    border-left: 4px solid #C10147;
+  }
+  #academy .lesson__label {
+    background: #C10147;
+  }
+  #academy .lesson__title {
+    color: #C10147;
+  }
+  #academy .lesson__teacher-name {
+    color: #C10147;
+  }
+  #arrangecompose .box2::after {
+    background: #29B5B2;
+  }
+  #arrangecompose .details__title-course {
+    color: #29B5B2;
+  }
+  #arrangecompose .box2__top {
+    background: #29B5B2;
+  }
+  #arrangecompose .box2__lesson {
+    border-left: 4px solid #29B5B2;
+  }
+  #arrangecompose .lesson__label {
+    background: #29B5B2;
+  }
+  #arrangecompose .lesson__title {
+    color: #29B5B2;
+  }
+  #arrangecompose .lesson__teacher-name {
+    color: #29B5B2;
+  }
+  #jazzpop .box2::after {
+    background: #015DAE;
+  }
+  #jazzpop .details__title-course {
+    color: #015DAE;
+  }
+  #jazzpop .box2__top {
+    background: #015DAE;
+  }
+  #jazzpop .box2__lesson {
+    border-left: 4px solid #015DAE;
+  }
+  #jazzpop .lesson__label {
+    background: #015DAE;
+  }
+  #jazzpop .lesson__title {
+    color: #015DAE;
+  }
+  #jazzpop .lesson__teacher-name {
+    color: #015DAE;
+  }
+  #musical .box2::after {
+    background: #F29600;
+  }
+  #musical .details__title-course {
+    color: #F29600;
+  }
+  #musical .box2__top {
+    background: #F29600;
+  }
+  #musical .box2__lesson {
+    border-left: 4px solid #F29600;
+  }
+  #musical .lesson__label {
+    background: #F29600;
+  }
+  #musical .lesson__title {
+    color: #F29600;
+  }
+  #musical .lesson__teacher-name {
+    color: #F29600;
+  }
+  #musicbusiness .box2::after {
+    background: #F4C200;
+  }
+  #musicbusiness .details__title-course {
+    color: #F4C200;
+  }
+  #musicbusiness .box2__top {
+    background: #F4C200;
+  }
+  #musicbusiness .box2__lesson {
+    border-left: 4px solid #F4C200;
+  }
+  #musicbusiness .lesson__label {
+    background: #F4C200;
+  }
+  #musicbusiness .lesson__title {
+    color: #F4C200;
+  }
+  #musicbusiness .lesson__teacher-name {
+    color: #F4C200;
+  }
+  #promusician .box2::after {
+    background: #D70C18;
+  }
+  #promusician .details__title-course {
+    color: #D70C18;
+  }
+  #promusician .box2__top {
+    background: #D70C18;
+  }
+  #promusician .box2__lesson {
+    border-left: 4px solid #D70C18;
+  }
+  #promusician .lesson__label {
+    background: #D70C18;
+  }
+  #promusician .lesson__title {
+    color: #D70C18;
+  }
+  #promusician .lesson__teacher-name {
+    color: #D70C18;
+  }
+  #soundvisuallighting .box2::after {
+    background: #0098D8;
+  }
+  #soundvisuallighting .details__title-course {
+    color: #0098D8;
+  }
+  #soundvisuallighting .box2__top {
+    background: #0098D8;
+  }
+  #soundvisuallighting .box2__lesson {
+    border-left: 4px solid #0098D8;
+  }
+  #soundvisuallighting .lesson__label {
+    background: #0098D8;
+  }
+  #soundvisuallighting .lesson__title {
+    color: #0098D8;
+  }
+  #soundvisuallighting .lesson__teacher-name {
+    color: #0098D8;
+  }
+  #vocal .box2::after {
+    background: #E75297;
+  }
+  #vocal .details__title-course {
+    color: #E75297;
+  }
+  #vocal .box2__top {
+    background: #E75297;
+  }
+  #vocal .box2__lesson {
+    border-left: 4px solid #E75297;
+  }
+  #vocal .lesson__label {
+    background: #E75297;
+  }
+  #vocal .lesson__title {
+    color: #E75297;
+  }
+  #vocal .lesson__teacher-name {
+    color: #E75297;
+  }
+  #voiceactor .box2::after {
+    background: #7FBE26;
+  }
+  #voiceactor .details__title-course {
+    color: #7FBE26;
+  }
+  #voiceactor .box2__top {
+    background: #7FBE26;
+  }
+  #voiceactor .box2__lesson {
+    border-left: 4px solid #7FBE26;
+  }
+  #voiceactor .lesson__label {
+    background: #7FBE26;
+  }
+  #voiceactor .lesson__title {
+    color: #7FBE26;
+  }
+  #voiceactor .lesson__teacher-name {
+    color: #7FBE26;
+  }
+  #wind .box2::after {
+    background: #008532;
+  }
+  #wind .details__title-course {
+    color: #008532;
+  }
+  #wind .box2__top {
+    background: #008532;
+  }
+  #wind .box2__lesson {
+    border-left: 4px solid #008532;
+  }
+  #wind .lesson__label {
+    background: #008532;
+  }
+  #wind .lesson__title {
+    color: #008532;
+  }
+  #wind .lesson__teacher-name {
+    color: #008532;
+  }
+  /* ============================================================================= */
+  .box2__img {
+    width: 31.25rem;
+    border-radius: 0px 0px 1.25rem 1.25rem;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 3rem;
+  }
+  .box2__img img {
+    width: 100%;
+    aspect-ratio: 500/258;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .box2__wrap {
+    padding-top: 3.125rem;
+    padding-inline: 3rem;
+    padding-bottom: 4.0625rem;
+  }
+  .box2__top {
+    padding-top: 3.125rem;
+    padding-inline: 3rem;
+    padding-bottom: 2.5rem;
+  }
+  .box2__top-wrap {
+    width: 48%;
+    margin-left: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 1.25rem;
+  }
+  .box2__top-left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .box2__date {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    gap: 0.625rem;
+  }
+  .box2__year {
+    color: #FFF;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-size: 1.625rem;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 1;
+  }
+  .box2__month {
+    color: #FFF;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-size: 2.75rem;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: -0.1875rem;
+  }
+  .box2__week {
+    color: #FFF;
+    text-align: center;
+    leading-trim: both;
+    text-edge: cap;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1;
+    position: relative;
+    margin-bottom: 0.375rem;
+    margin-left: 0.375rem;
+  }
+  .box2__week::after {
+    content: "";
+    width: 1.75rem;
+    height: 1.75rem;
+    border-radius: 50%;
+    border: 0.0625rem solid #FFF;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  .box2__label {
+    margin-top: 1.25rem;
+    width: 12.125rem;
+    position: relative;
+  }
+  .box2__label img {
+    width: 100%;
+  }
+  .box2__label-text {
+    color: #000;
+    text-align: center;
+    font-size: 0.8125rem;
+    font-weight: 700;
+    line-height: normal;
+    position: absolute;
+    top: 50%;
+    left: 0.3125rem;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  .box2__top-times {
+    margin-top: 1.125rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    gap: 0.9375rem;
+  }
+  .box2__top-text {
+    color: #FFF;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .box2__top-time {
+    color: #FFF;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-size: 1.625rem;
+    font-style: italic;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: -0.25rem;
+  }
+  .box2__btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 15.4375rem;
+    border-radius: 3.4375rem;
+    background: #FFF;
+    -webkit-box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.25);
+            box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.25);
+    padding-top: 1.875rem;
+    padding-bottom: 1.75rem;
+    padding-left: 2.5rem;
+    padding-right: 1.8125rem;
+    -webkit-transition: -webkit-transform 0.2s ease-out, -webkit-box-shadow 0.2s ease-out;
+    transition: -webkit-transform 0.2s ease-out, -webkit-box-shadow 0.2s ease-out;
+    transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
+    transition: transform 0.2s ease-out, box-shadow 0.2s ease-out, -webkit-transform 0.2s ease-out, -webkit-box-shadow 0.2s ease-out;
+  }
+  .box2__btn:hover {
+    -webkit-transform: translateY(0.1875rem);
+            transform: translateY(0.1875rem);
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .box2__btn:hover .box2__btn-arrow {
+    -webkit-transform: translateX(0.3125rem);
+            transform: translateX(0.3125rem);
+  }
+  .box2__btn-text {
+    color: #000;
+    leading-trim: both;
+    text-edge: cap;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.2px;
+  }
+  .box2__btn-arrow {
+    width: 0.8125rem;
+    -webkit-transition: -webkit-transform 0.2s ease-out;
+    transition: -webkit-transform 0.2s ease-out;
+    transition: transform 0.2s ease-out;
+    transition: transform 0.2s ease-out, -webkit-transform 0.2s ease-out;
+  }
+  .box2__btn-arrow img {
+    width: 100%;
+  }
+  .box2__middle {
+    padding-bottom: 2.9375rem;
+    border-bottom: 2px solid #FFF;
+  }
+  .box2__middle-top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    gap: 1.5625rem;
+  }
+  .box2__middle-bottom {
+    margin-top: 3.125rem;
+  }
+  .box2__lesson {
+    padding-left: 1.25rem;
+    -ms-flex-negative: 1;
+        flex-shrink: 1;
+  }
+  .lesson__tags {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-column-gap: 0.25rem;
+       -moz-column-gap: 0.25rem;
+            column-gap: 0.25rem;
+    row-gap: 0.375rem;
+    width: 32.125rem;
+  }
+  .lesson__tag {
+    border-radius: 0.1875rem;
+    padding-block: 0.1875rem;
+    padding-inline: 0.375rem;
+    background: rgba(255, 255, 255, 0.7);
+    color: #000;
+    text-align: center;
+    leading-trim: both;
+    text-edge: cap;
+    font-size: 0.8125rem;
+    font-weight: 700;
+    line-height: 1.4;
+  }
+  .lesson__bottom {
+    margin-top: 1.25rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 1.25rem;
+  }
+  .lesson__bottom .is-bottom {
+    min-width: 100%;
+  }
+  .lesson__contents {
+    max-width: 25rem;
+  }
+  .lesson__contents .is-bottom {
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    max-width: 100%;
+    max-width: 37.5rem;
+  }
+  .lesson__titles {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 0.75rem;
+  }
+  .lesson__label {
+    color: #FFF;
+    text-align: center;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-size: 1rem;
+    font-style: italic;
+    font-weight: 600;
+    line-height: 1.4;
+    padding-block: 0.1875rem;
+    padding-left: 0.375rem;
+    padding-right: 0.9375rem;
+    border-radius: 0px 0.9375rem 0.9375rem 0px;
+  }
+  .lesson__title {
+    leading-trim: both;
+    text-edge: cap;
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.4;
+  }
+  .lesson__teacher-name {
+    margin-top: 0.625rem;
+    text-align: right;
+    leading-trim: both;
+    text-edge: cap;
+    font-size: 0.9375rem;
+    font-weight: 400;
+    line-height: 1.6;
+  }
+  .lesson__text {
+    color: #000;
+    leading-trim: both;
+    text-edge: cap;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.6;
+  }
+  .lesson__sub-text {
+    color: #000;
+    leading-trim: both;
+    text-edge: cap;
+    font-size: 0.75rem;
+    font-weight: 400;
+    line-height: 1.6;
+  }
+  .lesson__teacher-img {
+    width: 4.625rem;
+  }
+  .lesson__teacher-img img {
+    width: 100%;
+  }
+  .box2__bottom {
+    padding-top: 2.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    gap: 3.75rem;
+  }
+  .box2__bottom-left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    gap: 1.375rem;
+  }
+  .box2__tag {
+    padding-block: 0.8125rem;
+    padding-left: 0.625rem;
+    padding-right: 1.4375rem;
+    border-radius: 0px 1.875rem 1.875rem 0px;
+    background: #FFF;
+    color: #006CB6;
+    text-align: center;
+    leading-trim: both;
+    text-edge: cap;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.6;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .date__bottom-text {
+    color: #000;
+    leading-trim: both;
+    text-edge: cap;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.6;
+  }
+  .box2__bottom-right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    gap: 1.375rem;
+  }
+  .box2__bottom-right-right {
+    margin-top: 0.6875rem;
+  }
+  .box2__bottom-right-head {
+    color: #000;
+    leading-trim: both;
+    text-edge: cap;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.6;
+  }
+  .box2__bottom-right-head .is-blue {
+    color: #006CB6;
+  }
+  .box2__bottom-right-time {
+    margin-top: 0.625rem;
+    color: #000;
+    leading-trim: both;
+    text-edge: cap;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.6;
+  }
+  .box2__last-text {
+    margin-top: 2.5rem;
+    color: #000;
+    leading-trim: both;
+    text-edge: cap;
+    font-size: 0.75rem;
+    font-weight: 400;
+    line-height: 1.6;
+  }
+  .details__button {
+    display: block;
+    margin-top: 1.5625rem;
+    margin-left: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 1.875rem;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding-inline: 1.25rem;
+    margin-left: auto;
+    position: relative;
+  }
+  .details__button:hover .details__button-arrow {
+    -webkit-transform: translateX(-0.5rem);
+            transform: translateX(-0.5rem);
+  }
+  .details__button::after {
+    content: "";
+    width: 100%;
+    height: 0.125rem;
+    background: #006CB6;
+    position: absolute;
+    bottom: -0.625rem;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  .details__button-arrow {
+    width: 0.5625rem;
+    -webkit-transition: -webkit-transform 0.2s ease-out;
+    transition: -webkit-transform 0.2s ease-out;
+    transition: transform 0.2s ease-out;
+    transition: transform 0.2s ease-out, -webkit-transform 0.2s ease-out;
+  }
+  .details__button-arrow img {
+    width: 100%;
+  }
+  .details__button-test {
+    color: #006CB6;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+}

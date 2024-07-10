@@ -4,16 +4,244 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ダンス学科 ○月○日 オープンキャンパスの詳細 | オープンキャンパス プログラム | 音楽を仕事にする学校 尚美ミュージックカレッジ専門学校</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+JP:wght@100..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/lib/common/css/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="/lib/common/css/style.css" type="text/css" media="all" />  <!-- reset.cssの役割 -->
+  <link rel="stylesheet" href="/lib/pages/opencampus/css/style.css" type="text/css" media="all" />  <!-- 全てのhtmlファイルに必須 -->
+  <link rel="stylesheet" href="/lib/pages/opencampus/course/css/style.css" type="text/css" media="all" />
   <link rel="stylesheet" href="/lib/pages/opencampus/course/css/date.css" type="text/css" media="all" />
 </head>
-<body>
+<body id="dance">
+  <!-- header -->
+  <header class="header">
+    <a href="#" class="header__logo">
+      <picture>
+        <source media="(min-width: 769px)" srcset="../../../../lib/common/img/logo.png">
+        <img src="../../../../lib/common/img/logo-sp.png" alt="ロゴ">
+      </picture>
+    </a>
+  </header>
+
   <!--#include virtual="/include/header.shtml" -->
+
   <main>
 
+    <div class="details">
+      <div class="details__inner inner">
+        <div class="details__titles">
+          <div class="details__title-course">ダンス学科</div>
+          <div class="details__title-text">オープンキャンパスの詳細</div>
+        </div>
+        <div class="details__box box2">
+          <div class="box2__img"><img src="../../../../lib/pages/opencampus/course/img/detail-img-dance.png" alt="写真(dance)"></div>
+          <div class="box2__top">
+            <div class="box2__top-wrap">
+              <div class="box2__top-left">
+                <div class="box2__date">
+                  <div class="box2__year">2024</div>
+                  <div class="box2__month">05/20</div>
+                  <div class="box2__week">日</div>
+                </div>
+                <div class="box2__label">
+                  <img src="../../../../lib/pages/opencampus/course/img/box2_label-yellow.png" alt="黄色いラベル">
+                  <p class="box2__label-text">AO入学エントリー資格認定日</p>
+                </div>
+                <div class="box2__top-times">
+                  <div class="box2__top-text">開催時間</div>
+                  <div class="box2__top-time">10:30～15:00</div>
+                </div>
+              </div>
+              <div class="box2__top-right">
+                <a href="#" class="box2__btn">
+                  <p class="box2__btn-text">参加申込み</p>
+                  <div class="box2__btn-arrow"><img src="../../../../lib/pages/opencampus/course/img/box2_btn-arrow.svg" alt="黒い矢印"></div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="box2__wrap">
+            <div class="box2__middle">
+              <div class="box2__middle-top">
+                <div class="box2__lesson">
+                  <div class="lesson__tags">
+                    <div class="lesson__tag">初参加の方</div>
+                    <div class="lesson__tag">リピーターの方</div>
+                    <div class="lesson__tag">初参加の方（希望者のみ）</div>
+                    <div class="lesson__tag">リピーターの方（希望者のみ）</div>
+                  </div>
+                  <div class="lesson__bottom">
+                    <div class="lesson__contents">
+                      <div class="lesson__titles">
+                        <div class="lesson__label">SPECIAL</div>
+                        <div class="lesson__title">ヒップホップレッスン</div>
+                      </div>
+                      <div class="lesson__teacher-name">講師：YUMiKA</div>
+                      <p class="lesson__text">パワフルなダンステクニックを習えるチャンス！ステージでの“見せ方”まで学ぼう！</p>
+                    </div>
+                    <div class="lesson__teacher-img"><img src="../../../../lib/pages/opencampus/course/img/lesson_teacher-img-01.png" alt="講師の顔写真01"></div>
+                  </div>
+                </div>
+                <div class="box2__lesson">
+                  <div class="lesson__tags">
+                    <div class="lesson__tag">リピーターの方</div>
+                  </div>
+                  <div class="lesson__bottom">
+                    <div class="lesson__contents">
+                      <div class="lesson__titles">
+                        <div class="lesson__label">SPECIAL</div>
+                        <div class="lesson__title">ダンスの基礎レッスン ～STEPPER～</div>
+                      </div>
+                      <div class="lesson__teacher-name">講師：ERI</div>
+                      <p class="lesson__text">優秀な成績を収めたダンス学科卒業生、STEPPERによるレッスン。基礎から学んで次のレッスンに備えよう！</p>
+                    </div>
+                    <div class="lesson__teacher-img"><img src="../../../../lib/pages/opencampus/course/img/lesson_teacher-img-02.png" alt="講師の顔写真02"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="box2__middle-bottom">
+                <div class="box2__lesson">
+                  <div class="lesson__tags">
+                    <div class="lesson__tag">初参加の方（希望者のみ）</div>
+                  </div>
+                  <div class="lesson__bottom is-bottom">
+                    <div class="lesson__contents is-bottom">
+                      <div class="lesson__titles">
+                        <div class="lesson__title">ダンス初心者のためのベーシックレッスン</div>
+                      </div>
+                      <p class="lesson__text">初めてでも大丈夫！午後のダンスレッスンに向けて身体の使い方を基礎から学ぼう！（10:30～）</p>
+                      <p class="lesson__sub-text">※受講ご希望の方はお申込時に「ベーシックレッスン希望」とご記入ください</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="box2__bottom">
+              <div class="box2__bottom-left">
+                <div class="box2__tag">持ちもの</div>
+                <div class="box2__bottom-left-right">
+                  <p class="date__bottom-text">ダンスレッスン用に下記をお持ちください。</p>
+                  <ul class="date__list">
+                    <li class="date__list-item">レッスン着（スエット・Tシャツなど。ジャージ可）</li>
+                    <li class="date__list-item">ダンスシューズ（スニーカーなど。上履き可）</li>
+                    <li class="date__list-item">タオル</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="box2__bottom-right">
+                <div class="box2__tag">集合時間</div>
+                <div class="box2__bottom-right-right">
+                  <p class="box2__bottom-right-head"><span class="is-blue">▶ </span>初参加の方／リピーターの方</p>
+                  <div class="box2__bottom-right-time">開始時間 12:30（終了予定16:30）</div>
+                </div>
+              </div>
+            </div>
+            <p class="box2__last-text">※前回の参加から時間が経っている方は「初参加」の方向けの講座をご案内する場合があります</p>
+          </div>
+        </div>
+        <a href="#" class="details__button js-modal-open" data-modal="1">
+          <div class="details__button-arrow"><img src="../../../../lib/pages/opencampus/course/img/details_button-arrow.svg" alt="青い矢印"></div>
+          <p class="details__button-test">一覧に戻る</p>
+        </a>
+      </div>
+    </div>
+
+    <!-- モーダル (全日程) -->
+    <dialog id="js-date-modal-1" class="date-modal">
+      <div class="date-modal__wrap">
+        <button class="date-modal__close js-modal-close" data-modal="1"><img src="../../../../lib/pages/opencampus/course/img/modal-close.png" alt="×"></button>
+        <div class="date-modal__top">
+          <div class="date-modal__titles">
+            <div class="date-modal__title-tag">SPECIAL</div>
+            <p class="date-modal__title-main">ダンスの基礎レッスン ～STEPPER～</p>
+          </div>
+          <div class="date-modal__teacher">講師：〇〇〇〇〇〇</div>
+        </div>
+        <div class="date-modal__box">
+          <div class="date-modal__tags">
+            <div class="date-modal__tag">初参加の方</div>
+            <div class="date-modal__tag">リピーターの方</div>
+            <div class="date-modal__tag">初参加の方（希望者のみ）</div>
+            <div class="date-modal__tag">リピーターの方（希望者のみ）</div>
+          </div>
+          <div class="date-modal__days">
+            <a href="#" class="date-modal__day">
+              <div class="date-modal__day-text1">06/23</div>
+              <div class="date-modal__day-text2">日</div>
+              <div class="date-modal__day-arrow"><img src="../../../../lib/pages/opencampus/course/img/day-arrow.svg" alt="黒い矢印"></div>
+            </a>
+            <a href="#" class="date-modal__day">
+              <div class="date-modal__day-text1">06/30</div>
+              <div class="date-modal__day-text2">日</div>
+              <div class="date-modal__day-arrow"><img src="../../../../lib/pages/opencampus/course/img/day-arrow.svg" alt="黒い矢印"></div>
+            </a>
+            <a href="#" class="date-modal__day">
+              <div class="date-modal__day-text1">07/07</div>
+              <div class="date-modal__day-text2">日</div>
+              <div class="date-modal__day-arrow"><img src="../../../../lib/pages/opencampus/course/img/day-arrow.svg" alt="黒い矢印"></div>
+            </a>
+            <a href="#" class="date-modal__day">
+              <div class="date-modal__day-text1">07/14</div>
+              <div class="date-modal__day-text2">日</div>
+              <div class="date-modal__day-arrow"><img src="../../../../lib/pages/opencampus/course/img/day-arrow.svg" alt="黒い矢印"></div>
+            </a>
+            <a href="#" class="date-modal__day">
+              <div class="date-modal__day-text1">07/21</div>
+              <div class="date-modal__day-text2">日</div>
+              <div class="date-modal__day-arrow"><img src="../../../../lib/pages/opencampus/course/img/day-arrow.svg" alt="黒い矢印"></div>
+            </a>
+            <a href="#" class="date-modal__day">
+              <div class="date-modal__day-text1">07/29</div>
+              <div class="date-modal__day-text2">日</div>
+              <div class="date-modal__day-arrow"><img src="../../../../lib/pages/opencampus/course/img/day-arrow.svg" alt="黒い矢印"></div>
+            </a>
+            <a href="#" class="date-modal__day">
+              <div class="date-modal__day-text1">08/23</div>
+              <div class="date-modal__day-text2">日</div>
+              <div class="date-modal__day-arrow"><img src="../../../../lib/pages/opencampus/course/img/day-arrow.svg" alt="黒い矢印"></div>
+            </a>
+            <a href="#" class="date-modal__day">
+              <div class="date-modal__day-text1">11/23</div>
+              <div class="date-modal__day-text2">日</div>
+              <div class="date-modal__day-arrow"><img src="../../../../lib/pages/opencampus/course/img/day-arrow.svg" alt="黒い矢印"></div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </dialog>
+
   </main>
+
   <!--#include virtual="/include/footer.shtml" -->
 
+  <footer class="footer">
+    <div class="footer__wrap">
+      <a href="#" class="footer__logo">
+        <picture class="footer__img">
+          <source media="(min-width: 769px)" srcset="../../../../lib/common/img/footer-logo.png">
+          <img src="../../../../lib/common/img/footer-logo-sp.png" alt="ロゴ">
+        </picture>
+      </a>
+      <small class="footer__copyright">Copyright(C)2024 SHOBI College of Music All Rights Reserved.</small>
+    </div>
+  </footer>
+
+  <!-- トップへ戻るボタン -->
+  <a href="#" id="js-top-btn" class="top-btn"><img src="../../../../lib/common/img/top-btn.png" alt="TOPへ戻るボタン"></a>
+
   <!--#include virtual="/include/body_end.shtml" -->
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>  <!-- GSAPをCDNで読込み -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>  <!-- GSAPのプラグイン「ScrollTrigger」をCDNで読込み -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>  <!-- GSAPのプラグイン「ScrollTo」をCDNで読込み -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/CustomEase.min.js"></script>  <!-- GSAPのプラグイン「CustomEase」をCDNで読込み -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>  <!-- jQuery -->
+  <script src="/lib/common/js/swiper-bundle.min.js"></script>  <!-- swiper -->
   <script type="text/javascript" src="/lib/pages/opencampus/course/js/date.js"></script>
 </body>
 </html>
