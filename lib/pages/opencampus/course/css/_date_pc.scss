@@ -33,6 +33,8 @@
     gap: rem(30);
     width: fit-content;
     margin-right: auto;
+    position: relative;
+    z-index: 30;
   }
 
   .details__title-course{
@@ -891,29 +893,6 @@
     font-weight: $bold;
     line-height: normal;
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

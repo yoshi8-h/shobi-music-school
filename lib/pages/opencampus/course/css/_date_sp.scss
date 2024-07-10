@@ -6,7 +6,916 @@
 
 @include mq(sp){
 
+  .details{
+    padding-top: rem(80);
+    padding-bottom: rem(80);
+    position: relative;
+  }
 
+  .details::before {  // 背景画像 (上部分の模様)
+    content: "";
+    width: 100%;
+    height: rem(150);
+    background: url(../img/details-bg.svg) no-repeat center center / cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .details__inner{
+  }
+
+  .details__titles{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: rem(10);
+    width: fit-content;
+    margin-inline: auto;
+    position: relative;
+    z-index: 30;
+  }
+
+  .details__title-course{
+    font-size: rem(28);
+    font-weight: $bold;
+    line-height: normal;
+  }
+
+  .details__title-text{
+    color: #000;
+    font-size: rem(20);
+    font-weight: $bold;
+    line-height: normal;
+  }
+
+  .details__box{
+  }
+
+
+  .box2 {
+    margin-top: rem(28);
+    width: 100%;
+    max-width: rem(550);
+    margin-inline: auto;
+    border-radius: rem(15);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .box2::after {  // 背景色 (各学科のテーマカラーの15%の濃さ) →背景色以外をここで指定。背景色は以下で制御して指定。
+    content: "";
+    width: 100%;
+    height: 100%;
+    opacity: 0.15;
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+  }
+
+  /* ============================================================================= */
+  /* 各学科のページ個別の指定 (bodyタグのidで制御) */
+   // 背景色 (各学科のテーマカラーの15%の濃さ)
+
+  // ダンス学科 (dance)
+  #dance {
+    .box2::after {
+      background: $theme-color-dance;
+    }
+
+    .details__title-course{
+      color: $theme-color-dance;
+    }
+
+    .box2__top {
+      background: $theme-color-dance;
+    }
+
+    .box2__lesson{
+      border-left: 4px solid $theme-color-dance;
+    }
+
+    .lesson__label{
+      background: $theme-color-dance;
+    }
+
+    .lesson__title{
+      color: $theme-color-dance;
+    }
+
+    .lesson__teacher-name{
+      color: $theme-color-dance;
+    }
+  }
+
+  // 音楽総合アカデミー学科 (academy)
+  #academy {
+    .box2::after {
+      background: $theme-color-academy;
+    }
+
+    .details__title-course{
+      color: $theme-color-academy;
+    }
+
+    .box2__top {
+      background: $theme-color-academy;
+    }
+
+    // .box2__lesson{
+    //   border-left: 4px solid $theme-color-academy;
+    // }
+
+    .lesson__label{
+      background: $theme-color-academy;
+    }
+
+    .lesson__title{
+      color: $theme-color-academy;
+    }
+
+    .lesson__teacher-name{
+      color: $theme-color-academy;
+    }
+  }
+
+  // アレンジ・作曲学科 (arrangecompose)
+  #arrangecompose {
+    .box2::after {
+      background: $theme-color-arrangecompose;
+    }
+
+    .details__title-course{
+      color: $theme-color-arrangecompose;
+    }
+
+    .box2__top {
+      background: $theme-color-arrangecompose;
+    }
+
+    // .box2__lesson{
+    //   border-left: 4px solid $theme-color-arrangecompose;
+    // }
+
+    .lesson__label{
+      background: $theme-color-arrangecompose;
+    }
+
+    .lesson__title{
+      color: $theme-color-arrangecompose;
+    }
+
+    .lesson__teacher-name{
+      color: $theme-color-arrangecompose;
+    }
+  }
+
+  // ジャズ・ポピュラー学科 (jazzpop)
+  #jazzpop {
+    .box2::after {
+      background: $theme-color-jazzpop;
+    }
+
+    .details__title-course{
+      color: $theme-color-jazzpop;
+    }
+
+    .box2__top {
+      background: $theme-color-jazzpop;
+    }
+
+    // .box2__lesson{
+    //   border-left: 4px solid $theme-color-jazzpop;
+    // }
+
+    .lesson__label{
+      background: $theme-color-jazzpop;
+    }
+
+    .lesson__title{
+      color: $theme-color-jazzpop;
+    }
+
+    .lesson__teacher-name{
+      color: $theme-color-jazzpop;
+    }
+  }
+
+  // ミュージカル学科 (musical)
+  #musical {
+    .box2::after {
+      background: $theme-color-musical;
+    }
+
+    .details__title-course{
+      color: $theme-color-musical;
+    }
+
+    .box2__top {
+      background: $theme-color-musical;
+    }
+
+    // .box2__lesson{
+    //   border-left: 4px solid $theme-color-musical;
+    // }
+
+    .lesson__label{
+      background: $theme-color-musical;
+    }
+
+    .lesson__title{
+      color: $theme-color-musical;
+    }
+
+    .lesson__teacher-name{
+      color: $theme-color-musical;
+    }
+  }
+
+  // ミュージックビジネス学科 (musicbusiness)
+  #musicbusiness {
+    .box2::after {
+      background: $theme-color-musicbusiness;
+    }
+
+    .details__title-course{
+      color: $theme-color-musicbusiness;
+    }
+
+    .box2__top {
+      background: $theme-color-musicbusiness;
+    }
+
+    // .box2__lesson{
+    //   border-left: 4px solid $theme-color-musicbusiness;
+    // }
+
+    .lesson__label{
+      background: $theme-color-musicbusiness;
+    }
+
+    .lesson__title{
+      color: $theme-color-musicbusiness;
+    }
+
+    .lesson__teacher-name{
+      color: $theme-color-musicbusiness;
+    }
+  }
+
+  // プロミュージシャン学科 (promusician)
+  #promusician {
+    .box2::after {
+      background: $theme-color-promusician;
+    }
+
+    .details__title-course{
+      color: $theme-color-promusician;
+    }
+
+    .box2__top {
+      background: $theme-color-promusician;
+    }
+
+    // .box2__lesson{
+    //   border-left: 4px solid $theme-color-promusician;
+    // }
+
+    .lesson__label{
+      background: $theme-color-promusician;
+    }
+
+    .lesson__title{
+      color: $theme-color-promusician;
+    }
+
+    .lesson__teacher-name{
+      color: $theme-color-promusician;
+    }
+  }
+
+  // 音楽・映像・照明学科 (soundvisuallighting)
+  #soundvisuallighting {
+    .box2::after {
+      background: $theme-color-soundvisuallighting;
+    }
+
+    .details__title-course{
+      color: $theme-color-soundvisuallighting;
+    }
+
+    .box2__top {
+      background: $theme-color-soundvisuallighting;
+    }
+
+    // .box2__lesson{
+    //   border-left: 4px solid $theme-color-soundvisuallighting;
+    // }
+
+    .lesson__label{
+      background: $theme-color-soundvisuallighting;
+    }
+
+    .lesson__title{
+      color: $theme-color-soundvisuallighting;
+    }
+
+    .lesson__teacher-name{
+      color: $theme-color-soundvisuallighting;
+    }
+  }
+
+  // ヴォーカル学科 (vocal)
+  #vocal {
+    .box2::after {
+      background: $theme-color-vocal;
+    }
+
+    .details__title-course{
+      color: $theme-color-vocal;
+    }
+
+    .box2__top {
+      background: $theme-color-vocal;
+    }
+
+    // .box2__lesson{
+    //   border-left: 4px solid $theme-color-vocal;
+    // }
+
+    .lesson__label{
+      background: $theme-color-vocal;
+    }
+
+    .lesson__title{
+      color: $theme-color-vocal;
+    }
+
+    .lesson__teacher-name{
+      color: $theme-color-vocal;
+    }
+  }
+
+  // 声優学科 (voiceactor)
+  #voiceactor {
+    .box2::after {
+      background: $theme-color-voiceactor;
+    }
+
+    .details__title-course{
+      color: $theme-color-voiceactor;
+    }
+
+    .box2__top {
+      background: $theme-color-voiceactor;
+    }
+
+    // .box2__lesson{
+    //   border-left: 4px solid $theme-color-voiceactor;
+    // }
+
+    .lesson__label{
+      background: $theme-color-voiceactor;
+    }
+
+    .lesson__title{
+      color: $theme-color-voiceactor;
+    }
+
+    .lesson__teacher-name{
+      color: $theme-color-voiceactor;
+    }
+  }
+
+  // 管弦打楽器学科 (wind)
+  #wind {
+    .box2::after {
+      background: $theme-color-wind;
+    }
+
+    .details__title-course{
+      color: $theme-color-wind;
+    }
+
+    .box2__top {
+      background: $theme-color-wind;
+    }
+
+    // .box2__lesson{
+    //   border-left: 4px solid $theme-color-wind;
+    // }
+
+    .lesson__label{
+      background: $theme-color-wind;
+    }
+
+    .lesson__title{
+      color: $theme-color-wind;
+    }
+
+    .lesson__teacher-name{
+      color: $theme-color-wind;
+    }
+  }
+
+  /* ============================================================================= */
+
+  .box2__img{
+    width: rem(300);
+    border-radius: rem(15) rem(15) rem(15) rem(15);
+    overflow: hidden;
+    position: absolute;
+    top: rem(270);
+    left: 50%;
+    transform: translateX(-50%);
+
+    img {
+      width: 100%;
+      aspect-ratio: 500 / 258;
+      object-fit: cover;
+    }
+  }
+
+  .box2__wrap{
+    padding-top: rem(210);
+    padding-inline: rem(15);
+    padding-bottom: rem(30);
+  }
+
+  .box2__top{
+    padding-top: rem(20);
+    padding-inline: rem(15);
+    padding-bottom: rem(20);
+  }
+
+  .box2__top-wrap {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: rem(20);
+  }
+
+  .box2__top-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: rem(15);
+  }
+
+  .box2__date{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: rem(6);
+  }
+
+  .box2__year{
+    color: #FFF;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: $font-family-en-1;
+    font-size: rem(22);
+    font-style: italic;
+    font-weight: $bold;
+    line-height: 1;
+  }
+
+  .box2__month{
+    color: #FFF;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: $font-family-en-1;
+    font-size: rem(34);
+    font-style: italic;
+    font-weight: $bold;
+    line-height: 1;
+    margin-bottom: rem(-3);
+  }
+
+  .box2__week{
+    color: #FFF;
+    text-align: center;
+    leading-trim: both;
+    text-edge: cap;
+    font-size: rem(14);
+    font-weight: $bold;
+    line-height: 1;
+    position: relative;
+    margin-bottom: rem(4);
+    margin-left: rem(8);
+  }
+
+  .box2__week::after{
+    content: "";
+    width: rem(26);
+    height: rem(26);
+    border-radius: 50%;
+    border: rem(1) solid #FFF;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .box2__label{
+    margin-top: rem(10);
+    width: rem(194);
+    position: relative;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .box2__label-text {
+    color: #000;
+    text-align: center;
+    font-size: rem(13);
+    font-weight: $bold;
+    line-height: normal;
+    position: absolute;
+    top: 50%;
+    left: rem(5);
+    transform: translateY(-50%);
+  }
+
+  .box2__top-times {
+    margin-top: rem(1);
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    gap: rem(8);
+  }
+
+  .box2__top-text{
+    color: #FFF;
+    font-size: rem(14);
+    font-weight: $bold;
+    line-height: normal;
+  }
+
+  .box2__top-time{
+    color: #FFF;
+    font-family: $font-family-en-1;
+    font-size: rem(26);
+    font-style: italic;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: rem(-4);
+  }
+
+  .box2__top-right{
+  }
+
+  .box2__btn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: rem(247);
+    border-radius: rem(55);
+    background: #FFF;
+    box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.25);
+    padding-top: rem(10);
+    padding-bottom: rem(14);
+    padding-left: rem(40);
+    padding-right: rem(29);
+    transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
+  }
+
+  .box2__btn:hover {
+    transform: translateY(rem(3));
+    box-shadow: none;
+
+    .box2__btn-arrow{
+      transform: translateX(rem(5));
+    }
+  }
+
+  .box2__btn-text{
+    color: #000;
+    leading-trim: both;
+    text-edge: cap;
+    font-size: rem(22);
+    font-weight: $bold;
+    line-height: normal;
+    letter-spacing: 1.2px;
+  }
+
+  .box2__btn-arrow{
+    width: rem(13);
+    transition: transform 0.2s ease-out;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .box2__middle{
+    padding-bottom: rem(40);
+    border-bottom: 2px solid #FFF;
+  }
+
+  .box2__middle-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: rem(45);
+
+    // display: grid;
+    // grid-template-columns: repeat(2, 1fr);  // 『grid-template-rows』は指定しない事で、行の高さは、その行に含まれるコンテンツのサイズに基づいて自動的に調整される。
+    // column-gap: rem(25);
+    // row-gap: rem(30);  // 『Voice ページ』を想定して設定。
+    // justify-content: flex-start;
+    // align-items: flex-start;  // grid時も、上側に揃うように。
+  }
+
+  .box2__middle-bottom {
+    margin-top: rem(40);
+    width: rem(310);
+    margin-inline: auto;
+  }
+
+  .box2__lesson{
+    width: rem(310);
+    padding-left: rem(15);
+    // flex-shrink: 1;
+  }
+
+  .lesson__tags{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: rem(4);
+    row-gap: rem(6);
+    width: rem(340);
+  }
+
+  .lesson__tag{
+    border-radius: rem(3);
+    padding-block: rem(3);
+    padding-inline: rem(6);
+    background: rgba(255, 255, 255, 0.70);
+    color: #000;
+    text-align: center;
+    leading-trim: both;
+    text-edge: cap;
+    font-size: rem(13);
+    font-weight: $bold;
+    line-height: 1.4;
+  }
+
+  .lesson__bottom {
+    margin-top: rem(20);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: rem(15);
+  }
+
+  .lesson__bottom .is-bottom {
+    min-width: 100%;
+  }
+
+  .lesson__contents{
+    max-width: rem(400);
+  }
+
+  .lesson__contents .is-bottom {
+    flex-shrink: 0;
+    flex-grow: 1;
+    max-width: 100%;
+    max-width: rem(600);
+  }
+
+  .lesson__titles{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: rem(6);
+  }
+
+  .lesson__label{
+    color: #FFF;
+    text-align: center;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: $font-family-en-1;
+    font-size: rem(13);
+    font-style: italic;
+    font-weight: 600;
+    line-height: 1.4;
+    padding-block: rem(3);
+    padding-left: rem(6);
+    padding-right: rem(15);
+    border-radius: 0px rem(15) rem(15) 0px;
+  }
+
+  .lesson__title{
+    leading-trim: both;
+    text-edge: cap;
+    font-size: rem(20);
+    font-weight: $bold;
+    line-height: 1.4;
+  }
+
+  .lesson__teacher-name{
+    margin-top: rem(10);
+    text-align: left;
+    leading-trim: both;
+    text-edge: cap;
+    font-size: rem(15);
+    font-weight: $normal;
+    line-height: 1.6;
+  }
+
+  .lesson__text{
+    color: #000;
+    leading-trim: both;
+    text-edge: cap;
+    font-size: rem(12);
+    font-weight: $normal;
+    line-height: 1.6;
+  }
+
+  .lesson__sub-text {
+    color: #000;
+    leading-trim: both;
+    text-edge: cap;
+    font-size: rem(12);
+    font-weight: $normal;
+    line-height: 1.6;
+  }
+
+  .lesson__teacher-img{
+    width: rem(260);
+    aspect-ratio: 260 / 309;
+    object-fit: cover;
+
+    img {
+      width: rem(260);
+      aspect-ratio: 260 / 309;
+      object-fit: cover;
+    }
+  }
+
+  .box2__bottom{
+    padding-top: rem(40);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: rem(45);
+  }
+
+  .box2__bottom-left{
+    display: flex;
+    // text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: rem(18);
+    width: fit-content;
+    width: rem(340);
+    margin-inline: auto;
+  }
+
+  .box2__tag{
+    padding-block: rem(7);
+    padding-left: rem(10);
+    padding-right: rem(23);
+    border-radius: 0px rem(30) rem(30) 0px;
+    background: #FFF;
+    color: #006CB6;
+    text-align: center;
+    leading-trim: both;
+    text-edge: cap;
+    font-size: rem(18);
+    font-weight: $bold;
+    line-height: 1.6;
+    width: fit-content;
+  }
+
+  .box2__bottom-left-right {
+  }
+
+  .date__bottom-text{
+    color: #000;
+    leading-trim: both;
+    text-edge: cap;
+    font-size: rem(16);
+    font-weight: $normal;
+    line-height: 1.6;
+  }
+
+  .date__list{
+  }
+
+  .date__list-item{
+  }
+
+  .box2__bottom-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: rem(10);
+    width: rem(340);
+    margin-inline: auto;
+  }
+
+  .box2__bottom-right-right {
+    margin-top: rem(11);
+  }
+
+  .box2__bottom-right-head{
+    color: #000;
+    leading-trim: both;
+    text-edge: cap;
+    font-size: rem(16);
+    font-weight: $bold;
+    line-height: 1.6;
+  }
+
+  .box2__bottom-right-head .is-blue{
+    color: #006CB6;
+  }
+
+  .box2__bottom-right-time{
+    margin-top: rem(10);
+    color: #000;
+    leading-trim: both;
+    text-edge: cap;
+    font-size: rem(16);
+    font-weight: $normal;
+    line-height: 1.6;
+  }
+
+  .box2__last-text{
+    margin-top: rem(40);
+    color: #000;
+    leading-trim: both;
+    text-edge: cap;
+    font-size: rem(12);
+    font-weight: $normal;
+    line-height: 1.6;
+  }
+
+  .details__button{
+    display: block;
+    margin-top: rem(25);
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: rem(30);
+    width: fit-content;
+    padding-inline: rem(20);
+    margin-left: auto;
+    position: relative;
+  }
+
+  .details__button:hover {
+    .details__button-arrow {
+      transform: translateX(rem(-8));
+    }
+  }
+
+  .details__button::after {  // 青い下線
+    content: "";
+    width: 100%;
+    height: rem(2);
+    background: #006CB6;
+    position: absolute;
+    bottom: rem(-10);
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .details__button-arrow {
+    width: rem(9);
+    transition: transform 0.2s ease-out;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .details__button-test {
+    color: #006CB6;
+    font-size: rem(18);
+    font-style: normal;
+    font-weight: $bold;
+    line-height: normal;
+  }
 
 
 
