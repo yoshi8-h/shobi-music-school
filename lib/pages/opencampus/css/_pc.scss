@@ -966,11 +966,34 @@
   .cta {  // cta (Block)
     border-radius: 105px 0px 0px 105px;
     border-top: 3px solid var(--Linear, #5FC4F1);
-    border-bottom: 3px solid var(--Linear, #5FC4F1);
+    border-bottom: 3px solid var(--Linear, #00DEC7);
     border-left: 3px solid var(--Linear, #5FC4F1);
     background: var(--Linear, linear-gradient(47deg, #CAEDC2 13.08%, #FFEDA6 82.58%));
+    // z-index: 100;
 
     width: fit-content;
+  }
+
+  .cta::before {
+  //   content: '';
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   width: 3px; /* Border width */
+  //   height: 100%;
+  //   background: linear-gradient(to bottom, #5FC4F1 50%, #00DEC7 50%);
+  //   border-radius: 105px 0 0 105px;
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -3px; // ボーダーの厚さ
+    left: -3px; // ボーダーの厚さ
+    right: 0; // ボーダーの厚さ
+    bottom: -3px; // ボーダーの厚さ
+    border-radius: 108px 0px 0px 108px; // ボーダーの内側の要素とのギャップを調整
+    background: linear-gradient(to bottom, #5FC4F1, #00DEC7); // グラデーションボーダー
+    z-index: -10; // 背景として配置
   }
 
   .cta__wrap {

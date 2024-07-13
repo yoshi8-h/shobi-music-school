@@ -656,7 +656,7 @@
 
   .subject__title .section-title__img {  // セクション毎に上書きする部分。
     img {
-      width: rem(235);
+      width: rem(335);
     }
   }
 
@@ -691,13 +691,13 @@
   }
 
   .contents__item {
-    width: rem(166);
-    height: rem(130);
+    width: rem(168);
+    height: rem(121);
   }
 
 
   .item {  // item (Block)
-    border-radius: 24px;
+    border-radius: rem(14);
     overflow: hidden;
     position: relative;
   }
@@ -726,10 +726,14 @@
     .item__title-en {
       opacity: 1;
     }
+
+    .item__title-ja::after {  // 白い矢印
+      transform: translate(rem(4), -50%);
+    }
   }
 
   .item.is-01 {  // 学科毎に、色を指定
-    border: 4px solid #E75297;
+    border: rem(3) solid #E75297;
 
     .item__title-en {
       color: #E75297;
@@ -741,7 +745,7 @@
   }
 
   .item.is-02 {
-    border: 4px solid #D70C18;
+    border: rem(3) solid #D70C18;
 
     .item__title-en {
       color: #D70C18;
@@ -753,7 +757,7 @@
   }
 
   .item.is-03 {
-    border: 4px solid #29B5B2;
+    border: rem(3) solid #29B5B2;
 
     .item__title-en {
       color: #29B5B2;
@@ -765,7 +769,7 @@
   }
 
   .item.is-04 {
-    border: 4px solid #7FBE26;
+    border: rem(3) solid #7FBE26;
 
     .item__title-en {
       color: #7FBE26;
@@ -777,7 +781,7 @@
   }
 
   .item.is-05 {
-    border: 4px solid #E9545D;
+    border: rem(3) solid #E9545D;
 
     .item__title-en {
       color: #E9545D;
@@ -789,7 +793,7 @@
   }
 
   .item.is-06 {
-    border: 4px solid #F29600;
+    border: rem(3) solid #F29600;
 
     .item__title-en {
       color: #F29600;
@@ -801,7 +805,7 @@
   }
 
   .item.is-07 {
-    border: 4px solid #F4C200;
+    border: rem(3) solid #F4C200;
 
     .item__title-en {
       color: #F4C200;
@@ -813,7 +817,7 @@
   }
 
   .item.is-08 {
-    border: 4px solid #0098D8;
+    border: rem(3) solid #0098D8;
 
     .item__title-en {
       color: #0098D8;
@@ -825,7 +829,7 @@
   }
 
   .item.is-09 {
-    border: 4px solid #015DAE;
+    border: rem(3) solid #015DAE;
 
     .item__title-en {
       color: #015DAE;
@@ -837,7 +841,7 @@
   }
 
   .item.is-10 {
-    border: 4px solid #008532;
+    border: rem(3) solid #008532;
 
     .item__title-en {
       color: #008532;
@@ -849,7 +853,7 @@
   }
 
   .item.is-11 {
-    border: 4px solid #C10147;
+    border: rem(3) solid #C10147;
 
     .item__title-en {
       color: #C10147;
@@ -867,7 +871,7 @@
 
     img {
       width: 100%;
-      aspect-ratio: 166 / 130;
+      aspect-ratio: 162 / 115;
       object-fit: cover;
     }
   }
@@ -899,7 +903,7 @@
     z-index: 30;
 
     position: absolute;
-    top: rem(65);
+    top: rem(60);
     left: 50%;
     transform: translateX(-50%);
     white-space: nowrap;
@@ -911,14 +915,14 @@
   .item__title-ja {
     position: relative;
     z-index: 30;
-    top: rem(80);
+    top: rem(75);
 
     color: #FFF;
     text-align: center;
     font-size: rem(12);
     line-height: 1.4;
     width: 100%;
-    padding-block: rem(5);
+    padding-block: rem(6);
     background: rgba(0, 0, 0, 0.50);
     transition: background 0.2s ease-out;
   }
@@ -936,7 +940,7 @@
 
   .subject__cta {
     position: absolute;
-    bottom: rem(-30);
+    bottom: rem(-25);
     right: 0;
   }
 
@@ -944,7 +948,7 @@
   .cta {  // cta (Block)
     border-radius: 60px 0px 0px 60px;
     border-top: 2px solid var(--Linear, #5FC4F1);
-    border-bottom: 2px solid var(--Linear, #5FC4F1);
+    border-bottom: 2px solid var(--Linear, #00DEC7);
     border-left: 2px solid var(--Linear, #5FC4F1);
     background: var(--Linear, linear-gradient(47deg, #CAEDC2 13.08%, #FFEDA6 82.58%));
 
