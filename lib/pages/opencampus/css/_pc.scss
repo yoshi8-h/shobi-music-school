@@ -30,7 +30,7 @@
     transition: opacity 0.3s ease-out;
 
     img {
-      width: rem(350);
+      width: rem(400);
     }
   }
 
@@ -42,84 +42,77 @@
 
   // fv
   .fv {
-    background: url(../../opencampus/img/fv-bg.png) center center / cover;
+    background: #F8F7F0 url(../../opencampus/img/fv-bg.png) center center / cover;
+    height: 100vh;
+    max-height: rem(800);
+    overflow: hidden;
   }
 
   .fv__inner {
-    // height: 100vh;
-    // max-height: rem(800);
-    padding-top: rem(150);
-    padding-bottom: rem(230);
+    // padding-top: rem(150);
+    // padding-bottom: rem(230);
+    height: 100%;
     position: relative;
   }
 
   .fv__title {
+    position: absolute;
+    top: 24%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: rem(617);
 
     img {
-      width: rem(500);
-      margin-inline: auto;
-      position: relative;
-      z-index: 50;
+      width: 100%;
+      // margin-inline: auto;
+      // position: relative;
+      // z-index: 50;
     }
   }
 
   .fv__img {
     position: absolute;
+
+    img {
+      width: 100%;
+    }
   }
 
   .fv__img.is-01 {
-    top: 0;
-    right: rem(280);
-
-    img {
-      width: rem(200);
-    }
+    width: rem(250);
+    top: rem(-20);
+    right: rem(210);
   }
 
   .fv__img.is-02 {
-    top: rem(50);
+    width: rem(300);
+    top: rem(60);
     left: rem(40);
-
-    img {
-      width: rem(250);
-    }
   }
 
   .fv__img.is-03 {
-    top: rem(150);
-    right: rem(20);
-
-    img {
-      width: rem(230);
-    }
+    width: rem(300);
+    top: rem(200);
+    right: rem(-70);
   }
 
   .fv__img.is-04 {
-    top: rem(350);
-    left: rem(10);
-
-    img {
-      width: rem(180);
-    }
+    width: rem(220);
+    top: rem(450);
+    left: rem(-10);
   }
 
   .fv__img.is-05 {
-    bottom: rem(40);
-    right: rem(200);
-
-    img {
-      width: rem(180);
-    }
+    width: rem(210);
+    bottom: rem(50);
+    right: rem(190);
   }
 
 
   .fv__img.is-06 {
+    width: rem(500);
     bottom: 0;
-    left: rem(300);
-
-    img {
-      width: rem(350);
-    }
+    left: rem(240);
   }
 
 
@@ -143,21 +136,21 @@
 
     img {
       width: 100%;
-      height: rem(118);
+      height: rem(128);
       object-fit: cover;
     }
   }
 
   .open__bottom {
     width: 100%;
-    height: rem(110);
+    height: rem(128);
     background: linear-gradient(180deg, #5FC4F1 0%, #62DABD 100%);
     position: relative;
 
     img {
-      width: rem(350);
+      width: rem(450);
       position: absolute;
-      top: rem(-50);
+      top: rem(-73);
       left: 50%;
       transform: translateX(-50%);
     }
@@ -187,6 +180,12 @@
   .section-title__img {  // セクションタイトルの文字
     img {
       width: rem(150);
+    }
+  }
+
+  .section-title__img--top {
+    img {
+      width: rem(240);
     }
   }
 
@@ -336,10 +335,15 @@
   }
 
 
-  .topics__pagination {  // swiperのページネーション   // デフォルトの指定を上書き。クラス名はデベロッパーツールから取得。
-    // width: fit-content !important;
+  .topics .topics__pagination {  // swiperのページネーション   // デフォルトの指定を上書き。クラス名はデベロッパーツールから取得。
     bottom: auto !important;
     margin-top: rem(-26);
+    z-index: 50;
+    width: fit-content;
+    // margin-inline: auto !important;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 
     .swiper-pagination-bullet {  // デフォルトの指定を上書き。クラス名はデベロッパーツールから取得。
       width: rem(15);
@@ -389,7 +393,7 @@
     }
 
     .btn__arrow {
-      transform: translate(rem(8), calc(-50% + rem(2)));
+      transform: translate(rem(8), -50%);
     }
 
     .btn__arrow svg path {
@@ -408,9 +412,11 @@
   }
 
   .btn__arrow {
+    width: rem(9);
+    height: rem(18);
     position: absolute;
     top: 50%;
-    transform: translateY(calc(-50% + rem(2)));
+    transform: translateY(-50%);
     right: rem(20);
     transition: transform 0.2s ease-out;
   }
@@ -446,7 +452,7 @@
     overflow: auto;  // 画面の高さがモーダルより小さい場合にスクロール可能に。
 
     &::backdrop {
-      opacity: 0.7;
+      opacity: 0.25;
       background: #000;
     }
   }
@@ -501,9 +507,11 @@
     position: absolute;
     top: rem(14);
     right: rem(14);
+    padding: 0;
 
     img {
       width: rem(38);
+      aspect-ratio: 1 / 1;
     }
   }
 
@@ -557,7 +565,7 @@
     text-edge: cap;
     font-size: rem(18);
     line-height: 1.6;
-    padding-block: rem(2);
+    padding-block: rem(0.5);
     padding-left: rem(5);
     padding-right: rem(14);
     border-radius: 0px rem(20) rem(20) 0px;
@@ -583,6 +591,16 @@
 
   .topics-modal__bottom-top-text2 {
     margin-top: rem(18);
+    leading-trim: both;
+    text-edge: cap;
+    font-size: rem(12);
+    font-weight: 400;
+    line-height: 1.6;
+    white-space: nowrap;
+  }
+
+  .topics-modal__bottom-top-text3 {
+    margin-top: rem(6);
     leading-trim: both;
     text-edge: cap;
     font-size: rem(12);
