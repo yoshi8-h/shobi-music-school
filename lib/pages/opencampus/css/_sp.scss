@@ -155,283 +155,6 @@
 
 
 
-//   // topics セクション
-//   .topics {
-//     padding-top: rem(50);
-//     padding-bottom: rem(80);
-//     background: #F1F8F5;
-//     position: relative;
-//   }
-
-//   .topics__title {
-//   }
-
-
-//   .section-title {  // section-title (Block)
-//     text-align: center;
-//     position: relative;
-//     width: fit-content;
-//     margin-inline: auto;
-
-//     img {
-//       width: rem(150);
-//     }
-//   }
-
-//   .topics .section-title__img--top {
-//     img {
-//       width: rem(240);
-//     }
-//   }
-
-//   .section-title__left {
-//     position: absolute;
-//     top: 50%;
-//     left: rem(-70);
-//     transform: translateY(-50%);
-//   }
-
-//   .section-title__right {
-//     position: absolute;
-//     top: 50%;
-//     right: rem(-70);
-//     transform: translateY(-50%);
-
-//     img {
-//       width: rem(50);
-//     }
-//   }
-
-
-//   .topics__middle {
-//     margin-top: rem(50);
-//   }
-
-//   .topics__swiper {
-//     padding-bottom: rem(55);  // 『.swiper』からはみ出しているボタンの下部が見えるように。
-//   }
-
-//   .topics__cards {
-//   }
-
-
-//   .cards {  // cards (Block)
-//     // display: flex;
-//     // gap: rem(10);
-//   }
-
-//   .cards__item {
-//     width: fit-content;
-//   }
-
-
-//   .card {  // card (Block)
-//   }
-
-//   .card:hover {  // hover時のアクション
-//     .card__img img {
-//       transform: scale(1.1);
-//     }
-
-//     .card__button {
-//       transform: translate(-50%, rem(5));
-//       box-shadow: none;
-//     }
-//   }
-
-//   .card__wrap {
-//     border-radius: rem(10);
-//     border: 2px solid #E3E3E3;
-//     background: #FFF;
-//     padding: rem(10);
-//     width: rem(390);
-//     height: rem(270);
-//     aspect-ratio: 390 / 270;
-//     object-fit: cover;
-//     position: relative;
-//   }
-
-//   .card__img {
-//     overflow: hidden;
-
-//     img {
-//       width: 100%;
-//       aspect-ratio: 370 / 250;
-//       object-fit: cover;
-//       transition: transform 0.2s ease-out;
-//     }
-//   }
-
-//   .card__button {
-//     width: rem(340);
-//     height: rem(80);
-//     border-radius: rem(38);
-//     background: #FFF;
-//     box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.25);
-//     padding-block: rem(15);
-//     padding-inline: rem(20);
-//     font-size: rem(19);
-//     position: absolute;
-//     bottom: rem(-50);
-//     left: 50%;
-//     transform: translateX(-50%);
-//     display: grid;
-//     place-items: center;
-
-//     transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
-//   }
-
-
-//   .topics__arrows {  // swiperの「前へ」「次へ」ボタン
-//     width: rem(340);
-//     height: rem(32);
-//     display: flex;
-//     justify-content: space-between;
-//     align-items: center;
-//     gap: rem(180);
-//     margin-top: rem(40);
-//     position: relative;
-//     margin-inline: auto;
-//     z-index: 30;
-//   }
-
-// .topics__prev,
-// .topics__next {
-//   &::after {
-//     display: none;  // デフォルトの青い矢印を削除
-//   }
-// }
-
-//   .topics__prev {
-//     width: rem(32);
-//     height: rem(31);
-//   }
-
-//   .topics__prev-img {
-//     width: 100%;
-
-//     img {
-//       width: rem(32);
-//       height: rem(31);
-//     }
-//   }
-
-//   .topics__next {
-//     width: rem(32);
-//     height: rem(31);
-//   }
-
-//   .topics__next-img {
-//     width: 100%;
-
-//     img {
-//       width: rem(32);
-//       height: rem(31);
-//     }
-//   }
-
-
-//   .topics .topics__pagination {  // swiperのページネーション   // デフォルトの指定を上書き。クラス名はデベロッパーツールから取得。
-//     // bottom: auto !important;
-//     // margin-top: rem(-36);
-//     // z-index: 50;
-//     // width: fit-content;
-//     // // margin-inline: auto !important;
-//     // position: absolute;
-//     // left: 50%;
-//     // transform: translateX(-50%);
-
-//     .swiper-pagination-bullet {  // デフォルトの指定を上書き。クラス名はデベロッパーツールから取得。
-//       width: rem(15);
-//       height: rem(15);
-//       margin-inline: rem(5) !important;
-//       background: #FFF;
-//       border: 1px solid #62DABD;
-//       opacity: 1;  // デフォルトの指定を上書き。
-
-//       &.swiper-pagination-bullet-active {  // アクティブなスライドのページネーションの色を指定
-//         background: linear-gradient(180deg, #5FC4F1 0%, #62DABD 100%);
-//       }
-//     }
-//   }
-
-
-//   .topics .topics__bottom {
-//     padding-top: rem(35);
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     gap: rem(20);
-//   }
-
-
-//   .topics__btn {
-//   }
-
-
-//   .btn {  // btn (Block)
-//     display: block;
-//     border: 2px solid $color-accent1;
-//     border-radius: rem(30);
-//     background: $color-accent1;
-//     padding-block: rem(12);
-//     padding-left: rem(35);
-//     padding-right: rem(60);
-//     position: relative;
-//     transition: background 0.2s ease-out;
-//   }
-
-//   .btn:hover {
-//     background: #FFF;
-
-//     .btn__text {
-//       color: $color-accent1;
-//     }
-
-//     .btn__arrow {
-//       transform: translate(rem(8), -50%);
-//     }
-
-//     .btn__arrow svg path {
-//       fill: $color-accent1;
-//     }
-//   }
-
-//   .btn__text {
-//     color: #FFF;
-//     font-size: rem(19);
-//     transition: color 0.2s ease-out;
-//   }
-
-//   .btn__arrow {
-//     width: rem(7.6);
-//     height: rem(15.3);
-//     position: absolute;
-//     top: 50%;
-//     transform: translateY(-50%);
-//     right: rem(20);
-//     transition: transform 0.2s ease-out;
-//   }
-
-//   .btn__arrow svg {
-//     vertical-align: top;
-//   }
-
-
-
-//   .topics__line-bottom {  // 下の仕切り線
-//   }
-
-//   .line-bottom {  // 下の仕切り線
-//     width: 100%;
-//     height: rem(10);
-//     background: $color-accent1;
-//     position: absolute;
-//     bottom: 0;
-//   }
-
-
-
   // topics セクション
   .topics {
     padding-top: rem(50);
@@ -570,7 +293,7 @@
     justify-content: space-between;
     align-items: center;
     gap: rem(180);
-    margin-top: rem(40);
+    margin-top: rem(10);
     position: relative;
     margin-inline: auto;
     z-index: 30;
@@ -614,7 +337,7 @@
 
   .topics .topics__pagination {  // swiperのページネーション   // デフォルトの指定を上書き。クラス名はデベロッパーツールから取得。
     bottom: auto !important;
-    margin-top: rem(-36);
+    margin-top: rem(-33);
     z-index: 50;
     width: fit-content;
     // margin-inline: auto !important;
@@ -638,7 +361,7 @@
 
 
   .topics__bottom {
-    padding-top: rem(50);
+    padding-top: rem(30);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -730,7 +453,7 @@
     overflow: auto;  // 画面の高さがモーダルより小さい場合にスクロール可能に。
 
     &::backdrop {
-      opacity: 0.7;
+      opacity: 0.25;
       background: #000;
     }
   }
@@ -764,11 +487,19 @@
     position: relative;
   }
 
-  .topics-modal__top-en::after {  // 矢印の群 (SP時は非表示)
-    display: none;
+  .topics-modal__top-en::after {  // 矢印の群
+    content: "";
+    width: rem(80);
+    height: rem(20);
+    background: url(../img/modal-arrows.png) no-repeat center center / contain;
+    position: absolute;
+    top: calc(100% + rem(1));
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   .topics-modal__top-ja {
+    margin-top: rem(20);
     leading-trim: both;
     text-edge: cap;
     font-size: rem(24);
@@ -779,9 +510,11 @@
     position: absolute;
     top: rem(10);
     right: rem(10);
+    padding: 0;
 
     img {
       width: rem(36);
+      aspect-ratio: 1 / 1;
     }
   }
 
@@ -863,6 +596,15 @@
 
   .topics-modal__bottom-top-text2 {
     margin-top: rem(3);
+    leading-trim: both;
+    text-edge: cap;
+    font-size: rem(12);
+    font-weight: 400;
+    line-height: 1.6;
+  }
+
+  .topics-modal__bottom-top-text3 {
+    margin-top: rem(6);
     leading-trim: both;
     text-edge: cap;
     font-size: rem(12);
