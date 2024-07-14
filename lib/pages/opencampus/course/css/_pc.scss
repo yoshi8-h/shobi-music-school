@@ -1196,7 +1196,7 @@
     position: absolute;
     left: 0;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(calc(-50% + rem(2.2)));
     z-index: -1;
   }
 
