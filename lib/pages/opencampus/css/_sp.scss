@@ -1589,12 +1589,12 @@
 
   .flow__if-need {
     width: rem(360);
-    width: calc(360px / 375px * 100vw);
+    // width: calc(360px / 375px * 100vw);
     max-width: rem(500);
     position: absolute;
     bottom: rem(-840);
     left: 50%;
-    transform: translateX(calc(-50% + rem(9)));
+    transform: translateX(-50%);
   }
 
 
@@ -1893,13 +1893,15 @@
     width: fit-content;
 
     img {
-      width: rem(220);
+      width: rem(239);
     }
   }
 
   .footer__copyright {
+    display: block;
+    width: 100%;
     color: #FFF;
-    text-align: center;
+    text-align: right;
     font-family: $font-family-en-1;
     font-size: rem(11);
     font-style: italic;
@@ -1934,7 +1936,9 @@
 
 
 
-
+  // * {
+  //   outline: 2px solid blue;
+  // }
 
 
 

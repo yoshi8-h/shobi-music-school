@@ -1700,7 +1700,7 @@ body {
     width: fit-content;
   }
   .footer__img img {
-    width: 26.125rem;
+    width: 23.125rem;
   }
   .footer__copyright {
     -ms-flex-item-align: end;
@@ -3138,13 +3138,12 @@ body {
   }
   .flow__if-need {
     width: 22.5rem;
-    width: 96vw;
     max-width: 31.25rem;
     position: absolute;
     bottom: -52.5rem;
     left: 50%;
-    -webkit-transform: translateX(calc(-50% + 0.5625rem));
-            transform: translateX(calc(-50% + 0.5625rem));
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
   }
   .if-need {
     border-radius: 0.9375rem;
@@ -3445,11 +3444,13 @@ body {
     width: fit-content;
   }
   .footer__img img {
-    width: 13.75rem;
+    width: 14.9375rem;
   }
   .footer__copyright {
+    display: block;
+    width: 100%;
     color: #FFF;
-    text-align: center;
+    text-align: right;
     font-family: "Barlow Semi Condensed", sans-serif;
     font-size: 0.6875rem;
     font-style: italic;
