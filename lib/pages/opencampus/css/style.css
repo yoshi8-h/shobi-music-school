@@ -349,6 +349,10 @@ body {
     transition: transform 0.2s ease-out;
     transition: transform 0.2s ease-out, -webkit-transform 0.2s ease-out;
   }
+  .btn__arrow svg {
+    width: 90%;
+    height: 100%;
+  }
   .line-bottom {
     width: 100%;
     height: 0.625rem;
@@ -905,7 +909,7 @@ body {
     background: #F1F8F5;
   }
   .feature__title .section-title__img img {
-    width: 20.625rem;
+    width: 45rem;
   }
   .feature__circles {
     margin-top: 3.4375rem;
@@ -1109,6 +1113,7 @@ body {
   .title2.is-place::after {
     width: 6.875rem;
     height: 0.75rem;
+    background: url(../img/title2-wave-2words.svg) no-repeat center center/contain;
   }
   .place__inner {
     margin-top: 3.125rem;
@@ -1206,12 +1211,12 @@ body {
   }
   .place__access::after {
     content: "";
-    width: 1.125rem;
-    height: 1.125rem;
+    width: 0.875rem;
+    height: 0.875rem;
     background: #F47F95;
     border-radius: 50%;
     position: absolute;
-    left: -1.375rem;
+    left: -1.1875rem;
     top: 50%;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
@@ -2042,6 +2047,10 @@ body {
     -webkit-transition: background 0.2s ease-out;
     transition: background 0.2s ease-out;
     text-align: center;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    display: block;
   }
   .btn:hover {
     background: #FFF;
@@ -2076,6 +2085,8 @@ body {
     transition: transform 0.2s ease-out, -webkit-transform 0.2s ease-out;
   }
   .btn__arrow svg {
+    width: 100%;
+    height: 100%;
     vertical-align: top;
   }
   .line-bottom {
@@ -2633,7 +2644,7 @@ body {
     background: #F1F8F5;
   }
   .feature__title .section-title__img img {
-    width: 15.3125rem;
+    width: 22.5rem;
   }
   .feature__circles {
     margin-top: 2.5rem;
@@ -2652,7 +2663,7 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    gap: 1.875rem;
+    gap: 1.25rem;
   }
   .circle {
     background: #FFF;
@@ -2830,6 +2841,7 @@ body {
   .title2.is-place::after {
     width: 4.0625rem;
     height: 0.75rem;
+    background: url(../img/title2-wave-2words.svg) no-repeat center center/contain;
   }
   .place__inner {
     margin-top: 1.875rem;
@@ -2937,13 +2949,13 @@ body {
   }
   .place__access::after {
     content: "";
-    width: 0.875rem;
-    height: 0.875rem;
+    width: 0.6875rem;
+    height: 0.6875rem;
     background: #F47F95;
     border-radius: 50%;
     position: absolute;
-    left: 0.1875rem;
-    top: 0.25rem;
+    left: 1rem;
+    top: 0.3125rem;
   }
   .place__map {
     margin-top: 1.5625rem;
@@ -2956,7 +2968,6 @@ body {
   }
   .place__btn {
     margin-top: 1.25rem;
-    width: 17.5rem;
     margin-inline: auto;
   }
   .flow {

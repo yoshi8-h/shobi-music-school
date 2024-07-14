@@ -421,6 +421,11 @@
     transition: transform 0.2s ease-out;
   }
 
+  .btn__arrow svg {
+    width: 90%;
+    height: 100%;
+  }
+
 
   .topics__line-bottom {  // 下の仕切り線
   }
@@ -1095,7 +1100,7 @@
 
   .feature__title .section-title__img {  // セクション毎に上書きする部分。
     img {
-      width: rem(330);
+      width: rem(720);
     }
   }
 
@@ -1313,6 +1318,7 @@
   .title2.is-place::after {  // 青い波線の下線 (上書き)
     width: rem(110);
     height: rem(12);
+    background: url(../img/title2-wave-2words.svg) no-repeat center center / contain;
   }
 
   .place__inner {
@@ -1397,12 +1403,12 @@
 
   .place__access::after {  // ピンクの円
     content: "";
-    width: rem(18);
-    height: rem(18);
+    width: rem(14);
+    height: rem(14);
     background: #F47F95;
     border-radius: 50%;
     position: absolute;
-    left: rem(-22);
+    left: rem(-19);
     top: 50%;
     transform: translateY(-50%);
   }
