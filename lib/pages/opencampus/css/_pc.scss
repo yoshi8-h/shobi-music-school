@@ -1447,7 +1447,7 @@
 
   .flow__title .section-title__img {  // セクション毎に上書きする部分。
     img {
-      width: rem(340);
+      width: rem(880);
     }
   }
 
@@ -1628,8 +1628,8 @@
   .flow__if-need {
     width: rem(530);
     position: absolute;
-    bottom: rem(-470);
-    left: rem(60);
+    bottom: rem(-460.4);
+    left: calc(50% - min(48.5vw, 31.2rem));  // ※min関数で制御
   }
 
 
@@ -1647,7 +1647,7 @@
     font-size: rem(30);
     line-height: 1.2;
     position: absolute;
-    top: rem(10);
+    top: rem(15);
     left: rem(50);
     z-index: 10;
   }
@@ -1660,7 +1660,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, calc(-50% - rem(2)));
     z-index: -10;
   }
 
@@ -1748,7 +1748,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: rem(26);
+    gap: rem(38);
   }
 
   .qa-boxes__item {
@@ -1826,21 +1826,23 @@
 
   .qa-box__open-button::before {  // 横線
     width: rem(26);
-    height: rem(2);
-    min-height: rem(2);
-    max-height: rem(2);
+    height: rem(3.6);
+    min-height: rem(3);
+    max-height: rem(3.6);
+    border-radius: rem(5);
   }
 
   .qa-box__open-button::after {  // 縦線
-    width: rem(2);
-    max-width: rem(2);
-    min-width: rem(2);
+    width: rem(3.6);
+    max-width: rem(3.6);
+    min-width: rem(3);
     height: rem(26);
+    border-radius: rem(5);
     transition: transform 0.35s ease-out;
   }
 
   .qa-box__body {
-    padding-top: rem(10);
+    padding-top: rem(30);
     padding-bottom: rem(2);
     padding-left: rem(60);
     padding-right: rem(60);
@@ -1852,6 +1854,7 @@
     justify-content: flex-start;
     align-items: center;
     gap: rem(50);
+    position: relative;
   }
 
   .qa-box__a-icon {  // 「A」の文字
@@ -1861,6 +1864,10 @@
     font-family: $font-family-en-2;
     font-size: rem(50);
     line-height: normal;
+    // align-self: flex-start;
+    position: absolute;
+    top: rem(-16);
+    left: 0;
   }
 
   .qa-box__a-text {
@@ -1868,6 +1875,7 @@
     font-weight: 400;
     line-height: 1.6;
     text-align: left;
+    padding-left: rem(70);
   }
 
   .qa__buttons {

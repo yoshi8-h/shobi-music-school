@@ -1412,12 +1412,12 @@
 
   .flow__title .section-title__img {  // セクション毎に上書きする部分。
     img {
-      width: rem(240);
+      width: rem(350);
     }
   }
 
   .flow__items {
-    margin-left: rem(-20);  // スマホ時だけ、少し全体を左に寄せる
+    // margin-left: rem(-20);  // スマホ時だけ、少し全体を左に寄せる
     margin-top: rem(50);
     display: flex;
     flex-direction: column;
@@ -1534,11 +1534,11 @@
 
 
   .same-time {  // same-time (Block)
-    border-radius: rem(20);
+    border-radius: rem(15);
     background: #FFE3E1;
     position: absolute;
-    bottom: rem(-450);
-    right: rem(-5);
+    bottom: rem(-435);
+    // right: rem(-5);
     z-index: -10;
   }
 
@@ -1559,7 +1559,7 @@
   }
 
   .same-time__img {
-    margin-right: rem(-30);
+    margin-right: rem(-29);
 
     img {
       border-radius: rem(15) 0px 0px rem(15);
@@ -1612,7 +1612,7 @@
     font-size: rem(22);
     line-height: 1.2;
     position: absolute;
-    top: rem(10);
+    top: rem(15);
     left: rem(43);
     z-index: 10;
   }
@@ -1625,7 +1625,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, calc(-50% - rem(2)));
     z-index: -10;
   }
 
@@ -1662,7 +1662,7 @@
 
   // qa セクション
   .qa {
-    padding-top: rem(60);
+    padding-top: rem(40);
     overflow: hidden;
   }
 
@@ -1700,12 +1700,12 @@
     position: relative;
 
     img {
-      width: rem(180);
+      width: rem(300);
     }
   }
 
   .qa__boxes {
-    margin-top: rem(40);
+    margin-top: rem(35);
   }
 
 
@@ -1796,6 +1796,7 @@
     height: rem(3);
     min-height: rem(3);
     max-height: rem(3);
+    border-radius: rem(5);
   }
 
   .qa-box__open-button::after {  // 縦線
@@ -1804,10 +1805,11 @@
     min-width: rem(3);
     height: rem(22);
     transition: transform 0.35s ease-out;
+    border-radius: rem(5);
   }
 
   .qa-box__body {
-    padding-top: rem(10);
+    padding-top: rem(25);
     padding-bottom: rem(2);
     padding-left: rem(20);
     padding-right: rem(10);
@@ -1819,6 +1821,7 @@
     justify-content: flex-start;
     align-items: center;
     gap: rem(30);
+    position: relative;
   }
 
   .qa-box__a-icon {  // 「A」の文字
@@ -1828,6 +1831,9 @@
     font-family: $font-family-en-2;
     font-size: rem(38);
     line-height: normal;
+    position: absolute;
+    top: rem(-14);
+    left: 0;
   }
 
   .qa-box__a-text {
@@ -1835,6 +1841,7 @@
     font-weight: 400;
     line-height: 1.6;
     text-align: left;
+    padding-left: rem(62);
   }
 
   .qa__buttons {
