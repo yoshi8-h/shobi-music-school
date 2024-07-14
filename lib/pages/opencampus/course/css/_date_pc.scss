@@ -45,7 +45,7 @@
 
   .details__title-text{
     color: #000;
-    font-size: rem(32);
+    font-size: rem(24);
     font-weight: $bold;
     line-height: normal;
   }
@@ -575,8 +575,8 @@
     border-radius: rem(55);
     background: #FFF;
     box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.25);
-    padding-top: rem(30);
-    padding-bottom: rem(28);
+    padding-top: rem(26);
+    padding-bottom: rem(26);
     padding-left: rem(40);
     padding-right: rem(29);
     transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
@@ -689,7 +689,7 @@
   .lesson__titles{
     display: flex;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
     gap: rem(12);
   }
 
@@ -703,10 +703,11 @@
     font-style: italic;
     font-weight: 600;
     line-height: 1.4;
-    padding-block: rem(3);
+    padding-block: rem(1);
     padding-left: rem(6);
     padding-right: rem(15);
     border-radius: 0px rem(15) rem(15) 0px;
+    margin-top: rem(1.5);
   }
 
   .lesson__title{
@@ -727,7 +728,11 @@
     line-height: 1.6;
   }
 
+  .lesson__bottom-bottom-sp {
+  }
+
   .lesson__text{
+    margin-top: rem(16);
     color: #000;
     leading-trim: both;
     text-edge: cap;
@@ -736,7 +741,12 @@
     line-height: 1.6;
   }
 
+  .lesson__teacher-img-sp {
+    display: none;
+  }
+
   .lesson__sub-text {
+    margin-top: rem(11);
     color: #000;
     leading-trim: both;
     text-edge: cap;

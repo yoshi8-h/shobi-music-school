@@ -423,7 +423,7 @@
   /* ============================================================================= */
 
   .box2__img{
-    width: rem(300);
+    width: rem(340);
     border-radius: rem(15) rem(15) rem(15) rem(15);
     overflow: hidden;
     position: absolute;
@@ -439,15 +439,15 @@
   }
 
   .box2__wrap{
-    padding-top: rem(210);
+    padding-top: rem(100);
     padding-inline: rem(15);
     padding-bottom: rem(30);
   }
 
   .box2__top{
-    padding-top: rem(20);
+    padding-top: rem(25);
     padding-inline: rem(15);
-    padding-bottom: rem(20);
+    padding-bottom: rem(158);
   }
 
   .box2__top-wrap {
@@ -456,7 +456,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: rem(20);
+    gap: rem(22);
   }
 
   .box2__top-left{
@@ -479,7 +479,7 @@
     leading-trim: both;
     text-edge: cap;
     font-family: $font-family-en-1;
-    font-size: rem(22);
+    font-size: rem(24);
     font-style: italic;
     font-weight: $bold;
     line-height: 1;
@@ -490,7 +490,7 @@
     leading-trim: both;
     text-edge: cap;
     font-family: $font-family-en-1;
-    font-size: rem(34);
+    font-size: rem(38);
     font-style: italic;
     font-weight: $bold;
     line-height: 1;
@@ -502,7 +502,7 @@
     text-align: center;
     leading-trim: both;
     text-edge: cap;
-    font-size: rem(14);
+    font-size: rem(16);
     font-weight: $bold;
     line-height: 1;
     position: relative;
@@ -581,7 +581,7 @@
     background: #FFF;
     box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.25);
     padding-top: rem(10);
-    padding-bottom: rem(14);
+    padding-bottom: rem(10);
     padding-left: rem(40);
     padding-right: rem(29);
     transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
@@ -604,6 +604,7 @@
     font-weight: $bold;
     line-height: normal;
     letter-spacing: 1.2px;
+    margin-top: rem(-2);
   }
 
   .box2__btn-arrow{
@@ -625,7 +626,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: rem(45);
+    gap: rem(39);
 
     // display: grid;
     // grid-template-columns: repeat(2, 1fr);  // 『grid-template-rows』は指定しない事で、行の高さは、その行に含まれるコンテンツのサイズに基づいて自動的に調整される。
@@ -654,7 +655,7 @@
     align-items: center;
     column-gap: rem(4);
     row-gap: rem(6);
-    width: rem(340);
+    width: rem(300);
   }
 
   .lesson__tag{
@@ -666,7 +667,7 @@
     text-align: center;
     leading-trim: both;
     text-edge: cap;
-    font-size: rem(13);
+    font-size: rem(12);
     font-weight: $bold;
     line-height: 1.4;
   }
@@ -697,10 +698,10 @@
 
   .lesson__titles{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+    justify-content: flex-start;
+    align-items: center;
     gap: rem(6);
+    position: relative;
   }
 
   .lesson__label{
@@ -709,14 +710,17 @@
     leading-trim: both;
     text-edge: cap;
     font-family: $font-family-en-1;
-    font-size: rem(13);
+    font-size: rem(16);
     font-style: italic;
     font-weight: 600;
     line-height: 1.4;
-    padding-block: rem(3);
-    padding-left: rem(6);
+    padding-block: rem(0);
+    padding-left: rem(12);
     padding-right: rem(15);
     border-radius: 0px rem(15) rem(15) 0px;
+    position: absolute;
+    top: rem(3);
+    left: 0;
   }
 
   .lesson__title{
@@ -725,11 +729,16 @@
     font-size: rem(20);
     font-weight: $bold;
     line-height: 1.4;
+    padding-left: rem(90);
+  }
+
+  .lesson__title--not-special {
+    padding-left: 0;
   }
 
   .lesson__teacher-name{
-    margin-top: rem(10);
-    text-align: left;
+    margin-top: rem(11);
+    text-align: right;
     leading-trim: both;
     text-edge: cap;
     font-size: rem(15);
@@ -737,7 +746,16 @@
     line-height: 1.6;
   }
 
+  .lesson__bottom-bottom-sp {
+    margin-top: rem(14);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: rem(10);
+  }
+
   .lesson__text{
+    margin-top: rem(-4);
     color: #000;
     leading-trim: both;
     text-edge: cap;
@@ -746,7 +764,23 @@
     line-height: 1.6;
   }
 
+  .lesson__text--not-special {
+    margin-top: rem(10);
+  }
+
+  .lesson__teacher-img-sp {
+    flex-shrink: 0;
+    width: rem(80);
+    aspect-ratio: 80 / 102;
+    object-fit: cover;
+
+    img {
+      width: 100%;
+    }
+  }
+
   .lesson__sub-text {
+    margin-top: rem(6);
     color: #000;
     leading-trim: both;
     text-edge: cap;
@@ -756,15 +790,7 @@
   }
 
   .lesson__teacher-img{
-    width: rem(260);
-    aspect-ratio: 260 / 309;
-    object-fit: cover;
-
-    img {
-      width: rem(260);
-      aspect-ratio: 260 / 309;
-      object-fit: cover;
-    }
+    display: none;
   }
 
   .box2__bottom{
