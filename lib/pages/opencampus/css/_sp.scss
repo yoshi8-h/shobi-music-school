@@ -224,6 +224,7 @@
 
   .cards__item {
     width: fit-content;
+    padding: 0;  // デフォルトの指定を打ち消し
   }
 
 
@@ -243,7 +244,7 @@
 
   .card__wrap {
     border-radius: rem(10);
-    border: 2px solid #E3E3E3;
+    border: 1px solid #E3E3E3;
     background: #FFF;
     padding: rem(7);
     width: rem(250);
@@ -251,6 +252,10 @@
     aspect-ratio: 250 / 175;
     object-fit: cover;
     position: relative;
+
+    width: rem(282);
+    height: rem(198);
+    aspect-ratio: 282 / 198;
   }
 
   .card__img {

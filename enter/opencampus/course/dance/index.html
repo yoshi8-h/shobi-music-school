@@ -9,7 +9,7 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+JP:wght@100..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:wght@100..900&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
 
   <!-- CSS -->
   <link rel="stylesheet" href="/lib/common/css/swiper-bundle.min.css" />
@@ -19,13 +19,23 @@
 </head>
 <body id="dance">
 
+<!-- header -->
+<header class="header">
+  <a href="#" class="header__logo">
+    <picture>
+      <source media="(min-width: 769px)" srcset="/lib/common/img/logo.png">
+      <img src="/lib/common/img/logo-sp.png" alt="ロゴ">
+    </picture>
+  </a>
+</header>
+
   <!--#include virtual="/include/header.shtml" -->
 
   <main>
     <!-- c-fv -->
     <div class="c-fv">  <!-- 背景画像は、『c-fv_bg-dance.png』/『『c-fv_bg-dance-sp.png』』という命名規則(danceの部分を適宜変更)にて『scss』内にて定義済み -->
       <div class="c-fv__inner inner">
-        <div class="c-fv__titles">
+        <h1 class="c-fv__titles">
           <div class="c-fv__title">
             OPEN CAMPUS
             <div class="c-fv__title-names">
@@ -37,7 +47,7 @@
             <source media="(min-width: 769px)" srcset="../../../../lib/pages/opencampus/course/img/c-fv_title-bg.svg">
             <img src="../../../../lib/pages/opencampus/course/img/c-fv_title-bg-sp.svg" alt="黒い背景">
           </picture>
-        </div>
+        </h1>
       </div>
       <div class="c-fv__bottom">
         <div class="c-fv__course-text">DANCE</div>
@@ -47,13 +57,13 @@
 
     <!-- topics2 セクション -->
     <section class="topics topics2">
-      <h3 class="topics2__title js-fadeInUp">
+      <h2 class="topics2__title js-fadeInUp">
         <div class="topics2__title-course">DANCE</div>
         <picture class="topics2__title-img">
           <source media="(min-width: 769px)" srcset="../../../../lib/pages/opencampus/course/img/section-title-topics2.svg">
           <img src="../../../../lib/pages/opencampus/course/img/section-title-topics2-sp.svg" alt="TOPICS">
         </picture>
-      </h3>
+      </h2>
       <div class="topics2__middle">
         <div id="js-topics-swiper" class="topics__swiper swiper">  <!-- swiper -->
           <div class="topics__cards cards swiper-wrapper">
@@ -122,12 +132,12 @@
         <div class="topics__arrows">  <!-- swiperの「前へ」「次へ」ボタン -->
           <div id="js-topics-prev" class="topics__prev swiper-button-prev">
             <div class="topics__prev-img">
-              <img src="../../../../lib/pages/opencampus/course/img/arrow-prev.png" alt="前へボタン">
+              <img src="../../../../lib/pages/opencampus/course/img/arrow-prev.svg" alt="前へボタン">
             </div>
           </div>
           <div id="js-topics-next" class="topics__next swiper-button-next">
             <div class="topics__next-img">
-              <img src="../../../../lib/pages/opencampus/course/img/arrow-next.png" alt="次へボタン">
+              <img src="../../../../lib/pages/opencampus/course/img/arrow-next.svg" alt="次へボタン">
             </div>
           </div>
         </div>
@@ -371,12 +381,12 @@
     <!-- date セクション -->
     <section class="date">
       <div class="date__inner inner">
-        <h3 class="date__title">
+        <h2 class="date__title">
           <picture class="date__title-img">
             <source media="(min-width: 769px)" srcset="../../../../lib/pages/opencampus/course/img/date-title.svg">
             <img src="../../../../lib/pages/opencampus/course/img/date-title-sp.svg" alt="これからのオープンキャンパス">
           </picture>
-        </h3>
+        </h2>
         <div class="date__posts posts">
           <div class="posts__item post">
             <div class="post__wrap">
@@ -668,12 +678,12 @@
     <!-- treatment セクション -->
     <section class="treatment">
       <div class="treatment__inner inner">
-        <h3 class="treatment__title">
+        <h2 class="treatment__title">
           <picture class="treatment__title-img">
             <source media="(min-width: 769px)" srcset="../../../../lib/pages/opencampus/course/img/treatment-title.svg">
             <img src="../../../../lib/pages/opencampus/course/img/treatment-title-sp.svg" alt="オープンキャンパス参加優遇制度">
           </picture>
-        </h3>
+        </h2>
         <div class="treatment__boxes">
           <div class="treatment__box">
             <div class="treatment__box-left">1</div>
@@ -732,6 +742,24 @@
     </section>
 
   </main>
+
+
+    <!-- footer -->
+<footer class="footer">
+  <div class="footer__wrap">
+    <a href="#" class="footer__logo">
+      <picture class="footer__img">
+        <source media="(min-width: 769px)" srcset="/lib/common/img/footer-logo.svg">
+        <img src="/lib/common/img/footer-logo-sp.svg" alt="ロゴ">
+      </picture>
+    </a>
+    <small class="footer__copyright">Copyright(C)2024 SHOBI College of Music All Rights Reserved.</small>
+  </div>
+</footer>
+
+<!-- トップへ戻るボタン -->
+<a href="#" id="js-top-btn" class="top-btn"><img src="/lib/common/img/top-btn.png" alt="TOPへ戻るボタン"></a>
+
 
   <!--#include virtual="/include/footer.shtml" -->
 

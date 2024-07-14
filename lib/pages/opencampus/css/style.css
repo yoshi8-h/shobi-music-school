@@ -1898,6 +1898,7 @@ body {
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
+    padding: 0;
   }
   .card:hover .card__img img {
     -webkit-transform: scale(1.1);
@@ -1911,7 +1912,7 @@ body {
   }
   .card__wrap {
     border-radius: 0.625rem;
-    border: 2px solid #E3E3E3;
+    border: 1px solid #E3E3E3;
     background: #FFF;
     padding: 0.4375rem;
     width: 15.625rem;
@@ -1920,6 +1921,9 @@ body {
     -o-object-fit: cover;
        object-fit: cover;
     position: relative;
+    width: 17.625rem;
+    height: 12.375rem;
+    aspect-ratio: 282/198;
   }
   .card__img {
     overflow: hidden;
