@@ -46,11 +46,18 @@
     line-height: 1.6;
   }
 
+  .description__title-text-top-sp {
+  }
+
   .description__title-text1 {
   }
 
+  .description__img-sp {
+    display: none;
+  }
+
   .description__title-text2 {
-  margin-top: rem(12);
+    margin-top: rem(12);
   }
 
   .description__title-text2 .is-pink {
@@ -177,6 +184,10 @@
         width: rem(70);
       }
     }
+
+    .cta__btn-text .bg-pink {
+      padding-inline: rem(4);
+    }
   }
 
 
@@ -196,7 +207,7 @@
 
   .o-flow .section-title__img {  // セクション毎に上書きする部分。
     img {
-      width: rem(530);
+      width: rem(680);
     }
   }
 
@@ -318,7 +329,7 @@
   }
 
   .o-f-item__download {
-    margin-top: rem(40);
+    margin-top: rem(34);
     max-width: rem(700);
     margin-inline: auto;
   }
@@ -373,7 +384,7 @@
     height: rem(2);
     background: #006CB6;
     position: absolute;
-    bottom: rem(-12);
+    bottom: rem(-7);
     left: rem(-20);
   }
 
@@ -385,7 +396,7 @@
     max-width: rem(1000);
     margin-inline: auto;
     padding-top: rem(45);
-    padding-bottom: rem(30);
+    padding-bottom: rem(45);
     padding-inline: rem(50);
     display: flex;
     justify-content: space-between;
@@ -496,6 +507,7 @@
     text-edge: cap;
     font-family: $font-family-en-1;
     font-size: rem(22);
+    font-style: italic;
     font-weight: 600;
     line-height: 2.0;
     text-decoration-line: underline;
@@ -534,6 +546,7 @@
     text-edge: cap;
     font-family: $font-family-en-1;
     font-size: rem(22);
+    font-style: italic;
     font-weight: 600;
     line-height: 2.0;
     text-decoration-line: underline;

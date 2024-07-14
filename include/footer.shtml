@@ -3,8 +3,8 @@
   <div class="footer__wrap">
     <a href="#" class="footer__logo">
       <picture class="footer__img">
-        <source media="(min-width: 769px)" srcset="/lib/common/img/footer-logo.png">
-        <img src="/lib/common/img/footer-logo-sp.png" alt="ロゴ">
+        <source media="(min-width: 769px)" srcset="/lib/common/img/footer-logo.svg">
+        <img src="/lib/common/img/footer-logo-sp.svg" alt="ロゴ">
       </picture>
     </a>
     <small class="footer__copyright">Copyright(C)2024 SHOBI College of Music All Rights Reserved.</small>
@@ -13,4 +13,3 @@
 
 <!-- トップへ戻るボタン -->
 <a href="#" id="js-top-btn" class="top-btn"><img src="/lib/common/img/top-btn.png" alt="TOPへ戻るボタン"></a>
-

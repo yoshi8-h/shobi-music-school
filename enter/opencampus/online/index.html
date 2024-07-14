@@ -19,6 +19,16 @@
 </head>
 <body>
 
+  <!-- header -->
+<header class="header">
+  <a href="#" class="header__logo">
+    <picture>
+      <source media="(min-width: 769px)" srcset="/lib/common/img/logo.png">
+      <img src="/lib/common/img/logo-sp.png" alt="ロゴ">
+    </picture>
+  </a>
+</header>
+
   <!--#include virtual="/include/header.shtml" -->
 
   <main>
@@ -31,7 +41,7 @@
         <div class="fv__img is-04 js-card-fadeInUp"><img src="../../../lib/pages/opencampus/online/img/fv-04.png" alt="画像04"></div>
         <div class="fv__img is-05 js-card-fadeInUp"><img src="../../../lib/pages/opencampus/online/img/fv-05.png" alt="画像05"></div>
         <div class="fv__img is-06 js-card-fadeInUp"><img src="../../../lib/pages/opencampus/online/img/fv-06.png" alt="画像06"></div>
-        <h1 class="fv__title js-card-fadeInUp"><img src="../../../lib/pages/opencampus/online/img/fv-title.png" alt="タイトル"></h1>
+        <h1 class="fv__title js-card-fadeInUp"><img src="../../../lib/pages/opencampus/online/img/fv-title.png" alt="音楽・エンタメを仕事にする SHOBI OPEN CAMPUS 本格的な設備とプロのレッスンを体験！音楽をもっと好きになろう！"></h1>
       </div>
     </div>
 
@@ -40,7 +50,7 @@
       <div class="open__line-top"></div>
       <div class="open__top">
         <picture>
-          <source media="(min-width: 769px)" srcset="../../../lib/pages/opencampus/online/img//open-bg.png">
+          <source media="(min-width: 769px)" srcset="../../../lib/pages/opencampus/online/img/open-bg.png">
           <img src="../../../lib/pages/opencampus/online/img/open-bg-sp.png" alt="背景画像">
         </picture>
       </div>
@@ -54,7 +64,10 @@
       <div class="description__inner inner">
         <div class="description__top">
           <h3 class="description__title-texts">
-            <p class="description__title-text1">尚美ミュージックカレッジでは、来校が難しい方を対象に、個別に「オンラインオープンキャンパス」を開催しています。</p>
+            <div class="description__title-text-top-sp">
+              <p class="description__title-text1">尚美ミュージックカレッジでは、来校が難しい方を対象に、個別に「オンラインオープンキャンパス」を開催しています。</p>
+              <div class="description__img-sp"><img src="../../../lib/pages/opencampus/online/img/description-icon.png" alt="アイコン"></div>
+            </div>
             <p class="description__title-text2">参加された方は来校してのオープンキャンパスと同様に　<span class="is-pink">①「入学選考面接の免除」と②「入学選考実技試験の免除」の参加優遇制度が適用</span>されます。</p>
           </h3>
           <div class="description__img"><img src="../../../lib/pages/opencampus/online/img/description-icon.png" alt="アイコン"></div>
@@ -83,7 +96,7 @@
         <div class="description__cta cta cta--online">
           <div class="cta__wrap">
             <a href="" class="cta__btn">
-              <div class="cta__btn-icon"><img src="../../../lib/pages/opencampus/online/img/cta-icon-online.png" alt="ctaアイコン"></div>
+              <div class="cta__btn-icon"><img src="../../../lib/pages/opencampus/online/img/cta-icon-online.svg" alt="ctaアイコン"></div>
               <p class="cta__btn-text"><span class="bg-pink">参加型</span>オープン<br class="hidden-pc">キャンパスはこちら</p>
               <div class="cta__btn-arrow"><img src="../../../lib/pages/opencampus/online/img/cra-arrow-white.png" alt="白い矢印"></div>
             </a>
@@ -96,13 +109,13 @@
     <!-- o-flow セクション (オンラインの流れ) -->
     <section class="o-flow">
       <div class="o-flow__inner inner">
-        <h3 class="o-flow__title section-title js-fadeInUp">
-          <picture class="section-title__img">
-            <source media="(min-width: 769px)" srcset="../../../lib/pages/opencampus/online/img/section-title-o-flow.png">
-            <img src="../../../lib/pages/opencampus/online/img/section-title-o-flow.png" alt="オンラインオープンキャンパスの流れ">
-          </picture>
-          <div class="section-title__left"><img src="../../../lib/pages/opencampus/online/img/section-title-left.png" alt="左側のアイコン"></div>
-          <div class="section-title__right"><img src="../../../lib/pages/opencampus/online/img/section-title-right.png" alt="右側のアイコン"></div>
+        <h3 class="flow__title section-title js-fadeInUp">
+          <div class="section-title__img section-title__img--top">
+            <picture class="section-title__img">
+              <source media="(min-width: 769px)" srcset="../../../lib/pages/opencampus/online/img/o-flow-title.svg">
+              <img src="../../../lib/pages/opencampus/online/img/o-flow-title-sp.svg" alt="11学科のオープンキャンパス">
+            </picture>
+          </div>
         </h3>
         <div class="o-flow__items">
           <div class="o-flow__item o-f-item">
@@ -110,7 +123,7 @@
             <div class="o-f-item__wrap">
               <div class="o-flow__top">
                 <div class="o-f-item__title">「学校説明」動画の視聴</div>
-                <p class="o-f-item__text">初めに尚美ミュージックカレッジ専門学校を理解するた「学校説明」の動画を視聴してください。</p>
+                <p class="o-f-item__text">初めに尚美ミュージックカレッジ専門学校を理解するため「学校説明」の動画を視聴してください。</p>
               </div>
               <div class="o-flow__movie">
                 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/OqYKRwuGbbk?si=mF-DcKvDEdIC_o0g&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -122,7 +135,7 @@
             <div class="o-f-item__number">2</div>
             <div class="o-f-item__wrap">
               <div class="o-flow__top">
-                <div class="o-f-item__title">「オンラインオープンキャンパス」<br class="hidden-pc">の参加申込み</div>
+                <div class="o-f-item__title">「オンライン<br class="hidden-pc">オープンキャンパス」の参加申込み</div>
                 <p class="o-f-item__text">専用フォームから参加申込みをしてください。</p>
               </div>
               <a href="#" class="o-f-item__btn btn">
@@ -141,7 +154,7 @@
             <div class="o-f-item__number">3</div>
             <div class="o-f-item__wrap">
               <div class="o-flow__top">
-                <div class="o-f-item__title">「学科説明及びオンライン個別面談」<br class="hidden-pc">実施候補日の調整</div>
+                <div class="o-f-item__title">「学科説明及びオンライン<br class="hidden-pc">個別面談」実施候補日の調整</div>
                 <p class="o-f-item__text">参加申込み後2〜3日ほどで「学科説明及びオンライン個別面談」の実施候補日をメールにてお知らせします。実施日程の調整をお願いします。</p>
               </div>
               <p class="o-f-item__sub-text">※メールの設定で「@shobi.ac.jp」からのメールが届くように変更しておいてください。</p>
@@ -152,9 +165,10 @@
             <div class="o-f-item__number">4</div>
             <div class="o-f-item__wrap">
               <div class="o-flow__top">
-                <div class="o-f-item__title">Zoomで<br class="hidden-pc">「学科説明及びオンライン個別面談」<br class="hidden-pc">を実施</div>
+                <div class="o-f-item__title">Zoomで「学科説明及び<br class="hidden-pc">オンライン個別面談」を実施</div>
                 <p class="o-f-item__text">Zoomを使用して学科教員と「学科説明及びオンライン個別面談」を行います。（個別面談は30分程度）</p>
               </div>
+              <p class="o-f-item__sub-text is-download">※スマホで行う場合は、事前にスマホにアプリ「Zoom」をインストールしてください。</p>
               <div class="o-f-item__download">
                 <p class="o-f-item__download-text"><span class="is-pink">●</span>「Zoom」のダウンロードはこちら</p>
                 <div class="o-f-item__download-links">
@@ -162,13 +176,12 @@
                   <a href="#" class="o-f-item__download-link">androidの方</a>
                 </div>
               </div>
-              <p class="o-f-item__sub-text is-download">※スマホで行う場合は、事前にスマホにアプリ「Zoom」をインストールしてください。</p>
             </div>
           </div>
         </div>
         <div class="o-flow__box">
           <div class="o-flow__box-left">
-            <div class="o-flow__box-title">ジャズ・ポピュラー学科、管弦打楽器学科、<br class="hidden-sp">音楽総合アカデミー学科<br class="hidden-pc">に入学希望の方</div>
+            <div class="o-flow__box-title">ジャズ・ポピュラー学科、管弦打楽器学科、音楽総合アカデミー学科に入学希望の方</div>
             <p class="o-flow__box-text">来校してのオープンキャンパスで行われる個別レッスンに代えて、動画による〈入学選考実技試験免除認定〉を受けていただきます。詳しくは該当学科にお申込みいただいた方にメールでお知らせします。</p>
           </div>
           <div class="o-flow__box-right">
@@ -193,6 +206,24 @@
     </section>
 
   </main>
+
+
+  <!-- footer -->
+<footer class="footer">
+  <div class="footer__wrap">
+    <a href="#" class="footer__logo">
+      <picture class="footer__img">
+        <source media="(min-width: 769px)" srcset="/lib/common/img/footer-logo.svg">
+        <img src="/lib/common/img/footer-logo-sp.svg" alt="ロゴ">
+      </picture>
+    </a>
+    <small class="footer__copyright">Copyright(C)2024 SHOBI College of Music All Rights Reserved.</small>
+  </div>
+</footer>
+
+<!-- トップへ戻るボタン -->
+<a href="#" id="js-top-btn" class="top-btn"><img src="/lib/common/img/top-btn.png" alt="TOPへ戻るボタン"></a>
+
 
   <!--#include virtual="/include/footer.shtml" -->
 
