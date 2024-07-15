@@ -11,7 +11,7 @@ body {
 @media print, screen and (min-width: 769px) {
   .c-fv {
     height: 100vh;
-    max-height: 39.375rem;
+    max-height: 43.125rem;
     display: grid;
     place-items: center;
     position: relative;
