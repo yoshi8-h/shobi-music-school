@@ -753,6 +753,7 @@
     font-size: rem(12);
     font-weight: $normal;
     line-height: 1.6;
+    hanging-punctuation: force-end;  // ぶら下げ処理の指定
   }
 
   .lesson__teacher-img{
@@ -854,6 +855,7 @@
     font-size: rem(12);
     font-weight: $normal;
     line-height: 1.6;
+    hanging-punctuation: force-end;  // ぶら下げ処理の指定
   }
 
   .details__button{
