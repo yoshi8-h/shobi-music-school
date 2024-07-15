@@ -207,7 +207,7 @@
 
   .o-flow .section-title__img {  // セクション毎に上書きする部分。
     img {
-      width: rem(680);
+      width: rem(950);
     }
   }
 
@@ -326,6 +326,7 @@
     font-size: rem(12);
     font-weight: 400;
     line-height: 1.6;
+    hanging-punctuation: force-end;  // ぶら下げ処理の指定
   }
 
   .o-f-item__download {

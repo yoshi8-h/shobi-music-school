@@ -172,7 +172,7 @@ body {
     padding-bottom: 5.625rem;
   }
   .o-flow .section-title__img img {
-    width: 42.5rem;
+    width: 59.375rem;
   }
   .o-flow__items {
     margin-top: 3.4375rem;
@@ -283,6 +283,7 @@ body {
     font-size: 0.75rem;
     font-weight: 400;
     line-height: 1.6;
+    hanging-punctuation: force-end;
   }
   .o-f-item__download {
     margin-top: 2.125rem;
@@ -837,6 +838,7 @@ body {
     line-height: 1.6;
     max-width: 28.125rem;
     margin-inline: auto;
+    hanging-punctuation: force-end;
   }
   .o-f-item__sub-text.is-download {
     margin-top: 1.25rem;
@@ -1042,6 +1044,7 @@ body {
     text-edge: cap;
     font-family: "Barlow Semi Condensed", sans-serif;
     font-size: 1.25rem;
+    font-style: italic;
     font-weight: 600;
     line-height: 2;
     text-decoration-line: underline;
@@ -1081,6 +1084,7 @@ body {
     text-edge: cap;
     font-family: "Barlow Semi Condensed", sans-serif;
     font-size: 1.25rem;
+    font-style: italic;
     font-weight: 600;
     line-height: 2;
     text-decoration-line: underline;
