@@ -5,16 +5,758 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>プロミュージシャン学科 | オープンキャンパス プログラム | 音楽を仕事にする学校 尚美ミュージックカレッジ専門学校</title>
   <!--#include virtual="/include/head_end.shtml" -->
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:wght@100..900&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/lib/common/css/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="/lib/common/css/style.css" type="text/css" media="all" />  <!-- reset.cssの役割 -->
+  <link rel="stylesheet" href="/lib/pages/opencampus/css/style.css" type="text/css" media="all" />  <!-- 全てのhtmlファイルに必須 -->
   <link rel="stylesheet" href="/lib/pages/opencampus/course/css/style.css" type="text/css" media="all" />
 </head>
-<body>
+<body id="promusician">
+
   <!--#include virtual="/include/header.shtml" -->
+
   <main>
+    <!-- c-fv -->
+    <div class="c-fv">  <!-- 背景画像は、『c-fv_bg-dance.png』/『『c-fv_bg-dance-sp.png』』という命名規則(danceの部分を適宜変更)にて『scss』内にて定義済み -->
+      <div class="c-fv__inner inner">
+        <h1 class="c-fv__titles">
+          <div class="c-fv__title">
+            OPEN CAMPUS
+            <div class="c-fv__title-names">
+              <p class="c-fv__school-name">SHOBI</p>
+              <div class="c-fv__course-name"><img src="../../../../lib/pages/opencampus/course/img/course_name-promusician.svg" alt="プロミュージシャン学科"></div>
+            </div>
+          </div>
+          <picture class="c-fv__title-bg">
+            <source media="(min-width: 769px)" srcset="../../../../lib/pages/opencampus/course/img/c-fv_title-bg.svg">
+            <img src="../../../../lib/pages/opencampus/course/img/c-fv_title-bg-sp.svg" alt="黒い背景">
+          </picture>
+        </h1>
+      </div>
+      <div class="c-fv__bottom">
+        <div class="c-fv__course-text">PRO MUSICIAN</div>
+        <p class="c-fv__message">テキスト◇入ります■テキスト◇入ります■テキスト◇入ります■テキスト◇</p>
+      </div>
+    </div>
+
+    <!-- topics2 セクション -->
+    <section class="topics topics2">
+      <h2 class="topics2__title js-fadeInUp">
+        <div class="topics2__title-course">PRO MUSICIAN</div>
+        <picture class="topics2__title-img">
+          <source media="(min-width: 769px)" srcset="../../../../lib/pages/opencampus/course/img/section-title-topics2.svg">
+          <img src="../../../../lib/pages/opencampus/course/img/section-title-topics2-sp.svg" alt="TOPICS">
+        </picture>
+      </h2>
+      <div class="topics2__middle">
+        <div id="js-topics-swiper" class="topics__swiper swiper">  <!-- swiper -->
+          <div class="topics__cards cards swiper-wrapper">
+            <button class="cards__item card swiper-slide js-modal-open" data-modal="1">
+              <div class="card__wrap">
+                <div class="card__img"><img src="../../../../lib/pages/opencampus/course/img/slide-01.png" alt="写真01"></div>
+                <p class="card__button">全日程対象！<br>参加時の交通費を補助します！</p>
+              </div>
+            </button>
+            <button class="cards__item card swiper-slide js-modal-open" data-modal="2">
+              <div class="card__wrap">
+                <div class="card__img"><img src="../../../../lib/pages/opencampus/course/img/slide-02.png" alt="写真02"></div>
+                <p class="card__button">AO入学エントリー資格の認定</p>
+              </div>
+            </button>
+            <button class="cards__item card swiper-slide js-modal-open" data-modal="3">
+              <div class="card__wrap">
+                <div class="card__img"><img src="../../../../lib/pages/opencampus/course/img/slide-03.png" alt="写真03"></div>
+                <p class="card__button">７月・8月限定夏休み特別企画！<br>01　無料体験入寮</p>
+              </div>
+            </button>
+            <button class="cards__item card swiper-slide js-modal-open" data-modal="4">
+              <div class="card__wrap">
+                <div class="card__img"><img src="../../../../lib/pages/opencampus/course/img/slide-04.png" alt="写真04"></div>
+                <p class="card__button">実技試験、面接の免除！<br>入学選考優遇制度</p>
+              </div>
+            </button>
+            <button class="cards__item card swiper-slide js-modal-open" data-modal="5">
+              <div class="card__wrap">
+                <div class="card__img"><img src="../../../../lib/pages/opencampus/course/img/slide-05.png" alt="写真05"></div>
+                <p class="card__button">保護者・ご家族向け説明会<br>学費・奨学金・入学制度など</p>
+              </div>
+            </button>
+            <!-- <button class="cards__item card swiper-slide">
+              <div class="card__wrap">
+                <div class="card__img"><img src="../../../../lib/pages/opencampus/course/img/slide-01.png" alt="写真01"></div>
+                <p class="card__button">全日程対象！<br>参加時の交通費を補助します！</p>
+              </div>
+            </button> -->
+            <!-- <button class="cards__item card swiper-slide">
+              <div class="card__wrap">
+                <div class="card__img"><img src="../../../../lib/pages/opencampus/course/img/slide-02.png" alt="写真02"></div>
+                <p class="card__button">AO入学エントリー資格の認定</p>
+              </div>
+            </button> -->
+            <button class="cards__item card swiper-slide js-modal-open" data-modal="6">
+              <div class="card__wrap">
+                <div class="card__img"><img src="../../../../lib/pages/opencampus/course/img/slide-03.png" alt="写真03"></div>
+                <p class="card__button">７月・8月限定夏休み特別企画！<br>01　無料体験入寮</p>
+              </div>
+            </button>
+            <button class="cards__item card swiper-slide js-modal-open" data-modal="7">
+              <div class="card__wrap">
+                <div class="card__img"><img src="../../../../lib/pages/opencampus/course/img/slide-04.png" alt="写真04"></div>
+                <p class="card__button">実技試験、面接の免除！<br>入学選考優遇制度</p>
+              </div>
+            </button>
+            <!-- <button class="cards__item card swiper-slide">
+              <div class="card__wrap">
+                <div class="card__img"><img src="../../../../lib/pages/opencampus/course/img/slide-05.png" alt="写真05"></div>
+                <p class="card__button">保護者・ご家族向け説明会<br>学費・奨学金・入学制度など</p>
+              </div>
+            </button> -->
+          </div>
+        </div>
+        <div class="topics__arrows">  <!-- swiperの「前へ」「次へ」ボタン -->
+          <div id="js-topics-prev" class="topics__prev swiper-button-prev">
+            <div class="topics__prev-img">
+              <img src="../../../../lib/pages/opencampus/course/img/arrow-prev.svg" alt="前へボタン">
+            </div>
+          </div>
+          <div id="js-topics-next" class="topics__next swiper-button-next">
+            <div class="topics__next-img">
+              <img src="../../../../lib/pages/opencampus/course/img/arrow-next.svg" alt="次へボタン">
+            </div>
+          </div>
+        </div>
+        <div id="js-topics-pagination" class="swiper-pagination topics__pagination"></div>  <!-- ページネーション -->
+      </div>
+    </section>
+
+    <!-- モーダル (topics セクションの) -->
+    <dialog id="js-topics-modal-1" class="topics-modal">
+      <div class="topics-modal__wrap">
+        <div class="topics-modal__top">
+          <div class="topics-modal__top-titles">
+            <div class="topics-modal__top-en">TOPICS</div>
+            <p class="topics-modal__top-ja">全日程対象！<br>参加時の交通費を補助します！</p>
+          </div>
+          <button class="topics-modal__close js-modal-close" data-modal="1"><img src="../../../../lib/pages/opencampus/course/img/modal-close.png" alt="×"></button>
+        </div>
+        <div class="topics-modal__bottom">
+          <div class="topics-modal__bottom-top">
+            <div class="topics-modal__bottom-top-left"><img src="../../../../lib/pages/opencampus/course/img/slide-01.png" alt="写真01"></div>
+            <div class="topics-modal__bottom-top-right">
+              <p class="topics-modal__bottom-top-title">オープンキャンパス参加者限定の<br>優遇制度があります！！</p>
+              <div class="topics-modal__bottom-top-tags tags">
+                <div class="tags__title">面接の免除</div>
+                <p class="tags__text">全学科対象</p>
+              </div>
+              <p class="topics-modal__bottom-top-text1">担当教員との個別カウンセリングで『入学選考面接免除認定』を受けた方は、入学選考時の面接が免除になります。</p>
+              <p class="topics-modal__bottom-top-text2">※免除は認定を受けた学科へ2024年度に出願する場合のみ有効です。</p>
+              <p class="topics-modal__bottom-top-text3">※2024年1月14日からは高校2年生（新高校3年生）も認定を行います。2025年度に出願する場合のみ有効です。</p>
+            </div>
+          </div>
+          <div class="topics-modal__bottom-bottom">
+            <div class="topics-modal__bottom-bottom-tags tags">
+              <div class="tags__title">実技試験の免除</div>
+                <p class="tags__text">ジャズ・ポピュラー学科・管弦打楽器学科・音楽総合アカデミー学科対象</p>
+            </div>
+            <p class="topics-modal__bottom-bottom-text1">担当教員との個別レッスンで『入学選考実技試験免除認定』を受けた方は、入学選考時の実技試験が免除になります。</p>
+            <p class="topics-modal__bottom-bottom-text2">※免除は認定を受けた学科・専攻・コースへ2024年度に出願する場合のみ有効です。</p>
+            <p class="topics-modal__bottom-bottom-text3">※2024年1月14日からは高校2年生（新高校3年生）も認定を行います。2025年度に出願する場合のみ有効です。</p>
+          </div>
+        </div>
+      </div>
+    </dialog>
+    <dialog id="js-topics-modal-2" class="topics-modal">
+      <div class="topics-modal__wrap">
+        <div class="topics-modal__top">
+          <div class="topics-modal__top-titles">
+            <div class="topics-modal__top-en">TOPICS</div>
+            <p class="topics-modal__top-ja">AO入学エントリー資格の認定</p>
+          </div>
+          <button class="topics-modal__close js-modal-close" data-modal="2"><img src="../../../../lib/pages/opencampus/course/img/modal-close.png" alt="×"></button>
+        </div>
+        <div class="topics-modal__bottom">
+          <div class="topics-modal__bottom-top">
+            <div class="topics-modal__bottom-top-left"><img src="../../../../lib/pages/opencampus/course/img/slide-02.png" alt="写真02"></div>
+            <div class="topics-modal__bottom-top-right">
+              <p class="topics-modal__bottom-top-title">オープンキャンパス参加者限定の<br>優遇制度があります！！</p>
+              <div class="topics-modal__bottom-top-tags tags">
+                <div class="tags__title">面接の免除</div>
+                <p class="tags__text">全学科対象</p>
+              </div>
+              <p class="topics-modal__bottom-top-text1">担当教員との個別カウンセリングで『入学選考面接免除認定』を受けた方は、入学選考時の面接が免除になります。</p>
+              <p class="topics-modal__bottom-top-text2">※免除は認定を受けた学科へ2024年度に出願する場合のみ有効です。</p>
+              <p class="topics-modal__bottom-top-text3">※2024年1月14日からは高校2年生（新高校3年生）も認定を行います。2025年度に出願する場合のみ有効です。</p>
+            </div>
+          </div>
+          <div class="topics-modal__bottom-bottom">
+            <div class="topics-modal__bottom-bottom-tags tags">
+              <div class="tags__title">実技試験の免除</div>
+                <p class="tags__text">ジャズ・ポピュラー学科・管弦打楽器学科・音楽総合アカデミー学科対象</p>
+            </div>
+            <p class="topics-modal__bottom-bottom-text1">担当教員との個別レッスンで『入学選考実技試験免除認定』を受けた方は、入学選考時の実技試験が免除になります。</p>
+            <p class="topics-modal__bottom-bottom-text2">※免除は認定を受けた学科・専攻・コースへ2024年度に出願する場合のみ有効です。</p>
+            <p class="topics-modal__bottom-bottom-text3">※2024年1月14日からは高校2年生（新高校3年生）も認定を行います。2025年度に出願する場合のみ有効です。</p>
+          </div>
+        </div>
+      </div>
+    </dialog>
+    <dialog id="js-topics-modal-3" class="topics-modal">
+      <div class="topics-modal__wrap">
+        <div class="topics-modal__top">
+          <div class="topics-modal__top-titles">
+            <div class="topics-modal__top-en">TOPICS</div>
+            <p class="topics-modal__top-ja">７月・8月限定夏休み特別企画！<br>01　無料体験入寮</p>
+          </div>
+          <button class="topics-modal__close js-modal-close" data-modal="3"><img src="../../../../lib/pages/opencampus/course/img/modal-close.png" alt="×"></button>
+        </div>
+        <div class="topics-modal__bottom">
+          <div class="topics-modal__bottom-top">
+            <div class="topics-modal__bottom-top-left"><img src="../../../../lib/pages/opencampus/course/img/slide-03.png" alt="写真03"></div>
+            <div class="topics-modal__bottom-top-right">
+              <p class="topics-modal__bottom-top-title">オープンキャンパス参加者限定の<br>優遇制度があります！！</p>
+              <div class="topics-modal__bottom-top-tags tags">
+                <div class="tags__title">面接の免除</div>
+                <p class="tags__text">全学科対象</p>
+              </div>
+              <p class="topics-modal__bottom-top-text1">担当教員との個別カウンセリングで『入学選考面接免除認定』を受けた方は、入学選考時の面接が免除になります。</p>
+              <p class="topics-modal__bottom-top-text2">※免除は認定を受けた学科へ2024年度に出願する場合のみ有効です。</p>
+              <p class="topics-modal__bottom-top-text3">※2024年1月14日からは高校2年生（新高校3年生）も認定を行います。2025年度に出願する場合のみ有効です。</p>
+            </div>
+          </div>
+          <div class="topics-modal__bottom-bottom">
+            <div class="topics-modal__bottom-bottom-tags tags">
+              <div class="tags__title">実技試験の免除</div>
+                <p class="tags__text">ジャズ・ポピュラー学科・管弦打楽器学科・音楽総合アカデミー学科対象</p>
+            </div>
+            <p class="topics-modal__bottom-bottom-text1">担当教員との個別レッスンで『入学選考実技試験免除認定』を受けた方は、入学選考時の実技試験が免除になります。</p>
+            <p class="topics-modal__bottom-bottom-text2">※免除は認定を受けた学科・専攻・コースへ2024年度に出願する場合のみ有効です。</p>
+            <p class="topics-modal__bottom-bottom-text3">※2024年1月14日からは高校2年生（新高校3年生）も認定を行います。2025年度に出願する場合のみ有効です。</p>
+          </div>
+        </div>
+      </div>
+    </dialog>
+    <dialog id="js-topics-modal-4" class="topics-modal">
+      <div class="topics-modal__wrap">
+        <div class="topics-modal__top">
+          <div class="topics-modal__top-titles">
+            <div class="topics-modal__top-en">TOPICS</div>
+            <p class="topics-modal__top-ja">実技試験、面接の免除！<br>入学選考優遇制度</p>
+          </div>
+          <button class="topics-modal__close js-modal-close" data-modal="4"><img src="../../../../lib/pages/opencampus/course/img/modal-close.png" alt="×"></button>
+        </div>
+        <div class="topics-modal__bottom">
+          <div class="topics-modal__bottom-top">
+            <div class="topics-modal__bottom-top-left"><img src="../../../../lib/pages/opencampus/course/img/slide-04.png" alt="写真04"></div>
+            <div class="topics-modal__bottom-top-right">
+              <p class="topics-modal__bottom-top-title">オープンキャンパス参加者限定の<br>優遇制度があります！！</p>
+              <div class="topics-modal__bottom-top-tags tags">
+                <div class="tags__title">面接の免除</div>
+                <p class="tags__text">全学科対象</p>
+              </div>
+              <p class="topics-modal__bottom-top-text1">担当教員との個別カウンセリングで『入学選考面接免除認定』を受けた方は、入学選考時の面接が免除になります。</p>
+              <p class="topics-modal__bottom-top-text2">※免除は認定を受けた学科へ2024年度に出願する場合のみ有効です。</p>
+              <p class="topics-modal__bottom-top-text3">※2024年1月14日からは高校2年生（新高校3年生）も認定を行います。2025年度に出願する場合のみ有効です。</p>
+            </div>
+          </div>
+          <div class="topics-modal__bottom-bottom">
+            <div class="topics-modal__bottom-bottom-tags tags">
+              <div class="tags__title">実技試験の免除</div>
+                <p class="tags__text">ジャズ・ポピュラー学科・管弦打楽器学科・音楽総合アカデミー学科対象</p>
+            </div>
+            <p class="topics-modal__bottom-bottom-text1">担当教員との個別レッスンで『入学選考実技試験免除認定』を受けた方は、入学選考時の実技試験が免除になります。</p>
+            <p class="topics-modal__bottom-bottom-text2">※免除は認定を受けた学科・専攻・コースへ2024年度に出願する場合のみ有効です。</p>
+            <p class="topics-modal__bottom-bottom-text3">※2024年1月14日からは高校2年生（新高校3年生）も認定を行います。2025年度に出願する場合のみ有効です。</p>
+          </div>
+        </div>
+      </div>
+    </dialog>
+    <dialog id="js-topics-modal-5" class="topics-modal">
+      <div class="topics-modal__wrap">
+        <div class="topics-modal__top">
+          <div class="topics-modal__top-titles">
+            <div class="topics-modal__top-en">TOPICS</div>
+            <p class="topics-modal__top-ja">保護者・ご家族向け説明会<br>学費・奨学金・入学制度など</p>
+          </div>
+          <button class="topics-modal__close js-modal-close" data-modal="5"><img src="../../../../lib/pages/opencampus/course/img/modal-close.png" alt="×"></button>
+        </div>
+        <div class="topics-modal__bottom">
+          <div class="topics-modal__bottom-top">
+            <div class="topics-modal__bottom-top-left"><img src="../../../../lib/pages/opencampus/course/img/slide-05.png" alt="写真05"></div>
+            <div class="topics-modal__bottom-top-right">
+              <p class="topics-modal__bottom-top-title">オープンキャンパス参加者限定の<br>優遇制度があります！！</p>
+              <div class="topics-modal__bottom-top-tags tags">
+                <div class="tags__title">面接の免除</div>
+                <p class="tags__text">全学科対象</p>
+              </div>
+              <p class="topics-modal__bottom-top-text1">担当教員との個別カウンセリングで『入学選考面接免除認定』を受けた方は、入学選考時の面接が免除になります。</p>
+              <p class="topics-modal__bottom-top-text2">※免除は認定を受けた学科へ2024年度に出願する場合のみ有効です。</p>
+              <p class="topics-modal__bottom-top-text3">※2024年1月14日からは高校2年生（新高校3年生）も認定を行います。2025年度に出願する場合のみ有効です。</p>
+            </div>
+          </div>
+          <div class="topics-modal__bottom-bottom">
+            <div class="topics-modal__bottom-bottom-tags tags">
+              <div class="tags__title">実技試験の免除</div>
+                <p class="tags__text">ジャズ・ポピュラー学科・管弦打楽器学科・音楽総合アカデミー学科対象</p>
+            </div>
+            <p class="topics-modal__bottom-bottom-text1">担当教員との個別レッスンで『入学選考実技試験免除認定』を受けた方は、入学選考時の実技試験が免除になります。</p>
+            <p class="topics-modal__bottom-bottom-text2">※免除は認定を受けた学科・専攻・コースへ2024年度に出願する場合のみ有効です。</p>
+            <p class="topics-modal__bottom-bottom-text3">※2024年1月14日からは高校2年生（新高校3年生）も認定を行います。2025年度に出願する場合のみ有効です。</p>
+          </div>
+        </div>
+      </div>
+    </dialog>
+    <dialog id="js-topics-modal-6" class="topics-modal">
+      <div class="topics-modal__wrap">
+        <div class="topics-modal__top">
+          <div class="topics-modal__top-titles">
+            <div class="topics-modal__top-en">TOPICS</div>
+            <p class="topics-modal__top-ja">７月・8月限定夏休み特別企画！<br>01　無料体験入寮</p>
+          </div>
+          <button class="topics-modal__close js-modal-close" data-modal="6"><img src="../../../../lib/pages/opencampus/course/img/modal-close.png" alt="×"></button>
+        </div>
+        <div class="topics-modal__bottom">
+          <div class="topics-modal__bottom-top">
+            <div class="topics-modal__bottom-top-left"><img src="../../../../lib/pages/opencampus/course/img/slide-03.png" alt="写真03"></div>
+            <div class="topics-modal__bottom-top-right">
+              <p class="topics-modal__bottom-top-title">オープンキャンパス参加者限定の<br>優遇制度があります！！</p>
+              <div class="topics-modal__bottom-top-tags tags">
+                <div class="tags__title">面接の免除</div>
+                <p class="tags__text">全学科対象</p>
+              </div>
+              <p class="topics-modal__bottom-top-text1">担当教員との個別カウンセリングで『入学選考面接免除認定』を受けた方は、入学選考時の面接が免除になります。</p>
+              <p class="topics-modal__bottom-top-text2">※免除は認定を受けた学科へ2024年度に出願する場合のみ有効です。</p>
+              <p class="topics-modal__bottom-top-text3">※2024年1月14日からは高校2年生（新高校3年生）も認定を行います。2025年度に出願する場合のみ有効です。</p>
+            </div>
+          </div>
+          <div class="topics-modal__bottom-bottom">
+            <div class="topics-modal__bottom-bottom-tags tags">
+              <div class="tags__title">実技試験の免除</div>
+                <p class="tags__text">ジャズ・ポピュラー学科・管弦打楽器学科・音楽総合アカデミー学科対象</p>
+            </div>
+            <p class="topics-modal__bottom-bottom-text1">担当教員との個別レッスンで『入学選考実技試験免除認定』を受けた方は、入学選考時の実技試験が免除になります。</p>
+            <p class="topics-modal__bottom-bottom-text2">※免除は認定を受けた学科・専攻・コースへ2024年度に出願する場合のみ有効です。</p>
+            <p class="topics-modal__bottom-bottom-text3">※2024年1月14日からは高校2年生（新高校3年生）も認定を行います。2025年度に出願する場合のみ有効です。</p>
+          </div>
+        </div>
+      </div>
+    </dialog>
+    <dialog id="js-topics-modal-7" class="topics-modal">
+      <div class="topics-modal__wrap">
+        <div class="topics-modal__top">
+          <div class="topics-modal__top-titles">
+            <div class="topics-modal__top-en">TOPICS</div>
+            <p class="topics-modal__top-ja">実技試験、面接の免除！<br>入学選考優遇制度</p>
+          </div>
+          <button class="topics-modal__close js-modal-close" data-modal="7"><img src="../../../../lib/pages/opencampus/course/img/modal-close.png" alt="×"></button>
+        </div>
+        <div class="topics-modal__bottom">
+          <div class="topics-modal__bottom-top">
+            <div class="topics-modal__bottom-top-left"><img src="../../../../lib/pages/opencampus/course/img/slide-04.png" alt="写真04"></div>
+            <div class="topics-modal__bottom-top-right">
+              <p class="topics-modal__bottom-top-title">オープンキャンパス参加者限定の<br>優遇制度があります！！</p>
+              <div class="topics-modal__bottom-top-tags tags">
+                <div class="tags__title">面接の免除</div>
+                <p class="tags__text">全学科対象</p>
+              </div>
+              <p class="topics-modal__bottom-top-text1">担当教員との個別カウンセリングで『入学選考面接免除認定』を受けた方は、入学選考時の面接が免除になります。</p>
+              <p class="topics-modal__bottom-top-text2">※免除は認定を受けた学科へ2024年度に出願する場合のみ有効です。</p>
+              <p class="topics-modal__bottom-top-text3">※2024年1月14日からは高校2年生（新高校3年生）も認定を行います。2025年度に出願する場合のみ有効です。</p>
+            </div>
+          </div>
+          <div class="topics-modal__bottom-bottom">
+            <div class="topics-modal__bottom-bottom-tags tags">
+              <div class="tags__title">実技試験の免除</div>
+                <p class="tags__text">ジャズ・ポピュラー学科・管弦打楽器学科・音楽総合アカデミー学科対象</p>
+            </div>
+            <p class="topics-modal__bottom-bottom-text1">担当教員との個別レッスンで『入学選考実技試験免除認定』を受けた方は、入学選考時の実技試験が免除になります。</p>
+            <p class="topics-modal__bottom-bottom-text2">※免除は認定を受けた学科・専攻・コースへ2024年度に出願する場合のみ有効です。</p>
+            <p class="topics-modal__bottom-bottom-text3">※2024年1月14日からは高校2年生（新高校3年生）も認定を行います。2025年度に出願する場合のみ有効です。</p>
+          </div>
+        </div>
+      </div>
+    </dialog>
+
+
+
+    <!-- date セクション -->
+    <section class="date">
+      <div class="date__inner inner">
+        <h2 class="date__title">
+          <picture class="date__title-img">
+            <source media="(min-width: 769px)" srcset="../../../../lib/pages/opencampus/course/img/date-title.svg">
+            <img src="../../../../lib/pages/opencampus/course/img/date-title-sp.svg" alt="これからのオープンキャンパス">
+          </picture>
+        </h2>
+        <div class="date__posts posts">
+          <div class="posts__item post">
+            <div class="post__wrap">
+              <div class="post__tag">SPECIAL</div>
+              <div class="post__top">
+                <div class="post__img"><img src="../../../../lib/pages/opencampus/course/img/post-img-01.png" alt="写真01"></div>
+              </div>
+              <div class="post__bottom">
+                <div class="post__bottom-top">
+                  <div class="post__title">シアタージャズレッスン</div>
+                  <div class="post__teacher">講師：町田 歩美</div>
+                  <div class="post__tags tags2">
+                    <div class="tags2__item tag2">初参加の方</div>
+                    <div class="tags2__item tag2">リピーターの方</div>
+                    <div class="tags2__item tag2">初参加の方（希望者のみ）</div>
+                    <div class="tags2__item tag2">リピーターの方（希望者のみ）</div>
+                  </div>
+                </div>
+                <div class="post__bottom-bottom">
+                  <div class="post__days days">
+                    <a href="./1234.html" class="days__item day">
+                      <div class="day__text1">06/09</div>
+                      <div class="day__text2">日</div>
+                      <div class="day__arrow"><img src="../../../../lib/pages/opencampus/course/img/day-arrow.svg" alt="黒い矢印"></div>
+                    </a>
+                    <a href="./1234.html" class="days__item day">
+                      <div class="day__text1">06/23</div>
+                      <div class="day__text2">日</div>
+                      <div class="day__arrow"><img src="../../../../lib/pages/opencampus/course/img/day-arrow.svg" alt="黒い矢印"></div>
+                    </a>
+                    <a href="./1234.html" class="days__item day">
+                      <div class="day__text1">07/07</div>
+                      <div class="day__text2">日</div>
+                      <div class="day__arrow"><img src="../../../../lib/pages/opencampus/course/img/day-arrow.svg" alt="黒い矢印"></div>
+                    </a>
+                  </div>
+                  <button type="button" class="post__link js-date-modal-open" data-modal="1">
+                    <span class="post__link-text">全日程を見る</span>
+                    <span class="post__link-arrow"><img src="../../../../lib/pages/opencampus/course/img/post_arrow-white.svg" alt="白い矢印"></span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="posts__item post">
+            <div class="post__wrap">
+              <div class="post__tag">SPECIAL</div>
+              <div class="post__top">
+                <div class="post__img"><img src="../../../../lib/pages/opencampus/course/img/post-img-02.png" alt="写真02"></div>
+              </div>
+              <div class="post__bottom">
+                <div class="post__bottom-top">
+                  <div class="post__title">ヒップホップレッスン</div>
+                  <div class="post__teacher">講師：YUMiKA</div>
+                  <div class="post__tags tags2">
+                    <div class="tags2__item tag2">リピーターの方</div>
+                  </div>
+                </div>
+                <div class="post__bottom-bottom">
+                  <div class="post__days days">
+                    <a href="./1234.html" class="days__item day">
+                      <div class="day__text1">06/09</div>
+                      <div class="day__text2">日</div>
+                      <div class="day__arrow"><img src="../../../../lib/pages/opencampus/course/img/day-arrow.svg" alt="黒い矢印"></div>
+                    </a>
+                    <a href="./1234.html" class="days__item day">
+                      <div class="day__text1">06/23</div>
+                      <div class="day__text2">日</div>
+                      <div class="day__arrow"><img src="../../../../lib/pages/opencampus/course/img/day-arrow.svg" alt="黒い矢印"></div>
+                    </a>
+                    <a href="./1234.html" class="days__item day">
+                      <div class="day__text1">07/07</div>
+                      <div class="day__text2">日</div>
+                      <div class="day__arrow"><img src="../../../../lib/pages/opencampus/course/img/day-arrow.svg" alt="黒い矢印"></div>
+                    </a>
+                  </div>
+                  <button type="button" class="post__link js-date-modal-open" data-modal="2">
+                    <span class="post__link-text">全日程を見る</span>
+                    <span class="post__link-arrow"><img src="../../../../lib/pages/opencampus/course/img/post_arrow-white.svg" alt="白い矢印"></span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="posts__item post">
+            <div class="post__wrap">
+              <div class="post__top">
+                <div class="post__img"><img src="../../../../lib/pages/opencampus/course/img/post-img-03.png" alt="写真03"></div>
+              </div>
+              <div class="post__bottom">
+                <div class="post__bottom-top">
+                  <div class="post__title">ダンス初心者のためのベーシックレッスン</div>
+                  <div class="post__tags tags2">
+                    <div class="tags2__item tag2">初参加の方</div>
+                    <div class="tags2__item tag2">リピーターの方</div>
+                    <div class="tags2__item tag2">リピーターの方（希望者のみ）</div>
+                  </div>
+                </div>
+                <div class="post__bottom-bottom">
+                  <div class="post__days days">
+                    <a href="./1234.html" class="days__item day">
+                      <div class="day__text1">06/09</div>
+                      <div class="day__text2">日</div>
+                      <div class="day__arrow"><img src="../../../../lib/pages/opencampus/course/img/day-arrow.svg" alt="黒い矢印"></div>
+                    </a>
+                    <a href="./1234.html" class="days__item day">
+                      <div class="day__text1">06/23</div>
+                      <div class="day__text2">日</div>
+                      <div class="day__arrow"><img src="../../../../lib/pages/opencampus/course/img/day-arrow.svg" alt="黒い矢印"></div>
+                    </a>
+                  </div>
+                  <button type="button" class="post__link js-date-modal-open" data-modal="3">
+                    <span class="post__link-text">全日程を見る</span>
+                    <span class="post__link-arrow"><img src="../../../../lib/pages/opencampus/course/img/post_arrow-white.svg" alt="白い矢印"></span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="date__bottom">
+          <div class="date__bottom-left">持ちもの</div>
+          <div class="date__bottom-right">
+            <p class="date__bottom-text">ダンスレッスン用に下記をお持ちください。</p>
+            <ul class="date__list">
+              <li class="date__list-item">レッスン着（スエット・Tシャツなど。ジャージ可）</li>
+              <li class="date__list-item">ダンスシューズ（スニーカーなど。上履き可）</li>
+              <li class="date__list-item">タオル</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- モーダル (全日程) -->
+    <dialog id="js-date-modal-1" class="date-modal">
+      <div class="date-modal__wrap">
+        <button class="date-modal__close js-date-modal-close" data-modal="1"><img src="../../../../lib/pages/opencampus/course/img/modal-close.png" alt="×"></button>
+        <div class="date-modal__top">
+          <div class="date-modal__titles">
+            <div class="date-modal__title-tag">SPECIAL</div>
+            <p class="date-modal__title-main">ダンスの基礎レッスン ～STEPPER～</p>
+          </div>
+          <div class="date-modal__teacher">講師：〇〇〇〇〇〇</div>
+        </div>
+        <div class="date-modal__box">
+          <div class="date-modal__tags">
+            <div class="date-modal__tag">初参加の方</div>
+            <div class="date-modal__tag">リピーターの方</div>
+            <div class="date-modal__tag">初参加の方（希望者のみ）</div>
+            <div class="date-modal__tag">リピーターの方（希望者のみ）</div>
+          </div>
+          <div class="date-modal__days">
+            <a href="./1234.html" class="date-modal__day">
+              <div class="date-modal__day-text1">06/23</div>
+              <div class="date-modal__day-text2">日</div>
+              <div class="date-modal__day-arrow"><img src="../../../../lib/pages/opencampus/course/img/day-arrow.svg" alt="黒い矢印"></div>
+            </a>
+            <a href="./1234.html" class="date-modal__day">
+              <div class="date-modal__day-text1">06/30</div>
+              <div class="date-modal__day-text2">日</div>
+              <div class="date-modal__day-arrow"><img src="../../../../lib/pages/opencampus/course/img/day-arrow.svg" alt="黒い矢印"></div>
+            </a>
+            <a href="./1234.html" class="date-modal__day">
+              <div class="date-modal__day-text1">07/07</div>
+              <div class="date-modal__day-text2">日</div>
+              <div class="date-modal__day-arrow"><img src="../../../../lib/pages/opencampus/course/img/day-arrow.svg" alt="黒い矢印"></div>
+            </a>
+            <a href="./1234.html" class="date-modal__day">
+              <div class="date-modal__day-text1">07/14</div>
+              <div class="date-modal__day-text2">日</div>
+              <div class="date-modal__day-arrow"><img src="../../../../lib/pages/opencampus/course/img/day-arrow.svg" alt="黒い矢印"></div>
+            </a>
+            <a href="./1234.html" class="date-modal__day">
+              <div class="date-modal__day-text1">07/21</div>
+              <div class="date-modal__day-text2">日</div>
+              <div class="date-modal__day-arrow"><img src="../../../../lib/pages/opencampus/course/img/day-arrow.svg" alt="黒い矢印"></div>
+            </a>
+            <a href="./1234.html" class="date-modal__day">
+              <div class="date-modal__day-text1">07/29</div>
+              <div class="date-modal__day-text2">日</div>
+              <div class="date-modal__day-arrow"><img src="../../../../lib/pages/opencampus/course/img/day-arrow.svg" alt="黒い矢印"></div>
+            </a>
+            <a href="./1234.html" class="date-modal__day">
+              <div class="date-modal__day-text1">08/23</div>
+              <div class="date-modal__day-text2">日</div>
+              <div class="date-modal__day-arrow"><img src="../../../../lib/pages/opencampus/course/img/day-arrow.svg" alt="黒い矢印"></div>
+            </a>
+            <a href="./1234.html" class="date-modal__day">
+              <div class="date-modal__day-text1">11/23</div>
+              <div class="date-modal__day-text2">日</div>
+              <div class="date-modal__day-arrow"><img src="../../../../lib/pages/opencampus/course/img/day-arrow.svg" alt="黒い矢印"></div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </dialog>
+    <dialog id="js-date-modal-2" class="date-modal">
+      <div class="date-modal__wrap">
+        <button class="date-modal__close js-date-modal-close" data-modal="2"><img src="../../../../lib/pages/opencampus/course/img/modal-close.png" alt="×"></button>
+        <div class="date-modal__top">
+          <div class="date-modal__titles">
+            <div class="date-modal__title-tag">SPECIAL</div>
+            <p class="date-modal__title-main">ヒップホップレッスン</p>
+          </div>
+          <div class="date-modal__teacher">講師：YUMiKA</div>
+        </div>
+        <div class="date-modal__box">
+          <div class="date-modal__tags">
+            <div class="date-modal__tag">リピーターの方</div>
+          </div>
+          <div class="date-modal__days">
+            <a href="./1234.html" class="date-modal__day">
+              <div class="date-modal__day-text1">06/23</div>
+              <div class="date-modal__day-text2">日</div>
+              <div class="date-modal__day-arrow"><img src="../../../../lib/pages/opencampus/course/img/day-arrow.svg" alt="黒い矢印"></div>
+            </a>
+            <a href="./1234.html" class="date-modal__day">
+              <div class="date-modal__day-text1">06/30</div>
+              <div class="date-modal__day-text2">日</div>
+              <div class="date-modal__day-arrow"><img src="../../../../lib/pages/opencampus/course/img/day-arrow.svg" alt="黒い矢印"></div>
+            </a>
+            <a href="./1234.html" class="date-modal__day">
+              <div class="date-modal__day-text1">07/07</div>
+              <div class="date-modal__day-text2">日</div>
+              <div class="date-modal__day-arrow"><img src="../../../../lib/pages/opencampus/course/img/day-arrow.svg" alt="黒い矢印"></div>
+            </a>
+            <a href="./1234.html" class="date-modal__day">
+              <div class="date-modal__day-text1">07/14</div>
+              <div class="date-modal__day-text2">日</div>
+              <div class="date-modal__day-arrow"><img src="../../../../lib/pages/opencampus/course/img/day-arrow.svg" alt="黒い矢印"></div>
+            </a>
+            <a href="./1234.html" class="date-modal__day">
+              <div class="date-modal__day-text1">07/21</div>
+              <div class="date-modal__day-text2">日</div>
+              <div class="date-modal__day-arrow"><img src="../../../../lib/pages/opencampus/course/img/day-arrow.svg" alt="黒い矢印"></div>
+            </a>
+            <a href="./1234.html" class="date-modal__day">
+              <div class="date-modal__day-text1">07/29</div>
+              <div class="date-modal__day-text2">日</div>
+              <div class="date-modal__day-arrow"><img src="../../../../lib/pages/opencampus/course/img/day-arrow.svg" alt="黒い矢印"></div>
+            </a>
+            <a href="./1234.html" class="date-modal__day">
+              <div class="date-modal__day-text1">08/23</div>
+              <div class="date-modal__day-text2">日</div>
+              <div class="date-modal__day-arrow"><img src="../../../../lib/pages/opencampus/course/img/day-arrow.svg" alt="黒い矢印"></div>
+            </a>
+            <a href="./1234.html" class="date-modal__day">
+              <div class="date-modal__day-text1">11/23</div>
+              <div class="date-modal__day-text2">日</div>
+              <div class="date-modal__day-arrow"><img src="../../../../lib/pages/opencampus/course/img/day-arrow.svg" alt="黒い矢印"></div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </dialog>
+    <dialog id="js-date-modal-3" class="date-modal">
+      <div class="date-modal__wrap">
+        <button class="date-modal__close js-date-modal-close" data-modal="3"><img src="../../../../lib/pages/opencampus/course/img/modal-close.png" alt="×"></button>
+        <div class="date-modal__top">
+          <div class="date-modal__titles">
+            <!-- <div class="date-modal__title-tag">SPECIAL</div> -->
+            <p class="date-modal__title-main">ダンス初心者のためのベーシックレッスン</p>
+          </div>
+          <!-- <div class="date-modal__teacher">講師：〇〇〇〇〇〇</div> -->
+        </div>
+        <div class="date-modal__box">
+          <div class="date-modal__tags">
+            <div class="date-modal__tag">初参加の方</div>
+            <div class="date-modal__tag">リピーターの方</div>
+            <div class="date-modal__tag">リピーターの方（希望者のみ）</div>
+          </div>
+          <div class="date-modal__days">
+            <a href="./1234.html" class="date-modal__day">
+              <div class="date-modal__day-text1">06/09</div>
+              <div class="date-modal__day-text2">日</div>
+              <div class="date-modal__day-arrow"><img src="../../../../lib/pages/opencampus/course/img/day-arrow.svg" alt="黒い矢印"></div>
+            </a>
+            <a href="./1234.html" class="date-modal__day">
+              <div class="date-modal__day-text1">06/23</div>
+              <div class="date-modal__day-text2">日</div>
+              <div class="date-modal__day-arrow"><img src="../../../../lib/pages/opencampus/course/img/day-arrow.svg" alt="黒い矢印"></div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </dialog>
+
+    <!-- treatment セクション -->
+    <section class="treatment">
+      <div class="treatment__inner inner">
+        <h2 class="treatment__title">
+          <picture class="treatment__title-img">
+            <source media="(min-width: 769px)" srcset="../../../../lib/pages/opencampus/course/img/treatment-title.svg">
+            <img src="../../../../lib/pages/opencampus/course/img/treatment-title-sp.svg" alt="オープンキャンパス参加優遇制度">
+          </picture>
+        </h2>
+        <div class="treatment__boxes">
+          <div class="treatment__box">
+            <div class="treatment__box-left">1</div>
+            <div class="treatment__box-right">
+              <div class="treatment__box-title">オープンキャンパス参加時の交通費を補助します！</div>
+            </div>
+          </div>
+          <div class="treatment__box">
+            <div class="treatment__box-left">2</div>
+            <div class="treatment__box-right">
+              <div class="treatment__box-title">面接を免除</div>
+              <p class="treatment__box-text">個別カウンセリングを受け「入学選考面接免除認定」を受けると、入学選考時の「面接」が免除！</p>
+            </div>
+          </div>
+          <div class="treatment__box">
+            <div class="treatment__box-left">3</div>
+            <div class="treatment__box-right">
+              <div class="treatment__box-title">卒業公演ご招待     <span class="is-small"><br class="hidden-pc">オープンキャンパス参加者は無料でご招待‼︎</span></div>
+              <p class="treatment__box-text">3/4（土）会場：かつしかシンフォニーヒルズ モーツァルトホール</p>
+            </div>
+          </div>
+        </div>
+        <div class="treatment__bottom">
+          <div class="treatment__messages">
+            <p class="treatment__message1">2年間の集大成となる卒業公演。このメンバーで踊る最後のステージ。<br>魂を込めたダンスを是非、劇場でご覧ください。</p>
+            <p class="treatment__message2">※詳細は学科の先生に直接申し出てください。</p>
+          </div>
+        </div>
+      </div>
+      <div class="treatment__buttons">
+        <a href="#" class="treatment__btn btn">
+          <p class="btn__text">AO入学について</p>
+          <div class="btn__arrow">
+            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="18" viewBox="0 0 10 18" fill="none">
+              <path d="M1.56393 17.9894C1.28829 17.9894 1.0028 17.8731 0.786229 17.6406C0.362924 17.186 0.362924 16.4354 0.786229 15.9808L7.30317 8.98216L0.796074 2.00471C0.362924 1.53954 0.362924 0.799512 0.796074 0.34492C1.22922 -0.109672 1.90848 -0.120244 2.34163 0.34492L9.62643 8.16813C10.0497 8.62272 10.0497 9.37333 9.62643 9.82792L2.34163 17.6511C2.12506 17.8837 1.84942 18 1.56393 18V17.9894Z" fill="white"/>
+            </svg>
+          </div>
+        </a>
+        <a href="#" class="treatment__btn btn">
+          <p class="btn__text">特待生入学奨学金</p>
+          <div class="btn__arrow">
+            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="18" viewBox="0 0 10 18" fill="none">
+              <path d="M1.56393 17.9894C1.28829 17.9894 1.0028 17.8731 0.786229 17.6406C0.362924 17.186 0.362924 16.4354 0.786229 15.9808L7.30317 8.98216L0.796074 2.00471C0.362924 1.53954 0.362924 0.799512 0.796074 0.34492C1.22922 -0.109672 1.90848 -0.120244 2.34163 0.34492L9.62643 8.16813C10.0497 8.62272 10.0497 9.37333 9.62643 9.82792L2.34163 17.6511C2.12506 17.8837 1.84942 18 1.56393 18V17.9894Z" fill="white"/>
+            </svg>
+          </div>
+        </a>
+        <a href="#" class="treatment__btn btn">
+          <p class="btn__text">日本学生支援機構</p>
+          <div class="btn__arrow">
+            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="18" viewBox="0 0 10 18" fill="none">
+              <path d="M1.56393 17.9894C1.28829 17.9894 1.0028 17.8731 0.786229 17.6406C0.362924 17.186 0.362924 16.4354 0.786229 15.9808L7.30317 8.98216L0.796074 2.00471C0.362924 1.53954 0.362924 0.799512 0.796074 0.34492C1.22922 -0.109672 1.90848 -0.120244 2.34163 0.34492L9.62643 8.16813C10.0497 8.62272 10.0497 9.37333 9.62643 9.82792L2.34163 17.6511C2.12506 17.8837 1.84942 18 1.56393 18V17.9894Z" fill="white"/>
+            </svg>
+          </div>
+        </a>
+      </div>
+    </section>
 
   </main>
+
   <!--#include virtual="/include/footer.shtml" -->
 
   <!--#include virtual="/include/body_end.shtml" -->
+
+  <script src="/lib/common/js/gsap.min.js"></script>  <!-- GSAPをファイルで直接読込み -->
+  <script src="/lib/common/js/ScrollTrigger.min.js"></script>  <!-- GSAPのプラグイン「ScrollTrigger」をファイルで直接読込み -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>  <!-- jQuery -->
+  <script src="/lib/common/js/swiper-bundle.min.js"></script>  <!-- swiper -->
   <script type="text/javascript" src="/lib/pages/opencampus/course/js/scripts.js"></script>
 </body>
 </html>
