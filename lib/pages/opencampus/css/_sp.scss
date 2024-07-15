@@ -579,7 +579,7 @@
     text-edge: cap;
     font-size: rem(14);
     line-height: 1.6;
-    padding-block: rem(2);
+    padding-block: rem(0.5);
     padding-left: rem(5);
     padding-right: rem(14);
     border-radius: 0px rem(20) rem(20) 0px;
@@ -639,6 +639,15 @@
 
   .topics-modal__bottom-bottom-text2 {
     margin-top: rem(3);
+    leading-trim: both;
+    text-edge: cap;
+    font-size: rem(12);
+    font-weight: 400;
+    line-height: 1.6;
+  }
+
+  .topics-modal__bottom-bottom-text3 {
+    margin-top: rem(6);
     leading-trim: both;
     text-edge: cap;
     font-size: rem(12);
@@ -936,7 +945,7 @@
     transition: background 0.2s ease-out;
   }
 
-  .item__title-ja::after {
+  .item__title-ja::after {  // 白い矢印
     content: "";
     width: rem(8);
     height: rem(10);
@@ -945,6 +954,7 @@
     top: 50%;
     right: rem(4);
     transform: translateY(-50%);
+    transition: transform 0.2s ease-out;
   }
 
   .subject__cta {
@@ -1376,7 +1386,7 @@
     background: #F47F95;
     border-radius: 50%;
     position: absolute;
-    left: rem(16);
+    left: rem(15);
     top: rem(5);
   }
 
@@ -1543,7 +1553,7 @@
     background: #FFE3E1;
     position: absolute;
     bottom: rem(-435);
-    // right: rem(-5);
+    right: rem(6);  // 白いフレームの左の余白と、このピンクのフレームの右側の余白を合わせる指定
     z-index: -10;
   }
 

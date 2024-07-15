@@ -601,6 +601,7 @@
     font-weight: 400;
     line-height: 1.6;
     white-space: nowrap;
+    hanging-punctuation: force-end;
   }
 
   .topics-modal__bottom-top-text3 {
@@ -610,6 +611,7 @@
     font-size: rem(12);
     font-weight: 400;
     line-height: 1.6;
+    hanging-punctuation: force-end;
   }
 
   .topics-modal__bottom-bottom {
@@ -630,6 +632,15 @@
 
   .topics-modal__bottom-bottom-text2 {
     margin-top: rem(18);
+    leading-trim: both;
+    text-edge: cap;
+    font-size: rem(12);
+    font-weight: 400;
+    line-height: 1.6;
+  }
+
+  .topics-modal__bottom-bottom-text3 {
+    margin-top: rem(6);
     leading-trim: both;
     text-edge: cap;
     font-size: rem(12);
