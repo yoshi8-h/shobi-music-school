@@ -19,6 +19,16 @@
 </head>
 <body id="dance">
 
+  <!-- header -->
+<header class="header">
+  <a href="#" class="header__logo">
+    <picture>
+      <source media="(min-width: 769px)" srcset="/lib/common/img/logo.png">
+      <img src="/lib/common/img/logo-sp.png" alt="ロゴ">
+    </picture>
+  </a>
+</header>
+
   <!--#include virtual="/include/header.shtml" -->
 
   <main>
@@ -124,9 +134,9 @@
                 <div class="box2__bottom-left-right">
                   <p class="date__bottom-text">ダンスレッスン用に下記をお持ちください。</p>
                   <ul class="date__list">
-                    <li class="date__list-item">レッスン着（スエット・Tシャツなど。ジャージ可）</li>
-                    <li class="date__list-item">ダンスシューズ（スニーカーなど。上履き可）</li>
-                    <li class="date__list-item">タオル</li>
+                    <li class="date__list-item date__list-item--2row">レッスン着（スエット・Tシャツなど。ジャージ可）</li>
+                    <li class="date__list-item date__list-item--2row">ダンスシューズ（スニーカーなど。上履き可）</li>
+                    <li class="date__list-item date__list-item--2row">タオル</li>
                   </ul>
                 </div>
               </div>
@@ -149,6 +159,22 @@
     </div>
 
   </main>
+
+      <!-- footer -->
+<footer class="footer">
+  <div class="footer__wrap">
+    <a href="#" class="footer__logo">
+      <picture class="footer__img">
+        <source media="(min-width: 769px)" srcset="/lib/common/img/footer-logo.svg">
+        <img src="/lib/common/img/footer-logo-sp.svg" alt="ロゴ">
+      </picture>
+    </a>
+    <small class="footer__copyright">Copyright(C)2024 SHOBI College of Music All Rights Reserved.</small>
+  </div>
+</footer>
+
+<!-- トップへ戻るボタン -->
+<a href="#" id="js-top-btn" class="top-btn"><img src="/lib/common/img/top-btn.png" alt="TOPへ戻るボタン"></a>
 
   <!--#include virtual="/include/footer.shtml" -->
 

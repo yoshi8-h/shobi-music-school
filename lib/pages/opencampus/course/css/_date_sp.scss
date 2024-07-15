@@ -837,7 +837,7 @@
     color: #000;
     leading-trim: both;
     text-edge: cap;
-    font-size: rem(16);
+    font-size: rem(15);
     font-weight: $normal;
     line-height: 1.6;
   }
@@ -845,7 +845,12 @@
   .date__list{
   }
 
-  .date__list-item{
+  .date__list-item--2row {
+    font-size: rem(15);
+  }
+
+  .date__list-item--2row::before {  // 緑の丸
+    top: rem(12);
   }
 
   .box2__bottom-right{
@@ -866,7 +871,7 @@
     color: #000;
     leading-trim: both;
     text-edge: cap;
-    font-size: rem(16);
+    font-size: rem(15);
     font-weight: $bold;
     line-height: 1.6;
   }
@@ -880,7 +885,7 @@
     color: #000;
     leading-trim: both;
     text-edge: cap;
-    font-size: rem(16);
+    font-size: rem(15);
     font-weight: $normal;
     line-height: 1.6;
   }
@@ -893,6 +898,7 @@
     font-size: rem(12);
     font-weight: $normal;
     line-height: 1.6;
+    hanging-punctuation: force-end;
   }
 
   .details__button{
@@ -921,7 +927,7 @@
     height: rem(2);
     background: #006CB6;
     position: absolute;
-    bottom: rem(-10);
+    bottom: rem(-8);
     left: 50%;
     transform: translateX(-50%);
   }
@@ -937,7 +943,7 @@
 
   .details__button-test {
     color: #006CB6;
-    font-size: rem(18);
+    font-size: rem(16);
     font-style: normal;
     font-weight: $bold;
     line-height: normal;
