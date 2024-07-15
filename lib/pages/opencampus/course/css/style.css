@@ -1927,23 +1927,25 @@ body {
   }
   .date__posts {
     margin-top: 2.5rem;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-inline: auto;
   }
   .posts {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    -webkit-column-gap: 0.5625rem;
-       -moz-column-gap: 0.5625rem;
-            column-gap: 0.5625rem;
     row-gap: 0.9375rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
   }
   .posts__item {
-    width: 21.5625rem;
     width: 22.5rem;
     max-width: 22.5rem;
-    margin-inline: auto;
     -ms-flex-negative: 0;
         flex-shrink: 0;
     -webkit-box-flex: 1;
