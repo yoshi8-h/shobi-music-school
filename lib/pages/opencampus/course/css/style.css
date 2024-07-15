@@ -353,6 +353,12 @@ body {
     position: relative;
     z-index: 40;
   }
+  .topics2__middle.is-not-enough-slide {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-inline: auto;
+  }
   /* ============================================================================= */
   /* 各学科のページ個別の指定 (bodyタグのidで制御) */
   #dance .topics2__title-course {
@@ -1733,6 +1739,12 @@ body {
     margin-top: 1.625rem;
     position: relative;
     z-index: 40;
+  }
+  .topics2__middle.is-not-enough-slide {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-inline: auto;
   }
   /* ============================================================================= */
   /* 各学科のページ個別の指定 (bodyタグのidで制御) */

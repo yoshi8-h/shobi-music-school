@@ -211,6 +211,11 @@
     margin-top: rem(40);
   }
 
+  .topics__middle.is-not-enough-slide {  // スライドの枚数の合計幅が画面内に収まる枚数のときはスライド機能をOFFにするため、その場合はスライドを画面真ん中に配置
+    width: fit-content;
+    margin-inline: auto;
+  }
+
   .topics__swiper {
     padding-bottom: rem(55);  // 『.swiper』からはみ出しているボタンの下部が見えるように。
   }
@@ -220,6 +225,9 @@
 
 
   .cards {  // cards (Block)
+    .is-not-enough-slide {  // スライドの枚数の合計幅が画面内に収まる枚数のときはスライド機能をOFFにするため、その場合はスライドを画面真ん中に配置
+      gap: rem(10);
+    }
   }
 
   .cards__item {
@@ -460,6 +468,15 @@
     border: none;  // デフォルトの指定を打ち消し
     padding: 0;  // デフォルトの指定を打ち消し
     overflow: auto;  // 画面の高さがモーダルより小さい場合にスクロール可能に。
+
+    transform: scale(1.1);  // 初期状態を大きく
+    opacity: 0;  // 初期状態を透明に
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out;  // アニメーションを設定
+
+    &.is-visible {  // 表示される際の変化
+      transform: scale(1);  // アニメーションで元のサイズに
+      opacity: 1;  // アニメーションで不透明に
+    }
 
     &::backdrop {
       opacity: 0.25;
@@ -965,16 +982,22 @@
 
 
   .cta {  // cta (Block)
+    // 角丸のborderをグラデーションするための指定
     border-radius: 60px 0px 0px 60px;
-    border-top: 2px solid var(--Linear, #5FC4F1);
-    border-bottom: 2px solid var(--Linear, #00DEC7);
-    border-left: 2px solid var(--Linear, #5FC4F1);
-    background: var(--Linear, linear-gradient(47deg, #CAEDC2 13.08%, #FFEDA6 82.58%));
+    border-top: 2px solid #5FC4F1;
+    border-left: 2px solid transparent;
+    border-bottom: 2px solid #62DABD;
+    background: linear-gradient(to bottom, #5FC4F1, #62DABD);
+    display: inline-block;
 
     width: fit-content;
   }
 
   .cta__wrap {
+    // 角丸のborderをグラデーションするための指定
+    border-radius: 58px 0px 0px 58px;  // 値を調整
+    background: var(--Linear, linear-gradient(47deg, #CAEDC2 13.08%, #FFEDA6 82.58%));
+
     padding-block: rem(18);
     padding-left: rem(18);
     padding-right: rem(15);

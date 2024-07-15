@@ -196,14 +196,21 @@
 
 
   .cta--online {  // 『.cta』の モディファイア
+    // 角丸のborderをグラデーションするための指定
     border-radius: 60px 0px 0px 60px;
-    border-top: 3px solid #CAEDC2;
-    border-bottom: 3px solid #CAEDC2;
-    border-left: 3px solid #CAEDC2;
-    background: linear-gradient(88deg, #5FC4F1 8.32%, #62DABD 86.09%);
+    border-top: 2px solid #CAEDC2;
+    border-left: 2px solid transparent;
+    border-bottom: 2px solid #FFEDA6;
+    background: linear-gradient(to bottom, #CAEDC2, #FFEDA6);
+    display: inline-block;
   }
 
   .cta--online {
+    .cta__wrap {
+      // 角丸のborderをグラデーションするための指定
+      border-radius: 58px 0px 0px 58px;  // 値を調整
+      background: linear-gradient(88deg, #5FC4F1 8.32%, #62DABD 86.09%);
+    }
 
     .cta__btn-icon {
 

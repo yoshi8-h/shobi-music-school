@@ -216,11 +216,17 @@
     margin-top: rem(50);
   }
 
+  .topics__middle.is-not-enough-slide {  // スライドの枚数の合計幅が画面内に収まる枚数のときはスライド機能をOFFにするため、その場合はスライドを画面真ん中に配置
+    width: fit-content;
+    margin-inline: auto;
+  }
+
   .topics__swiper {
     padding-bottom: rem(55);  // 『.swiper』からはみ出しているボタンの下部が見えるように。
   }
 
   .topics__cards {
+    // width: 100vw;
   }
 
 
@@ -313,6 +319,8 @@
 }
 
   .topics__prev {
+    height: fit-content;
+    top: rem(27.5);
   }
 
   .topics__prev-img {
@@ -324,6 +332,9 @@
   }
 
   .topics__next {
+    height: fit-content;
+    top: rem(26);
+    // top: rem(27.5);
   }
 
   .topics__next-img {
@@ -454,6 +465,15 @@
     border: none;  // デフォルトの指定を打ち消し
     padding: 0;  // デフォルトの指定を打ち消し
     overflow: auto;  // 画面の高さがモーダルより小さい場合にスクロール可能に。
+
+    transform: scale(1.2);  // 初期状態を大きく
+    opacity: 0;  // 初期状態を透明に
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out;  // アニメーションを設定
+
+    &.is-visible {  // 表示される際の変化
+      transform: scale(1);  // アニメーションで元のサイズに
+      opacity: 1;  // アニメーションで不透明に
+    }
 
     &::backdrop {
       opacity: 0.25;
@@ -980,39 +1000,31 @@
 
 
   .cta {  // cta (Block)
-    border-radius: 105px 0px 0px 105px;
-    border-top: 3px solid var(--Linear, #5FC4F1);
-    border-bottom: 3px solid var(--Linear, #00DEC7);
-    border-left: 3px solid var(--Linear, #5FC4F1);
-    background: var(--Linear, linear-gradient(47deg, #CAEDC2 13.08%, #FFEDA6 82.58%));
+
+    // border-top: 3px solid transparent;
+    // border-bottom: 3px solid transparent;
+    // border-left: 3px solid transparent;
+    // border-image: linear-gradient(to bottom, #5FC4F1, #62DABD) 1;
+    // background: var(--Linear, linear-gradient(47deg, #CAEDC2 13.08%, #FFEDA6 82.58%));
+
     // z-index: 100;
+
+    // 角丸のborderをグラデーションするための指定
+    border-radius: 105px 0px 0px 105px;
+    border-top: 3px solid #5FC4F1;
+    border-left: 3px solid transparent;
+    border-bottom: 3px solid #62DABD;
+    background: linear-gradient(to bottom, #5FC4F1, #62DABD);
+    display: inline-block;
 
     width: fit-content;
   }
 
-  .cta::before {
-  //   content: '';
-  //   position: absolute;
-  //   top: 0;
-  //   left: 0;
-  //   width: 3px; /* Border width */
-  //   height: 100%;
-  //   background: linear-gradient(to bottom, #5FC4F1 50%, #00DEC7 50%);
-  //   border-radius: 105px 0 0 105px;
-    content: "";
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: -3px; // ボーダーの厚さ
-    left: -3px; // ボーダーの厚さ
-    right: 0; // ボーダーの厚さ
-    bottom: -3px; // ボーダーの厚さ
-    border-radius: 108px 0px 0px 108px; // ボーダーの内側の要素とのギャップを調整
-    background: linear-gradient(to bottom, #5FC4F1, #00DEC7); // グラデーションボーダー
-    z-index: -10; // 背景として配置
-  }
-
   .cta__wrap {
+    // 角丸のborderをグラデーションするための指定
+    border-radius: 105px 0 0 105px;
+    background: linear-gradient(47deg, #CAEDC2 13.08%, #FFEDA6 82.58%);
+
     padding-block: rem(40);
     padding-left: rem(45);
     padding-right: rem(55);
