@@ -1930,7 +1930,12 @@ body {
   .topics__swiper {
     padding-bottom: 3.4375rem;
   }
-  .cards .is-not-enough-slide {
+  .topics__swiper.is-not-enough-slide {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .cards.is-not-enough-slide {
     gap: 0.625rem;
   }
   .cards__item {

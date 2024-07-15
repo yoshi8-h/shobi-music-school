@@ -1085,6 +1085,18 @@ body {
     padding: 0;
     overflow: auto;
     z-index: 100;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    opacity: 0;
+    -webkit-transition: opacity 0.3s ease-out, -webkit-transform 0.3s ease-out;
+    transition: opacity 0.3s ease-out, -webkit-transform 0.3s ease-out;
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out, -webkit-transform 0.3s ease-out;
+  }
+  .date-modal.is-visible {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
   }
   .date-modal::-ms-backdrop {
     opacity: 0.25;
@@ -2487,6 +2499,18 @@ body {
     padding: 0;
     overflow: auto;
     z-index: 100;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    opacity: 0;
+    -webkit-transition: opacity 0.3s ease-out, -webkit-transform 0.3s ease-out;
+    transition: opacity 0.3s ease-out, -webkit-transform 0.3s ease-out;
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out, -webkit-transform 0.3s ease-out;
+  }
+  .date-modal.is-visible {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
   }
   .date-modal::-ms-backdrop {
     opacity: 0.25;

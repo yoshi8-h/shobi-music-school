@@ -218,6 +218,10 @@
 
   .topics__swiper {
     padding-bottom: rem(55);  // 『.swiper』からはみ出しているボタンの下部が見えるように。
+
+    &.is-not-enough-slide {  // スライドの枚数の合計幅が画面内に収まらない枚数のときはスライド機能をOFFになる為、その際にカード間にgapを付与。
+      width: fit-content;
+    }
   }
 
   .topics__cards {
@@ -225,7 +229,7 @@
 
 
   .cards {  // cards (Block)
-    .is-not-enough-slide {  // スライドの枚数の合計幅が画面内に収まる枚数のときはスライド機能をOFFにするため、その場合はスライドを画面真ん中に配置
+    &.is-not-enough-slide {  // スライドの枚数の合計幅が画面内に収まらない枚数のときはスライド機能をOFFになる為、その際にカード間にgapを付与。
       gap: rem(10);
     }
   }

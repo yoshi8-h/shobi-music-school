@@ -1315,6 +1315,15 @@
     overflow: auto;  // 画面の高さがモーダルより小さい場合にスクロール可能に。
     z-index: 100;
 
+    transform: scale(1.1);  // 初期状態を大きく
+    opacity: 0;  // 初期状態を透明に
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out;  // アニメーションを設定
+
+    &.is-visible {  // 表示される際の変化
+      transform: scale(1);  // アニメーションで元のサイズに
+      opacity: 1;  // アニメーションで不透明に
+    }
+
     &::backdrop {
       opacity: 0.25;
       background: #000;
