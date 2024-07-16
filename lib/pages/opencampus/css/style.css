@@ -1310,6 +1310,7 @@ body {
     width: 62.5rem;
     height: 11.5rem;
     position: relative;
+    margin-left: -3.125rem;
   }
   .f-item {
     position: relative;
@@ -1415,7 +1416,7 @@ body {
     background: #FFE3E1;
     position: absolute;
     bottom: -28.75rem;
-    right: 3.125rem;
+    right: calc(50% - min(48.5vw, 32.7rem));
     z-index: -10;
   }
   .same-time__tag {
@@ -1458,7 +1459,7 @@ body {
     width: 33.125rem;
     position: absolute;
     bottom: -28.775rem;
-    left: calc(50% - min(48.5vw, 31.2rem));
+    left: calc(50% - min(48.5vw, 32.7rem));
   }
   .if-need {
     border-radius: 1.25rem;
