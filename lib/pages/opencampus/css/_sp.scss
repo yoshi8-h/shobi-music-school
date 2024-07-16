@@ -633,6 +633,24 @@
     line-height: 1.6;
   }
 
+  .text-indent {  // 文頭に『※』が付く部分に付与するクラス
+    position: relative;
+    padding-left: rem(13);  // 『※』が入るスペースを確保
+  }
+
+  .text-indent::before {  // 『※』のぶら下げ処理の為に、擬似要素で『※』を配置
+    content: "※";
+    leading-trim: both;
+    text-edge: cap;
+    font-size: rem(12);
+    font-weight: 400;
+    line-height: 1.6;
+    position: absolute;
+    top: rem(1);
+    top: 0;
+    left: 0;
+  }
+
   .topics-modal__bottom-top-text3 {
     margin-top: rem(6);
     leading-trim: both;
