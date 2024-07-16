@@ -308,6 +308,15 @@ body {
     line-height: 1.6;
     hanging-punctuation: force-end;
   }
+  .o-f-item__sub-text-2 {
+    width: 48.75rem;
+    leading-trim: both;
+    text-edge: cap;
+    font-size: 0.75rem;
+    font-weight: 400;
+    line-height: 1.6;
+    hanging-punctuation: force-end;
+  }
   .o-f-item__download {
     margin-top: 2.125rem;
     max-width: 43.75rem;
@@ -860,6 +869,16 @@ body {
   }
   .o-f-item__sub-text {
     margin-top: 1.5625rem;
+    leading-trim: both;
+    text-edge: cap;
+    font-size: 0.75rem;
+    font-weight: 400;
+    line-height: 1.6;
+    max-width: 28.125rem;
+    margin-inline: auto;
+    hanging-punctuation: force-end;
+  }
+  .o-f-item__sub-text-2 {
     leading-trim: both;
     text-edge: cap;
     font-size: 0.75rem;
