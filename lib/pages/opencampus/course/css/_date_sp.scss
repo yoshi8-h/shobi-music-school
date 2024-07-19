@@ -124,9 +124,9 @@
       background: $theme-color-academy;
     }
 
-    // .box2__lesson{
-    //   border-left: 4px solid $theme-color-academy;
-    // }
+    .box2__lesson{
+      border-left: 4px solid $theme-color-academy;
+    }
 
     .lesson__label{
       background: $theme-color-academy;
@@ -155,9 +155,9 @@
       background: $theme-color-arrangecompose;
     }
 
-    // .box2__lesson{
-    //   border-left: 4px solid $theme-color-arrangecompose;
-    // }
+    .box2__lesson{
+      border-left: 4px solid $theme-color-arrangecompose;
+    }
 
     .lesson__label{
       background: $theme-color-arrangecompose;
@@ -186,9 +186,9 @@
       background: $theme-color-jazzpop;
     }
 
-    // .box2__lesson{
-    //   border-left: 4px solid $theme-color-jazzpop;
-    // }
+    .box2__lesson{
+      border-left: 4px solid $theme-color-jazzpop;
+    }
 
     .lesson__label{
       background: $theme-color-jazzpop;
@@ -217,9 +217,9 @@
       background: $theme-color-musical;
     }
 
-    // .box2__lesson{
-    //   border-left: 4px solid $theme-color-musical;
-    // }
+    .box2__lesson{
+      border-left: 4px solid $theme-color-musical;
+    }
 
     .lesson__label{
       background: $theme-color-musical;
@@ -248,9 +248,9 @@
       background: $theme-color-musicbusiness;
     }
 
-    // .box2__lesson{
-    //   border-left: 4px solid $theme-color-musicbusiness;
-    // }
+    .box2__lesson{
+      border-left: 4px solid $theme-color-musicbusiness;
+    }
 
     .lesson__label{
       background: $theme-color-musicbusiness;
@@ -279,9 +279,9 @@
       background: $theme-color-promusician;
     }
 
-    // .box2__lesson{
-    //   border-left: 4px solid $theme-color-promusician;
-    // }
+    .box2__lesson{
+      border-left: 4px solid $theme-color-promusician;
+    }
 
     .lesson__label{
       background: $theme-color-promusician;
@@ -310,9 +310,9 @@
       background: $theme-color-soundvisuallighting;
     }
 
-    // .box2__lesson{
-    //   border-left: 4px solid $theme-color-soundvisuallighting;
-    // }
+    .box2__lesson{
+      border-left: 4px solid $theme-color-soundvisuallighting;
+    }
 
     .lesson__label{
       background: $theme-color-soundvisuallighting;
@@ -341,9 +341,9 @@
       background: $theme-color-vocal;
     }
 
-    // .box2__lesson{
-    //   border-left: 4px solid $theme-color-vocal;
-    // }
+    .box2__lesson{
+      border-left: 4px solid $theme-color-vocal;
+    }
 
     .lesson__label{
       background: $theme-color-vocal;
@@ -372,9 +372,9 @@
       background: $theme-color-voiceactor;
     }
 
-    // .box2__lesson{
-    //   border-left: 4px solid $theme-color-voiceactor;
-    // }
+    .box2__lesson{
+      border-left: 4px solid $theme-color-voiceactor;
+    }
 
     .lesson__label{
       background: $theme-color-voiceactor;
@@ -403,9 +403,9 @@
       background: $theme-color-wind;
     }
 
-    // .box2__lesson{
-    //   border-left: 4px solid $theme-color-wind;
-    // }
+    .box2__lesson{
+      border-left: 4px solid $theme-color-wind;
+    }
 
     .lesson__label{
       background: $theme-color-wind;
@@ -618,7 +618,24 @@
 
   .box2__middle{
     padding-bottom: rem(40);
-    border-bottom: 2px solid #FFF;
+    position: relative;
+    // border-bottom: 2px solid #FFF;
+
+    width: 100%;  // 追加
+    max-width: rem(340);
+    margin-inline: auto;
+  }
+
+  .box2__middle::after {  // 白い仕切り線
+    content: "";
+    width: rem(360);
+    width: 170%;
+    height: rem(2);
+    background: #FFF;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   .box2__middle-top {
@@ -638,12 +655,12 @@
 
   .box2__middle-bottom {
     margin-top: rem(40);
-    width: rem(310);
+    width: 100%;
     margin-inline: auto;
   }
 
   .box2__lesson{
-    width: rem(310);
+    width: 100%;
     padding-left: rem(15);
     // flex-shrink: 1;
   }
@@ -801,6 +818,10 @@
     justify-content: center;
     align-items: center;
     gap: rem(45);
+
+    width: 100%;  // 追加
+    max-width: rem(340);
+    margin-inline: auto;
   }
 
   .box2__bottom-left{
@@ -810,8 +831,9 @@
     justify-content: center;
     align-items: flex-start;
     gap: rem(18);
-    width: fit-content;
-    width: rem(340);
+    // width: fit-content;
+    // width: rem(334);
+    width: 100%;
     margin-inline: auto;
   }
 
@@ -847,11 +869,11 @@
   }
 
   .date__list-item--2row {
-    font-size: rem(15);
+    font-size: rem(14.8);
   }
 
   .date__list-item--2row::before {  // 緑の丸
-    top: rem(12);
+    top: rem(11);
   }
 
   .box2__bottom-right{
@@ -860,7 +882,8 @@
     justify-content: center;
     align-items: flex-start;
     gap: rem(10);
-    width: rem(340);
+    // width: rem(340);
+    width: 100%;
     margin-inline: auto;
   }
 

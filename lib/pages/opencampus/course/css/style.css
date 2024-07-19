@@ -1106,11 +1106,18 @@ body {
     opacity: 0.25;
     background: #000;
   }
+  .date-modal__head {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+  }
   .date-modal__wrap {
     padding-top: 3.3125rem;
     padding-inline: 3.75rem;
     padding-bottom: 3.75rem;
     position: relative;
+    z-index: 50;
   }
   .date-modal__close {
     position: absolute;
@@ -2377,12 +2384,13 @@ body {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     gap: 1.875rem;
   }
   .treatment__box-left {
+    margin-top: 0.2625rem;
     text-align: center;
     color: #F47F95;
     leading-trim: both;
@@ -2437,19 +2445,19 @@ body {
     margin-inline: auto;
   }
   .treatment__messages {
-    margin-top: 1.875rem;
+    margin-top: 1.25rem;
     width: 17.0625rem;
     margin-left: auto;
     position: relative;
   }
   .treatment__messages::before {
     content: "";
-    width: 4.5rem;
-    height: 0.75rem;
+    width: 4.0625rem;
+    height: 0.625rem;
     background: url(../img/treatment-arrows.svg) no-repeat center center/contain;
     position: absolute;
     top: 0.3125rem;
-    left: -5.0625rem;
+    left: -4.625rem;
   }
   .treatment__message1 {
     color: #000;
@@ -2522,11 +2530,18 @@ body {
     opacity: 0.25;
     background: #000;
   }
+  .date-modal__head {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+  }
   .date-modal__wrap {
     padding-top: 3.125rem;
     padding-inline: 0.9375rem;
     padding-bottom: 1.875rem;
     position: relative;
+    z-index: 50;
   }
   .date-modal__close {
     position: absolute;

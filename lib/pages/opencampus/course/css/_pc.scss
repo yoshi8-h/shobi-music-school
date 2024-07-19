@@ -1319,11 +1319,19 @@
     }
   }
 
+  .date-modal__head {  // スマホ時にスクロールした時に、ボタンをstickyする為の親クラス
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+  }
+
   .date-modal__wrap {
     padding-top: rem(53);
     padding-inline: rem(60);
     padding-bottom: rem(60);
     position: relative;
+    z-index: 50;
   }
 
   .date-modal__close {  // 『閉じる』ボタン

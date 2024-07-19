@@ -516,7 +516,18 @@ body {
   }
   .box2__middle {
     padding-bottom: 2.9375rem;
-    border-bottom: 2px solid #FFF;
+    position: relative;
+  }
+  .box2__middle::after {
+    content: "";
+    width: 75rem;
+    height: 0.125rem;
+    background: #FFF;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
   }
   .box2__middle-top {
     display: -webkit-box;
@@ -919,6 +930,9 @@ body {
   #academy .box2__top {
     background: #C10147;
   }
+  #academy .box2__lesson {
+    border-left: 4px solid #C10147;
+  }
   #academy .lesson__label {
     background: #C10147;
   }
@@ -936,6 +950,9 @@ body {
   }
   #arrangecompose .box2__top {
     background: #29B5B2;
+  }
+  #arrangecompose .box2__lesson {
+    border-left: 4px solid #29B5B2;
   }
   #arrangecompose .lesson__label {
     background: #29B5B2;
@@ -955,6 +972,9 @@ body {
   #jazzpop .box2__top {
     background: #015DAE;
   }
+  #jazzpop .box2__lesson {
+    border-left: 4px solid #015DAE;
+  }
   #jazzpop .lesson__label {
     background: #015DAE;
   }
@@ -972,6 +992,9 @@ body {
   }
   #musical .box2__top {
     background: #F29600;
+  }
+  #musical .box2__lesson {
+    border-left: 4px solid #F29600;
   }
   #musical .lesson__label {
     background: #F29600;
@@ -991,6 +1014,9 @@ body {
   #musicbusiness .box2__top {
     background: #F4C200;
   }
+  #musicbusiness .box2__lesson {
+    border-left: 4px solid #F4C200;
+  }
   #musicbusiness .lesson__label {
     background: #F4C200;
   }
@@ -1008,6 +1034,9 @@ body {
   }
   #promusician .box2__top {
     background: #D70C18;
+  }
+  #promusician .box2__lesson {
+    border-left: 4px solid #D70C18;
   }
   #promusician .lesson__label {
     background: #D70C18;
@@ -1027,6 +1056,9 @@ body {
   #soundvisuallighting .box2__top {
     background: #0098D8;
   }
+  #soundvisuallighting .box2__lesson {
+    border-left: 4px solid #0098D8;
+  }
   #soundvisuallighting .lesson__label {
     background: #0098D8;
   }
@@ -1044,6 +1076,9 @@ body {
   }
   #vocal .box2__top {
     background: #E75297;
+  }
+  #vocal .box2__lesson {
+    border-left: 4px solid #E75297;
   }
   #vocal .lesson__label {
     background: #E75297;
@@ -1063,6 +1098,9 @@ body {
   #voiceactor .box2__top {
     background: #7FBE26;
   }
+  #voiceactor .box2__lesson {
+    border-left: 4px solid #7FBE26;
+  }
   #voiceactor .lesson__label {
     background: #7FBE26;
   }
@@ -1080,6 +1118,9 @@ body {
   }
   #wind .box2__top {
     background: #008532;
+  }
+  #wind .box2__lesson {
+    border-left: 4px solid #008532;
   }
   #wind .lesson__label {
     background: #008532;
@@ -1311,7 +1352,22 @@ body {
   }
   .box2__middle {
     padding-bottom: 2.5rem;
-    border-bottom: 2px solid #FFF;
+    position: relative;
+    width: 100%;
+    max-width: 21.25rem;
+    margin-inline: auto;
+  }
+  .box2__middle::after {
+    content: "";
+    width: 22.5rem;
+    width: 170%;
+    height: 0.125rem;
+    background: #FFF;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
   }
   .box2__middle-top {
     display: -webkit-box;
@@ -1331,11 +1387,11 @@ body {
   }
   .box2__middle-bottom {
     margin-top: 2.5rem;
-    width: 19.375rem;
+    width: 100%;
     margin-inline: auto;
   }
   .box2__lesson {
-    width: 19.375rem;
+    width: 100%;
     padding-left: 0.9375rem;
   }
   .lesson__tags {
@@ -1517,6 +1573,9 @@ body {
         -ms-flex-align: center;
             align-items: center;
     gap: 2.8125rem;
+    width: 100%;
+    max-width: 21.25rem;
+    margin-inline: auto;
   }
   .box2__bottom-left {
     display: -webkit-box;
@@ -1533,10 +1592,7 @@ body {
         -ms-flex-align: start;
             align-items: flex-start;
     gap: 1.125rem;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    width: 21.25rem;
+    width: 100%;
     margin-inline: auto;
   }
   .box2__tag {
@@ -1565,10 +1621,10 @@ body {
     line-height: 1.6;
   }
   .date__list-item--2row {
-    font-size: 0.9375rem;
+    font-size: 0.925rem;
   }
   .date__list-item--2row::before {
-    top: 0.75rem;
+    top: 0.6875rem;
   }
   .box2__bottom-right {
     display: -webkit-box;
@@ -1585,7 +1641,7 @@ body {
         -ms-flex-align: start;
             align-items: flex-start;
     gap: 0.625rem;
-    width: 21.25rem;
+    width: 100%;
     margin-inline: auto;
   }
   .box2__bottom-right-right {

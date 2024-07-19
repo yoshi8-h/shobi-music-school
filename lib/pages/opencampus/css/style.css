@@ -410,11 +410,17 @@ body {
     opacity: 0.25;
     background: #000;
   }
+  .topics-modal__head {
+    position: sticky;
+    top: 0;
+    left: 0;
+  }
   .topics-modal__top {
     background: #FFF;
     padding-block: 2.375rem;
     padding-inline: 4.125rem;
     position: relative;
+    z-index: -1;
   }
   .topics-modal__top-titles {
     display: -webkit-box;
@@ -470,6 +476,8 @@ body {
     padding-top: 3.125rem;
     padding-inline: 3.75rem;
     padding-bottom: 3.75rem;
+    position: relative;
+    z-index: -1;
   }
   .topics-modal__bottom-top {
     display: -webkit-box;
@@ -2198,11 +2206,17 @@ body {
     opacity: 0.25;
     background: #000;
   }
+  .topics-modal__head {
+    position: sticky;
+    top: 0;
+    left: 0;
+  }
   .topics-modal__top {
     background: #FFF;
     padding-block: 1.25rem;
     padding-inline: 1.25rem;
     position: relative;
+    z-index: -1;
   }
   .topics-modal__top-titles {
     display: -webkit-box;
@@ -2218,7 +2232,7 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    gap: 0.625rem;
+    gap: 0.3125rem;
   }
   .topics-modal__top-en {
     leading-trim: both;
@@ -2228,21 +2242,22 @@ body {
     font-style: italic;
     font-weight: 600;
     letter-spacing: 2.2px;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
     position: relative;
   }
   .topics-modal__top-en::after {
     content: "";
-    width: 5rem;
-    height: 1.25rem;
+    width: 6.6875rem;
+    height: 1rem;
     background: url(../img/modal-arrows.png) no-repeat center center/contain;
     position: absolute;
-    top: calc(100% + 0.0625rem);
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
+    top: 50%;
+    left: 5.3125rem;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
   }
   .topics-modal__top-ja {
-    margin-top: 1.25rem;
     leading-trim: both;
     text-edge: cap;
     font-size: 1.5rem;
@@ -2263,6 +2278,8 @@ body {
     padding-top: 1.875rem;
     padding-inline: 0.9375rem;
     padding-bottom: 2.5rem;
+    position: relative;
+    z-index: -1;
   }
   .topics-modal__bottom-top {
     display: -webkit-box;
@@ -2618,7 +2635,7 @@ body {
     top: 4.6875rem;
     color: #FFF;
     text-align: center;
-    font-size: 0.75rem;
+    font-size: 0.71875rem;
     line-height: 1.4;
     width: 100%;
     padding-block: 0.375rem;
@@ -3088,7 +3105,7 @@ body {
     border-bottom: 0.5rem solid #00DEC7;
     background: #F8F7F0;
     padding-top: 3.75rem;
-    padding-bottom: 56.25rem;
+    padding-bottom: 54.375rem;
   }
   .flow__title .section-title__img img {
     width: 21.875rem;
@@ -3111,6 +3128,12 @@ body {
     gap: 2.625rem;
     position: relative;
     z-index: 10;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-inline: auto;
+    -webkit-transform: translateX(-0.625rem);
+            transform: translateX(-0.625rem);
   }
   .flow__item {
     width: 89.0666666667vw;
@@ -3150,7 +3173,7 @@ body {
     z-index: -10;
   }
   .f-item__left {
-    padding-top: 0.9375rem;
+    padding-top: 1.25rem;
     padding-bottom: 1.5625rem;
     padding-left: 6.5rem;
   }
@@ -3202,7 +3225,7 @@ body {
     background: #FFE3E1;
     position: absolute;
     bottom: -27.1875rem;
-    right: 0.375rem;
+    right: -1.25rem;
     z-index: -10;
   }
   .same-time__tag {
@@ -3248,10 +3271,10 @@ body {
     width: 22.5rem;
     max-width: 31.25rem;
     position: absolute;
-    bottom: -52.5rem;
+    bottom: -50.625rem;
     left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
+    -webkit-transform: translateX(calc(-50% + 0.625rem));
+            transform: translateX(calc(-50% + 0.625rem));
   }
   .if-need {
     border-radius: 0.9375rem;
@@ -3292,7 +3315,7 @@ body {
   .if-need__title {
     margin-top: 1.5625rem;
     color: #006CB6;
-    font-size: 1.625rem;
+    font-size: 1.25rem;
     line-height: 1.3;
   }
   .if-need__text {
@@ -3304,7 +3327,7 @@ body {
     line-height: 1.6;
   }
   .qa {
-    padding-top: 2.5rem;
+    padding-top: 0.875rem;
     overflow: hidden;
   }
   .qa__inner {
@@ -3339,10 +3362,10 @@ body {
     position: relative;
   }
   .qa__title img {
-    width: 18.75rem;
+    width: 16.25rem;
   }
   .qa__boxes {
-    margin-top: 2.1875rem;
+    margin-top: 0.0625rem;
   }
   .qa-boxes {
     display: -webkit-box;

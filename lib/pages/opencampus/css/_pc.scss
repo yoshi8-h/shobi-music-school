@@ -451,7 +451,8 @@
 
 
 
-  // モーダル (topics セクションの)
+
+// モーダル (topics セクションの)
 
   // 要素を固定するクラス (スクロール不可に)
   .is-fixed {
@@ -481,6 +482,12 @@
     }
   }
 
+  .topics-modal__head {  // スマホ時にスクロールした時に、ボタンをstickyする為の親クラス
+    position: sticky;
+    top: 0;
+    left: 0;
+  }
+
   .topics-modal__wrap {
   }
 
@@ -489,6 +496,7 @@
     padding-block: rem(38);
     padding-inline: rem(66);
     position: relative;
+    z-index: -1;
   }
 
   .topics-modal__top-titles {
@@ -544,6 +552,8 @@
     padding-top: rem(50);
     padding-inline: rem(60);
     padding-bottom: rem(60);
+    position: relative;
+    z-index: -1;
   }
 
   .topics-modal__bottom-top {
@@ -685,6 +695,7 @@
     font-weight: 400;
     line-height: 1.6;
   }
+
 
 
 

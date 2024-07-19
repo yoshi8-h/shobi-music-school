@@ -151,6 +151,24 @@
     line-height: 1.6;
   }
 
+  .text-indent2 {
+    position: relative;
+    padding-left: rem(16);  // 『※』が入るスペースを確保
+  }
+
+  .text-indent2::before {  // 『※』のぶら下げ処理の為に、擬似要素で『※』を配置
+    content: "※";
+    leading-trim: both;
+    text-edge: cap;
+    font-size: rem(16);
+    font-weight: 400;
+    line-height: 1.6;
+    position: absolute;
+    top: rem(1);
+    top: 0;
+    left: 0;
+  }
+
   .box__text .mail-link {
     color: #006CB6;
     text-decoration-line: underline;
