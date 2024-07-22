@@ -436,7 +436,8 @@
 
   .box2__wrap{
     padding-top: rem(50);
-    padding-inline: rem(48);
+    // padding-inline: rem(48);
+    padding-inline: rem(50);
     padding-bottom: rem(65);
   }
 
@@ -633,6 +634,7 @@
     justify-content: space-between;
     align-items: flex-start;
     gap: rem(25);
+    row-gap: rem(50);
 
     // display: grid;
     // grid-template-columns: repeat(2, 1fr);  // 『grid-template-rows』は指定しない事で、行の高さは、その行に含まれるコンテンツのサイズに基づいて自動的に調整される。
@@ -658,7 +660,8 @@
     align-items: center;
     column-gap: rem(4);
     row-gap: rem(6);
-    width: rem(514);
+    // width: rem(514);
+    width: rem(400);
   }
 
   .lesson__tag{
@@ -679,7 +682,7 @@
     margin-top: rem(20);
     display: flex;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
     gap: rem(20);
   }
 
